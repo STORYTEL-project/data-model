@@ -1,0 +1,18 @@
+@prefix : <http://www.semanticweb.org/storytel/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/storytel/> .
+
+<http://www.semanticweb.org/storytel> rdf:type owl:Ontology ;
+                                       owl:imports <http://cidoc-crm.org/extensions/lrmoo/owl/1.0/> ,
+                                                   <http://www.cidoc-crm.org/extensions/crmdig/owl/5.0/> ,
+                                                   <http://www.w3.org/ns/prov-o-20130430> ,
+                                                   <https://schema.org/> ,
+                                                   <http://purl.org/dc/terms/>;
+                                       <http://purl.org/dc/elements/1.1/creator> "Giorgia Crosilla" ;
+                                       <http://purl.org/dc/elements/1.1/description> "Storytel is the ontology of the european ERASMUS+ project Storytel. Its goal is to map the relationship between Full Video, Story and Anonymized Video re-using existing ontologies and implementing some ad-hoc classes." ;
+                                       <http://purl.org/dc/elements/1.1/language> "English" ;
+                                       rdfs:label "Storytel" .
