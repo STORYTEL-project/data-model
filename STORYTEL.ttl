@@ -1,0 +1,661 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix ex: <http://www.purl.org/storytel/type/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix type: <http://www.purl.org/storytel/type/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@base <http://www.purl.org/storytel/> .
+
+<http://www.purl.org/storytel/> rdf:type owl:Ontology ;
+                                 owl:imports <http://cidoc-crm.org/extensions/lrmoo/owl/1.0/> ,
+                                             <http://www.cidoc-crm.org/cidoc-crm/owl/7.1.3/> ,
+                                             <http://www.cidoc-crm.org/extensions/crmdig/owl/5.0/> ;
+                                 <http://purl.org/dc/elements/1.1/creator> "Giorgia Crosilla" ;
+                                 <http://purl.org/dc/elements/1.1/description> "Storytel is the ontology of the european ERASMUS+ project Storytel. Its goal is to map the relationship between Full Video, Story and Anonymized Video re-using existing ontologies and implementing some ad-hoc classes." ;
+                                 <http://purl.org/dc/elements/1.1/language> "English" ;
+                                 <http://purl.org/dc/elements/1.1/title> "Storytel" ;
+                                 rdfs:label "Storytel" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
+                                          <http://purl.org/dc/elements/1.1/title> "Creator"@en ;
+                                          rdfs:comment "Entity primarily responsible for making the resource; used here to record the author of the ontology."@en ;
+                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                          rdfs:label "Creator"@en .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty ;
+                                              <http://purl.org/dc/elements/1.1/title> "Description"@en ;
+                                              rdfs:comment "An account of the resource; used here to describe the ontology and its purpose."@en ;
+                                              rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                              rdfs:label "Description"@en .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty ;
+                                           <http://purl.org/dc/elements/1.1/title> "Language"@en ;
+                                           rdfs:comment "The language of the resource; used here to state the language in which the ontology is expressed."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                           rdfs:label "Language"@en .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        <http://purl.org/dc/elements/1.1/title> "Title"@en ;
+                                        rdfs:comment "A name given to the resource; used here to provide a human-readable title for ontology terms."@en ;
+                                        rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> ;
+                                        rdfs:label "Title"@en .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member
+cidoc-crm:P107_has_current_member rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/oa#hasBody
+oa:hasBody rdf:type owl:ObjectProperty ;
+           <http://purl.org/dc/elements/1.1/title> "has body"@en ;
+           rdfs:comment "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."@en ;
+           rdfs:isDefinedBy oa: ;
+           rdfs:label "has body"@en .
+
+
+###  http://www.w3.org/ns/oa#hasSelector
+oa:hasSelector rdf:type owl:ObjectProperty ;
+               <http://purl.org/dc/elements/1.1/title> "has selector"@en ;
+               rdfs:comment "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."@en ;
+               rdfs:isDefinedBy oa: ;
+               rdfs:label "has selector"@en .
+
+
+###  http://www.w3.org/ns/oa#hasTarget
+oa:hasTarget rdf:type owl:ObjectProperty ;
+             <http://purl.org/dc/elements/1.1/title> "has target"@en ;
+             rdfs:comment "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en ;
+             rdfs:isDefinedBy oa: ;
+             rdfs:label "has target"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty ;
+          <http://purl.org/dc/elements/1.1/title> "value"@en ;
+          rdfs:comment "RDF property giving the literal value of a structured resource, here the media fragment expression of a selector."@en ;
+          rdfs:isDefinedBy rdf: ;
+          rdfs:label "value"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.purl.org/storytel/Age_Of_The_Participants
+:Age_Of_The_Participants rdf:type owl:Class ;
+                         rdfs:subClassOf cidoc-crm:E54_Dimension ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty cidoc-crm:P90_has_value ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:integer ;
+                                                                owl:withRestrictions ( [ xsd:minInclusive 18
+                                                                                       ]
+                                                                                       [ xsd:maxInclusive 65
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ] ;
+                         <http://purl.org/dc/elements/1.1/title> "Age of the Participants"@en ;
+                         rdfs:comment "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."@en ;
+                         rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                         rdfs:label "Age of the Participants"@en .
+
+
+###  http://www.purl.org/storytel/Annotation
+:Annotation rdf:type owl:Class ;
+            rdfs:subClassOf crmdig:D29_Annotation_Object ,
+                            oa:Annotation ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty crmdig:L43_annotates ;
+                              owl:someValuesFrom :Anonymized_Story
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty oa:hasBody ;
+                              owl:someValuesFrom :Annotation_Body
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty oa:hasTarget ;
+                              owl:someValuesFrom :Anonymized_Story_Segment
+                            ] ;
+            <http://purl.org/dc/elements/1.1/title> "Annotation "@en ;
+            rdfs:comment "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"@en ;
+            rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+            rdfs:label "Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Annotation_Body
+:Annotation_Body rdf:type owl:Class ;
+                 rdfs:subClassOf oa:TextualBody ;
+                 <http://purl.org/dc/elements/1.1/title> "Annotation Body"@en ;
+                 rdfs:comment "Content of the annotation, e.g. the transcribed text of the segment." ;
+                 rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                 rdfs:label "Annotation Body"@en .
+
+
+###  http://www.purl.org/storytel/Anonymized_Story
+:Anonymized_Story rdf:type owl:Class ;
+                  rdfs:subClassOf lrmoo:F2_Expression ,
+                                  crmdig:D1_Digital_Object ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty lrmoo:R76_is_derivative_of ;
+                                    owl:someValuesFrom :Story
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cidoc-crm:P2_has_type ;
+                                    owl:hasValue type:Anonymized_Story
+                                  ] ;
+                  owl:disjointWith [ rdf:type owl:Class ;
+                                     owl:unionOf ( :Full_Video
+                                                   :Story
+                                                 )
+                                   ] ;
+                  <http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en ;
+                  rdfs:comment "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." ;
+                  rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                  rdfs:label "Anonymized Story"@en .
+
+
+###  http://www.purl.org/storytel/Anonymized_Story_Creation
+:Anonymized_Story_Creation rdf:type owl:Class ;
+                           rdfs:subClassOf lrmoo:F28_Expression_Creation ,
+                                           crmdig:D3_Formal_Derivation ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty lrmoo:R17_created ;
+                                             owl:someValuesFrom :Anonymized_Story
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty crmdig:L21_used_as_derivation_source ;
+                                             owl:someValuesFrom :Story
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty crmdig:L23_used_software_or_firmware ;
+                                             owl:someValuesFrom :Software_Based_On_LLM
+                                           ] ;
+                           <http://purl.org/dc/elements/1.1/title> "Anonymized Story Creation"@en ;
+                           rdfs:comment "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM."@en ;
+                           rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                           rdfs:label "Anonymized Story Creation"@en .
+
+
+###  http://www.purl.org/storytel/Anonymized_Story_Segment
+:Anonymized_Story_Segment rdf:type owl:Class ;
+                          rdfs:subClassOf oa:SpecificResource ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty oa:hasSelector ;
+                                            owl:someValuesFrom :Media_Fragment_Selector
+                                          ] ;
+                          <http://purl.org/dc/elements/1.1/title> "Segment of Anonymized Story"@en ;
+                          rdfs:comment "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47." ;
+                          rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                          rdfs:label "Segment of Anonymized Story"@en .
+
+
+###  http://www.purl.org/storytel/Anonymized_Story_mp4
+:Anonymized_Story_mp4 rdf:type owl:Class ;
+                      rdfs:subClassOf lrmoo:F3_Manifestation ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty lrmoo:R4_embodies ;
+                                        owl:someValuesFrom :Anonymized_Story
+                                      ] ;
+                      <http://purl.org/dc/elements/1.1/title> "Anonymized Story mp4"@en ;
+                      rdfs:comment "Manifestation of an Anonymized Story in mp4 file format."@en ;
+                      rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                      rdfs:label "Anonymized Story mp4"@en .
+
+
+###  http://www.purl.org/storytel/Automatic_Annotation
+:Automatic_Annotation rdf:type owl:Class ;
+                      rdfs:subClassOf crmdig:D30_Annotation_Event ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty crmdig:L23_used_software_or_firmware ;
+                                        owl:someValuesFrom :STORYTEL_AI_Assisted_Pipeline
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty crmdig:L48_created_annotation ;
+                                        owl:someValuesFrom :Annotation
+                                      ] ;
+                      <http://purl.org/dc/elements/1.1/title> "Automatic Annotation"@en ;
+                      rdfs:comment "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."@en ;
+                      rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                      rdfs:label "Automatic Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Conversational_Storytelling_Session
+:Conversational_Storytelling_Session rdf:type owl:Class ;
+                                     rdfs:subClassOf lrmoo:F1_Work ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty lrmoo:R3_is_realised_in ;
+                                                       owl:someValuesFrom :Anonymized_Story
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty lrmoo:R3_is_realised_in ;
+                                                       owl:someValuesFrom :Full_Video
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty lrmoo:R3_is_realised_in ;
+                                                       owl:someValuesFrom :Story
+                                                     ] ;
+                                     <http://purl.org/dc/elements/1.1/title> "Conversational Storytelling session"@en ;
+                                     rdfs:comment "Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story."@en ;
+                                     rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                                     rdfs:label "Conversational Storytelling session"@en .
+
+
+###  http://www.purl.org/storytel/Duration_Of_Full_Video
+:Duration_Of_Full_Video rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E54_Dimension ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty cidoc-crm:P90_has_value ;
+                                          owl:someValuesFrom xsd:duration
+                                        ] ;
+                        <http://purl.org/dc/elements/1.1/title> "Duration of Full Video"@en ;
+                        rdfs:comment "Dimension expressing the total duration of a Full Video, as an xsd:duration value."@en ;
+                        rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                        rdfs:label "Duration of Full Video"@en .
+
+
+###  http://www.purl.org/storytel/Duration_Of_The_Story
+:Duration_Of_The_Story rdf:type owl:Class ;
+                       rdfs:subClassOf cidoc-crm:E54_Dimension ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cidoc-crm:P90_has_value ;
+                                         owl:someValuesFrom xsd:duration
+                                       ] ;
+                       <http://purl.org/dc/elements/1.1/title> "Duration of the Story"@en ;
+                       rdfs:comment "Dimension expressing the duration of a Story (clip), as an xsd:duration value."@en ;
+                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                       rdfs:label "Duration of the Story"@en .
+
+
+###  http://www.purl.org/storytel/End_Of_The_Full_Video
+:End_Of_The_Full_Video rdf:type owl:Class ;
+                       rdfs:subClassOf cidoc-crm:E54_Dimension ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cidoc-crm:P90_has_value ;
+                                         owl:someValuesFrom xsd:time
+                                       ] ;
+                       <http://purl.org/dc/elements/1.1/title> "End of the Full Video"@en ;
+                       rdfs:comment "Dimension expressing the end time of a Full Video, as an xsd:time value."@en ;
+                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                       rdfs:label "End of the Full Video"@en .
+
+
+###  http://www.purl.org/storytel/Full_Video
+:Full_Video rdf:type owl:Class ;
+            rdfs:subClassOf lrmoo:F2_Expression ,
+                            crmdig:D1_Digital_Object ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cidoc-crm:P43_has_dimension ;
+                              owl:someValuesFrom :Duration_Of_Full_Video
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cidoc-crm:P43_has_dimension ;
+                              owl:someValuesFrom :End_Of_The_Full_Video
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cidoc-crm:P43_has_dimension ;
+                              owl:someValuesFrom :Start_Of_The_Full_Video
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cidoc-crm:P72_has_language ;
+                              owl:someValuesFrom cidoc-crm:E56_Language
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cidoc-crm:P2_has_type ;
+                              owl:hasValue type:Full_Video
+                            ] ;
+            owl:disjointWith [ rdf:type owl:Class ;
+                               owl:unionOf ( :Anonymized_Story
+                                             :Story
+                                           )
+                             ] ;
+            <http://purl.org/dc/elements/1.1/title> "Full Video"@en ;
+            rdfs:comment "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" ;
+            rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+            rdfs:label "Full Video"@en .
+
+
+###  http://www.purl.org/storytel/Full_Video_Creation
+:Full_Video_Creation rdf:type owl:Class ;
+                     rdfs:subClassOf lrmoo:F28_Expression_Creation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty lrmoo:R17_created ;
+                                       owl:someValuesFrom :Full_Video
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty cidoc-crm:P11_had_participant ;
+                                       owl:someValuesFrom :Group_Of_Participants
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty cidoc-crm:P14_carried_out_by ;
+                                       owl:someValuesFrom :Student_Recording
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty cidoc-crm:P7_took_place_at ;
+                                       owl:someValuesFrom :Place_Of_Recording
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty crmdig:L12_happened_on_device ;
+                                       owl:someValuesFrom :Smartphone
+                                     ] ;
+                     <http://purl.org/dc/elements/1.1/title> "Full Video Creation"@en ;
+                     rdfs:comment "Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone."@en ;
+                     rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                     rdfs:label "Full Video Creation"@en .
+
+
+###  http://www.purl.org/storytel/Full_Video_mp4
+:Full_Video_mp4 rdf:type owl:Class ;
+                rdfs:subClassOf lrmoo:F3_Manifestation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty lrmoo:R4_embodies ;
+                                  owl:someValuesFrom :Full_Video
+                                ] ;
+                <http://purl.org/dc/elements/1.1/title> "Full Video mp4"@en ;
+                rdfs:comment "Manifestation of a Full Video in mp4 file format."@en ;
+                rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                rdfs:label "Full Video mp4"@en .
+
+
+###  http://www.purl.org/storytel/Group_Of_Participants
+:Group_Of_Participants rdf:type owl:Class ;
+                       rdfs:subClassOf cidoc-crm:E74_Group ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cidoc-crm:P107_has_current_member ;
+                                         owl:someValuesFrom :Student_Participant
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cidoc-crm:P43_has_dimension ;
+                                         owl:someValuesFrom :Age_Of_The_Participants
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cidoc-crm:P43_has_dimension ;
+                                         owl:someValuesFrom :Number_of_Participants
+                                       ] ;
+                       <http://purl.org/dc/elements/1.1/title> "Group of Participants"@en ;
+                       rdfs:comment "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en ;
+                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                       rdfs:label "Group of Participants"@en .
+
+
+###  http://www.purl.org/storytel/Linguistics_Researcher
+:Linguistics_Researcher rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E39_Actor ;
+                        <http://purl.org/dc/elements/1.1/title> "Linguistics Researcher"@en ;
+                        rdfs:comment "Actor (researcher in linguistics) who manually cuts the Full Video to produce the Story."@en ;
+                        rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                        rdfs:label "Linguistics Researcher"@en .
+
+
+###  http://www.purl.org/storytel/Manual_Cutting
+:Manual_Cutting rdf:type owl:Class ;
+                rdfs:subClassOf cidoc-crm:E29_Design_or_Procedure ;
+                <http://purl.org/dc/elements/1.1/title> "Manual cutting"@en ;
+                rdfs:comment "Procedure by which a researcher manually clips a Story out of a Full Video."@en ;
+                rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                rdfs:label "Manual cutting"@en .
+
+
+###  http://www.purl.org/storytel/Media_Fragment_Selector
+:Media_Fragment_Selector rdf:type owl:Class ;
+                         rdfs:subClassOf oa:FragmentSelector ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty rdf:value ;
+                                           owl:someValuesFrom xsd:duration
+                                         ] ;
+                         <http://purl.org/dc/elements/1.1/title> "Media Fragment Selector"@en ;
+                         rdfs:comment "Media Fragment URI selecting the segment, e.g. t=723,767." ;
+                         rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                         rdfs:label "Media Fragment Selector"@en .
+
+
+###  http://www.purl.org/storytel/Number_of_Participants
+:Number_of_Participants rdf:type owl:Class ;
+                        rdfs:subClassOf cidoc-crm:E54_Dimension ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty cidoc-crm:P90_has_value ;
+                                          owl:someValuesFrom xsd:integer
+                                        ] ;
+                        <http://purl.org/dc/elements/1.1/title> "Number of Participants"@en ;
+                        rdfs:comment "Dimension expressing the number of participants in a group, as an integer value."@en ;
+                        rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                        rdfs:label "Number of Participants"@en .
+
+
+###  http://www.purl.org/storytel/Place_Of_Recording
+:Place_Of_Recording rdf:type owl:Class ;
+                    rdfs:subClassOf cidoc-crm:E53_Place ;
+                    <http://purl.org/dc/elements/1.1/title> "Place of Recording"@en ;
+                    rdfs:comment "Place where a Full Video is recorded."@en ;
+                    rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                    rdfs:label "Place of Recording"@en .
+
+
+###  http://www.purl.org/storytel/STORYTEL_AI_Assisted_Pipeline
+:STORYTEL_AI_Assisted_Pipeline rdf:type owl:Class .
+
+
+###  http://www.purl.org/storytel/Smartphone
+:Smartphone rdf:type owl:Class ;
+            rdfs:subClassOf crmdig:D8_Digital_Device ;
+            <http://purl.org/dc/elements/1.1/title> "Smartphone"@en ;
+            rdfs:comment "Digital device (smartphone) used to record the Full Video."@en ;
+            rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+            rdfs:label "Smartphone"@en .
+
+
+###  http://www.purl.org/storytel/Software_Based_On_LLM
+:Software_Based_On_LLM rdf:type owl:Class ;
+                       rdfs:subClassOf crmdig:D14_Software ;
+                       <http://purl.org/dc/elements/1.1/title> "Software based on LLM"@en ;
+                       rdfs:comment "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story."@en ;
+                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                       rdfs:label "Software based on LLM"@en .
+
+
+###  http://www.purl.org/storytel/Start_Of_The_Full_Video
+:Start_Of_The_Full_Video rdf:type owl:Class ;
+                         rdfs:subClassOf cidoc-crm:E54_Dimension ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty cidoc-crm:P90_has_value ;
+                                           owl:someValuesFrom xsd:time
+                                         ] ;
+                         <http://purl.org/dc/elements/1.1/title> "Start of the Full Video"@en ;
+                         rdfs:comment "Dimension expressing the start time of a Full Video, as an xsd:time value."@en ;
+                         rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                         rdfs:label "Start of the Full Video"@en .
+
+
+###  http://www.purl.org/storytel/Story
+:Story rdf:type owl:Class ;
+       rdfs:subClassOf lrmoo:F2_Expression ,
+                       crmdig:D1_Digital_Object ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty lrmoo:R76_is_derivative_of ;
+                         owl:someValuesFrom :Full_Video
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty cidoc-crm:P43_has_dimension ;
+                         owl:someValuesFrom :Duration_Of_The_Story
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty cidoc-crm:P2_has_type ;
+                         owl:hasValue type:Story
+                       ] ;
+       owl:disjointWith [ rdf:type owl:Class ;
+                          owl:unionOf ( :Anonymized_Story
+                                        :Full_Video
+                                      )
+                        ] ;
+       <http://purl.org/dc/elements/1.1/title> "Story"@en ;
+       rdfs:comment "Clipped Story from the main full video." ;
+       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+       rdfs:label "Story"@en .
+
+
+###  http://www.purl.org/storytel/Story_Creation
+:Story_Creation rdf:type owl:Class ;
+                rdfs:subClassOf lrmoo:F28_Expression_Creation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty lrmoo:R17_created ;
+                                  owl:someValuesFrom :Story
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cidoc-crm:P14_carried_out_by ;
+                                  owl:someValuesFrom :Linguistics_Researcher
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cidoc-crm:P16_used_specific_object ;
+                                  owl:someValuesFrom :Full_Video
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cidoc-crm:P33_used_specific_technique ;
+                                  owl:someValuesFrom :Manual_Cutting
+                                ] ;
+                <http://purl.org/dc/elements/1.1/title> "Story Creation"@en ;
+                rdfs:comment "Event in which a Story is created by a Linguistics Researcher who manually cuts a Full Video."@en ;
+                rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                rdfs:label "Story Creation"@en .
+
+
+###  http://www.purl.org/storytel/Story_mp4
+:Story_mp4 rdf:type owl:Class ;
+           rdfs:subClassOf lrmoo:F3_Manifestation ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty lrmoo:R4_embodies ;
+                             owl:someValuesFrom :Story
+                           ] ;
+           <http://purl.org/dc/elements/1.1/title> "Story mp4"@en ;
+           rdfs:comment "Manifestation of a Story in mp4 file format."@en ;
+           rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+           rdfs:label "Story mp4"@en .
+
+
+###  http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline
+:Storytel_AI_Assisted_Pipeline rdf:type owl:Class ;
+                               rdfs:subClassOf crmdig:D14_Software ;
+                               <http://purl.org/dc/elements/1.1/title> "Storytel AI-assisted pipeline"@en ;
+                               rdfs:comment "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."@en ;
+                               rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                               rdfs:label "Storytel AI-assisted pipeline"@en .
+
+
+###  http://www.purl.org/storytel/Student_Participant
+:Student_Participant rdf:type owl:Class ;
+                     rdfs:subClassOf cidoc-crm:E21_Person ;
+                     <http://purl.org/dc/elements/1.1/title> "Student Participant"@en ;
+                     rdfs:comment "Person, a student, who participates in a conversational storytelling session."@en ;
+                     rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                     rdfs:label "Student Participant"@en .
+
+
+###  http://www.purl.org/storytel/Student_Recording
+:Student_Recording rdf:type owl:Class ;
+                   rdfs:subClassOf cidoc-crm:E39_Actor ;
+                   <http://purl.org/dc/elements/1.1/title> "Student Recording"@en ;
+                   rdfs:comment "Actor (student) who records the Full Video."@en ;
+                   rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                   rdfs:label "Student Recording"@en .
+
+
+###  http://www.w3.org/ns/oa#Annotation
+oa:Annotation rdf:type owl:Class ;
+              <http://purl.org/dc/elements/1.1/title> "Annotation"@en ;
+              rdfs:comment "Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource)."@en ;
+              rdfs:isDefinedBy oa: ;
+              rdfs:label "Annotation"@en .
+
+
+###  http://www.w3.org/ns/oa#FragmentSelector
+oa:FragmentSelector rdf:type owl:Class ;
+                    <http://purl.org/dc/elements/1.1/title> "Fragment Selector"@en ;
+                    rdfs:comment "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."@en ;
+                    rdfs:isDefinedBy oa: ;
+                    rdfs:label "Fragment Selector"@en .
+
+
+###  http://www.w3.org/ns/oa#SpecificResource
+oa:SpecificResource rdf:type owl:Class ;
+                    <http://purl.org/dc/elements/1.1/title> "Specific Resource"@en ;
+                    rdfs:comment "Web Annotation class: a part or a particular state of a resource, identified through a source and a selector."@en ;
+                    rdfs:isDefinedBy oa: ;
+                    rdfs:label "Specific Resource"@en .
+
+
+###  http://www.w3.org/ns/oa#TextualBody
+oa:TextualBody rdf:type owl:Class ;
+               <http://purl.org/dc/elements/1.1/title> "Textual Body"@en ;
+               rdfs:comment "Web Annotation class: an embedded textual resource used as the body of an Annotation."@en ;
+               rdfs:isDefinedBy oa: ;
+               rdfs:label "Textual Body"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.purl.org/storytel/type/Anonymized_Story
+type:Anonymized_Story rdf:type owl:NamedIndividual ,
+                               cidoc-crm:E55_Type ;
+                      <http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en ;
+                      rdfs:comment "Type (E55 Type) used to classify digital objects as Anonymized Stories."@en ;
+                      rdfs:isDefinedBy type: ;
+                      rdfs:label "Anonymized Story"@en .
+
+
+###  http://www.purl.org/storytel/type/Full_Video
+type:Full_Video rdf:type owl:NamedIndividual ,
+                         cidoc-crm:E55_Type ;
+                <http://purl.org/dc/elements/1.1/title> "Full Video"@en ;
+                rdfs:comment "Type (E55 Type) used to classify digital objects as Full Videos."@en ;
+                rdfs:isDefinedBy type: ;
+                rdfs:label "Full Video"@en .
+
+
+###  http://www.purl.org/storytel/type/Story
+type:Story rdf:type owl:NamedIndividual ,
+                    cidoc-crm:E55_Type ;
+           <http://purl.org/dc/elements/1.1/title> "Story"@en ;
+           rdfs:comment "Type (E55 Type) used to classify digital objects as Stories."@en ;
+           rdfs:isDefinedBy type: ;
+           rdfs:label "Story"@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
