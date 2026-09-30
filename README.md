@@ -1,10 +1,10 @@
 # STORYTEL DATA MODEL 
 
 The STORYTEL data model is an entity-relationship model that follows the best practice of reusing established ontologies and vocabularies rather than defining new properties whenever suitable existing semantic models are available. The main ontologies re-used are:
--	**LRMoo**, the object-oriented extension of the Library Reference Model (LRM), derived from FRBRoo and compatible with CIDOC-CRM. It provides the conceptual framework for representing intellectual and cultural resources through the distinction between Work, Expression, Manifestation and Item (WEMI), while also modelling the events through which these entities are realized and created. 
--	**CIDOC-CRM**, an event-based ontology originally developed for the cultural heritage domain. It provides the general framework for representing entities, events, actors, places and the relationships between them. 
--	**CRMDig**, an extension of CIDOC-CRM for representing the production, derivation and provenance of digital objects and digital representations. 
--	**Web Annotation Ontology**, a formal representation of Web Annotation Data Model of W3C which is used to represent annotations and the relationship between an annotation and the resource or specific segment to which it refers in a structured, shared and interoperable manner.
+-	[**LRMoo**](https://cidoc-crm.org/lrmoo), the object-oriented extension of the Library Reference Model (LRM), derived from FRBRoo and compatible with CIDOC-CRM. It provides the conceptual framework for representing intellectual and cultural resources through the distinction between Work, Expression, Manifestation and Item (WEMI), while also modelling the events through which these entities are realized and created. 
+-	[**CIDOC-CRM**](https://cidoc-crm.org/), an event-based ontology originally developed for the cultural heritage domain. It provides the general framework for representing entities, events, actors, places and the relationships between them. 
+-	[**CRMDig**](https://cidoc-crm.org/crmdig), an extension of CIDOC-CRM for representing the production, derivation and provenance of digital objects and digital representations. 
+-	[**Web Annotation Ontology**](https://www.w3.org/ns/oa), a formal representation of Web Annotation Data Model of W3C which is used to represent annotations and the relationship between an annotation and the resource or specific segment to which it refers in a structured, shared and interoperable manner.
 
 ![A visual representation of Storytel Data Model](DATA-MODEL.svg)
 
