@@ -6,7 +6,7 @@ The STORYTEL data model is an entity-relationship model that follows the best pr
 -	**CRMDig**, an extension of CIDOC-CRM for representing the production, derivation and provenance of digital objects and digital representations. 
 -	**Web Annotation Ontology**, a formal representation of Web Annotation Data Model of W3C which is used to represent annotations and the relationship between an annotation and the resource or specific segment to which it refers in a structured, shared and interoperable manner.
 
-<img width="1004" height="341" alt="image" src="https://github.com/user-attachments/assets/9a97d1d3-4c4a-4083-97fc-2438ecc341dc" />
+[A visual representation of Storytel Data Model](DATA-MODEL.svg)
 
 The data model structure can be summarized at four interconnected levels:
 
