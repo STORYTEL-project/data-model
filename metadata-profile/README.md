@@ -9,6 +9,7 @@ The JSON file, manually compiled by a researcher, is mainly divided into two sec
     …
   }
 }
+```
 
 This new metadata profile re-uses already existing standards, in particular [Dublin Core Terms](http://purl.org/dc/terms/), [Schema.org](http://schema.org/) and [DataCite](https://datacite-metadata-schema.readthedocs.io/en/4.7/).  
 
