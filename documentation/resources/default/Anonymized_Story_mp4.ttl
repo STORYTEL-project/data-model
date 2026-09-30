@@ -1,0 +1,16 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Anonymized_Story_mp4 a owl:Class ;
+    rdfs:label "Anonymized Story mp4"@en ;
+    dc:title "Anonymized Story mp4"@en ;
+    rdfs:comment "Manifestation of an Anonymized Story in mp4 file format."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R4_embodies ;
+            owl:someValuesFrom :Anonymized_Story ],
+        lrmoo:F3_Manifestation .
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b19">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Manual_Cutting"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Story_Creation">
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b17"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b16"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b19"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b18"/>
+    <rdfs:label xml:lang="en">Story Creation</rdfs:label>
+    <rdfs:comment xml:lang="en">Event in which a Story is created by a Linguistics Researcher who manually cuts a Full Video.</rdfs:comment>
+    <dc:title xml:lang="en">Story Creation</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b16">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Linguistics_Researcher"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b18">
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+  </rdf:Description>
+</rdf:RDF>

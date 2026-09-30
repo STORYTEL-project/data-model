@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b32">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Duration_Of_The_Story">
+    <dc:title xml:lang="en">Duration of the Story</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Duration of the Story</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b32"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:comment xml:lang="en">Dimension expressing the duration of a Story (clip), as an xsd:duration value.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

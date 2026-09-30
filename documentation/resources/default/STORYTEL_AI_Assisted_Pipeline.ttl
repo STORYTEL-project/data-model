@@ -1,0 +1,5 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:STORYTEL_AI_Assisted_Pipeline a owl:Class .
+

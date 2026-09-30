@@ -1,0 +1,54 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Segment of Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Segment of Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b30"
+      },
+      {
+        "@id": "http://www.w3.org/ns/oa#SpecificResource"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b30",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasSelector"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Media_Fragment_Selector"
+      }
+    ]
+  }
+]

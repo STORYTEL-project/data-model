@@ -1,0 +1,8 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  }
+]

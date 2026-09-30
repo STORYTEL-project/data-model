@@ -1,0 +1,24 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Anonymized_Story_Creation a owl:Class ;
+    rdfs:label "Anonymized Story Creation"@en ;
+    dc:title "Anonymized Story Creation"@en ;
+    rdfs:comment "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R17_created ;
+            owl:someValuesFrom :Anonymized_Story ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L21_used_as_derivation_source ;
+            owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Software_Based_On_LLM ],
+        lrmoo:F28_Expression_Creation,
+        crmdig:D3_Formal_Derivation .
+

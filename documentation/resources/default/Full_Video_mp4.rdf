@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_mp4">
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b15"/>
+    <dc:title xml:lang="en">Full Video mp4</dc:title>
+    <rdfs:label xml:lang="en">Full Video mp4</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Manifestation of a Full Video in mp4 file format.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b15">
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+  </rdf:Description>
+</rdf:RDF>

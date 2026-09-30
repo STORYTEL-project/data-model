@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b37">
+    <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Media_Fragment_Selector">
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b37"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+    <dc:title xml:lang="en">Media Fragment Selector</dc:title>
+    <rdfs:comment>Media Fragment URI selecting the segment, e.g. t=723,767.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Media Fragment Selector</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

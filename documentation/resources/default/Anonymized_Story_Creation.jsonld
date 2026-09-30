@@ -1,0 +1,96 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/Anonymized_Story_Creation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b1"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b3"
+      },
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b2"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  }
+]

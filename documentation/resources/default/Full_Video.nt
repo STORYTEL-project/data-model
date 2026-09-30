@@ -1,0 +1,34 @@
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2002/07/owl#disjointWith> _:n64c7f766f8394242a9af6b72fa234328b50 .
+_:n64c7f766f8394242a9af6b72fa234328b47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Start_Of_The_Full_Video> .
+_:n64c7f766f8394242a9af6b72fa234328b45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Duration_Of_Full_Video> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b47 .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Full_Video> <http://purl.org/dc/elements/1.1/title> "Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+_:n64c7f766f8394242a9af6b72fa234328b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.cidoc-crm.org/cidoc-crm/E56_Language> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b52 .
+_:n64c7f766f8394242a9af6b72fa234328b49 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Full_Video> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b49 .
+_:n64c7f766f8394242a9af6b72fa234328b48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> .
+_:n64c7f766f8394242a9af6b72fa234328b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Story> .
+_:n64c7f766f8394242a9af6b72fa234328b45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/End_Of_The_Full_Video> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b46 .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b45 .
+_:n64c7f766f8394242a9af6b72fa234328b50 <http://www.w3.org/2002/07/owl#unionOf> _:n64c7f766f8394242a9af6b72fa234328b51 .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+_:n64c7f766f8394242a9af6b72fa234328b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Anonymized_Story> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+_:n64c7f766f8394242a9af6b72fa234328b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b48 .

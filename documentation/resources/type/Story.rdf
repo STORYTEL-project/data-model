@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/type/Story">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <dc:title xml:lang="en">Story</dc:title>
+    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Stories.</rdfs:comment>
+    <rdfs:label xml:lang="en">Story</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
+  </rdf:Description>
+</rdf:RDF>

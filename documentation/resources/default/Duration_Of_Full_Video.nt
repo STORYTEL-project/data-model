@@ -1,0 +1,10 @@
+_:n64c7f766f8394242a9af6b72fa234328b31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+_:n64c7f766f8394242a9af6b72fa234328b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b31 .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://purl.org/dc/elements/1.1/title> "Duration of Full Video"@en .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the total duration of a Full Video, as an xsd:duration value."@en .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "Duration of Full Video"@en .

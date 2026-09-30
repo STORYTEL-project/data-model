@@ -1,0 +1,11 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+oa:hasSelector a owl:ObjectProperty ;
+    rdfs:label "has selector"@en ;
+    dc:title "has selector"@en ;
+    rdfs:comment "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."@en ;
+    rdfs:isDefinedBy oa: .
+

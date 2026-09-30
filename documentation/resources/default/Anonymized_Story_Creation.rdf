@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story_Creation">
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b1"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b3"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b2"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Anonymized Story Creation</rdfs:label>
+    <dc:title xml:lang="en">Anonymized Story Creation</dc:title>
+    <rdfs:comment xml:lang="en">Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b2">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Software_Based_On_LLM"/>
+  </rdf:Description>
+</rdf:RDF>

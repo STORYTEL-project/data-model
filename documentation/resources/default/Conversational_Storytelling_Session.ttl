@@ -1,0 +1,22 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Conversational_Storytelling_Session a owl:Class ;
+    rdfs:label "Conversational Storytelling session"@en ;
+    dc:title "Conversational Storytelling session"@en ;
+    rdfs:comment "Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R3_is_realised_in ;
+            owl:someValuesFrom :Anonymized_Story ],
+        [ a owl:Restriction ;
+            owl:onProperty lrmoo:R3_is_realised_in ;
+            owl:someValuesFrom :Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty lrmoo:R3_is_realised_in ;
+            owl:someValuesFrom :Story ],
+        lrmoo:F1_Work .
+

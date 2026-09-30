@@ -1,0 +1,11 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+oa:Annotation a owl:Class ;
+    rdfs:label "Annotation"@en ;
+    dc:title "Annotation"@en ;
+    rdfs:comment "Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource)."@en ;
+    rdfs:isDefinedBy oa: .
+

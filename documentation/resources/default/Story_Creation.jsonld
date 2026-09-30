@@ -1,0 +1,112 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/Story_Creation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Story Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Event in which a Story is created by a Linguistics Researcher who manually cuts a Full Video."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Story Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b17"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b16"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b19"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b18"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b17",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Linguistics_Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Manual_Cutting"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b18",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+cidoc-crm:P107_has_current_member a owl:ObjectProperty .
+

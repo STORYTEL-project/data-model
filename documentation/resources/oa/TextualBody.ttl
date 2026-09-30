@@ -1,0 +1,11 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+oa:TextualBody a owl:Class ;
+    rdfs:label "Textual Body"@en ;
+    dc:title "Textual Body"@en ;
+    rdfs:comment "Web Annotation class: an embedded textual resource used as the body of an Annotation."@en ;
+    rdfs:isDefinedBy oa: .
+

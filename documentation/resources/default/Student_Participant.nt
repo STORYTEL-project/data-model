@@ -1,0 +1,6 @@
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Student Participant"@en .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Student_Participant> <http://purl.org/dc/elements/1.1/title> "Student Participant"@en .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Person, a student, who participates in a conversational storytelling session."@en .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -1,0 +1,13 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Manual_Cutting a owl:Class ;
+    rdfs:label "Manual cutting"@en ;
+    dc:title "Manual cutting"@en ;
+    rdfs:comment "Procedure by which a researcher manually clips a Story out of a Full Video."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf cidoc-crm:E29_Design_or_Procedure .
+

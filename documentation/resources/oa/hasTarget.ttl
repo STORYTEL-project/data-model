@@ -1,0 +1,11 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+oa:hasTarget a owl:ObjectProperty ;
+    rdfs:label "has target"@en ;
+    dc:title "has target"@en ;
+    rdfs:comment "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en ;
+    rdfs:isDefinedBy oa: .
+

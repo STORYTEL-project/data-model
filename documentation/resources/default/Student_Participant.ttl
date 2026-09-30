@@ -1,0 +1,13 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Student_Participant a owl:Class ;
+    rdfs:label "Student Participant"@en ;
+    dc:title "Student Participant"@en ;
+    rdfs:comment "Person, a student, who participates in a conversational storytelling session."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf cidoc-crm:E21_Person .
+

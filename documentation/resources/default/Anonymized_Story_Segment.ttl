@@ -1,0 +1,16 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Anonymized_Story_Segment a owl:Class ;
+    rdfs:label "Segment of Anonymized Story"@en ;
+    dc:title "Segment of Anonymized Story"@en ;
+    rdfs:comment "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47." ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty oa:hasSelector ;
+            owl:someValuesFrom :Media_Fragment_Selector ],
+        oa:SpecificResource .
+

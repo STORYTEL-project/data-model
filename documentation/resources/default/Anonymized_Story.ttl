@@ -1,0 +1,26 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix type: <http://www.purl.org/storytel/type/> .
+
+:Anonymized_Story a owl:Class ;
+    rdfs:label "Anonymized Story"@en ;
+    dc:title "Anonymized Story"@en ;
+    rdfs:comment "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R76_is_derivative_of ;
+            owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:hasValue type:Anonymized_Story ;
+            owl:onProperty cidoc-crm:P2_has_type ],
+        lrmoo:F2_Expression,
+        crmdig:D1_Digital_Object ;
+    owl:disjointWith [ a owl:Class ;
+            owl:unionOf ( :Full_Video :Story ) ] .
+

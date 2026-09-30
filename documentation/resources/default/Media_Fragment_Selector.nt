@@ -1,0 +1,10 @@
+_:n64c7f766f8394242a9af6b72fa234328b37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n64c7f766f8394242a9af6b72fa234328b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b37 .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#FragmentSelector> .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://purl.org/dc/elements/1.1/title> "Media Fragment Selector"@en .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#comment> "Media Fragment URI selecting the segment, e.g. t=723,767." .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#label> "Media Fragment Selector"@en .

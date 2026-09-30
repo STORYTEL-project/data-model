@@ -1,0 +1,482 @@
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b27 .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b47 .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://purl.org/dc/elements/1.1/title> "Group of Participants"@en .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://purl.org/dc/elements/1.1/title> "End of the Full Video"@en .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#FragmentSelector> .
+<http://www.purl.org/storytel/type/Story> <http://www.w3.org/2000/01/rdf-schema#label> "Story"@en .
+_:n64c7f766f8394242a9af6b72fa234328b28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasBody> .
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> .
+_:n64c7f766f8394242a9af6b72fa234328b21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."@en .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.purl.org/storytel/Student_Recording> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasSelector> .
+<http://www.purl.org/storytel/Student_Recording> <http://purl.org/dc/elements/1.1/title> "Student Recording"@en .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://purl.org/dc/elements/1.1/title> "Full Video Creation"@en .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Manual_Cutting> <http://www.w3.org/2000/01/rdf-schema#label> "Manual cutting"@en .
+_:n64c7f766f8394242a9af6b72fa234328b8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
+_:n64c7f766f8394242a9af6b72fa234328b34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Student_Participant> .
+_:n64c7f766f8394242a9af6b72fa234328b29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b35 .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b31 .
+<http://www.purl.org/storytel/> <http://purl.org/dc/elements/1.1/title> "Storytel" .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#comment> "RDF property giving the literal value of a structured resource, here the media fragment expression of a selector."@en .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://www.w3.org/2000/01/rdf-schema#label> "Duration of the Story"@en .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation> .
+<http://www.purl.org/storytel/Software_Based_On_LLM> <http://www.w3.org/2000/01/rdf-schema#label> "Software based on LLM"@en .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n64c7f766f8394242a9af6b72fa234328b49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+_:n64c7f766f8394242a9af6b72fa234328b38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story"@en .
+_:n64c7f766f8394242a9af6b72fa234328b29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Anonymized_Story_Segment> .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#label> "Story Creation"@en .
+_:n64c7f766f8394242a9af6b72fa234328b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://purl.org/dc/elements/1.1/title> "Media Fragment Selector"@en .
+_:n64c7f766f8394242a9af6b72fa234328b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Full_Video> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the end time of a Full Video, as an xsd:time value."@en .
+<http://www.purl.org/storytel/type/Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/type/> .
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/2000/01/rdf-schema#label> "Textual Body"@en .
+_:n64c7f766f8394242a9af6b72fa234328b12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Student_Recording> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b33 .
+_:n64c7f766f8394242a9af6b72fa234328b42 <http://www.w3.org/2002/07/owl#unionOf> _:n64c7f766f8394242a9af6b72fa234328b43 .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#label> "Media Fragment Selector"@en .
+_:n64c7f766f8394242a9af6b72fa234328b53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Group_Of_Participants> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/> <http://purl.org/dc/elements/1.1/creator> "Giorgia Crosilla" .
+<http://www.w3.org/ns/oa#hasTarget> <http://purl.org/dc/elements/1.1/title> "has target"@en .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n64c7f766f8394242a9af6b72fa234328b23 .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation class: a part or a particular state of a resource, identified through a source and a selector."@en .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "Duration of Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b8 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in> .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://www.purl.org/storytel/Software_Based_On_LLM> <http://www.w3.org/2000/01/rdf-schema#comment> "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story."@en .
+_:n64c7f766f8394242a9af6b72fa234328b34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b15 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R4_embodies> .
+_:n64c7f766f8394242a9af6b72fa234328b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b30 .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/type/Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b40 .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> .
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/2000/01/rdf-schema#label> "Specific Resource"@en .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b4 .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b55 .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"@en .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#comment> "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."@en .
+<http://www.purl.org/storytel/Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b26 .
+_:n64c7f766f8394242a9af6b72fa234328b37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> .
+_:n64c7f766f8394242a9af6b72fa234328b5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/STORYTEL_AI_Assisted_Pipeline> .
+<http://www.purl.org/storytel/Story_mp4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2002/07/owl#disjointWith> _:n64c7f766f8394242a9af6b72fa234328b56 .
+<http://www.purl.org/storytel/Smartphone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Anonymized_Story> .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Number_of_Participants> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "End of the Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b40 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story Creation"@en .
+<http://www.purl.org/storytel/Story_mp4> <http://purl.org/dc/elements/1.1/title> "Story mp4"@en .
+_:n64c7f766f8394242a9af6b72fa234328b52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Story> .
+_:n64c7f766f8394242a9af6b72fa234328b1 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R17_created> .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b28 .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b3 .
+_:n64c7f766f8394242a9af6b72fa234328b6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://purl.org/dc/elements/1.1/title> "Age of the Participants"@en .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://purl.org/dc/elements/1.1/title> "Storytel AI-assisted pipeline"@en .
+_:n64c7f766f8394242a9af6b72fa234328b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifestation of an Anonymized Story in mp4 file format."@en .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b45 .
+_:n64c7f766f8394242a9af6b72fa234328b50 <http://www.w3.org/2002/07/owl#unionOf> _:n64c7f766f8394242a9af6b72fa234328b51 .
+<http://www.purl.org/storytel/type/Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:n64c7f766f8394242a9af6b72fa234328b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/oa#hasBody> <http://purl.org/dc/elements/1.1/title> "has body"@en .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b19 .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.purl.org/storytel/Smartphone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Manual_Cutting> .
+<http://www.purl.org/storytel/Manual_Cutting> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure by which a researcher manually clips a Story out of a Full Video."@en .
+<http://www.purl.org/storytel/Software_Based_On_LLM> <http://purl.org/dc/elements/1.1/title> "Software based on LLM"@en .
+<http://www.purl.org/storytel/Story> <http://purl.org/dc/elements/1.1/title> "Story"@en .
+_:n64c7f766f8394242a9af6b72fa234328b33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.purl.org/storytel/> <http://www.w3.org/2002/07/owl#imports> <http://www.cidoc-crm.org/extensions/crmdig/owl/5.0/> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en .
+_:n64c7f766f8394242a9af6b72fa234328b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b22 <http://www.w3.org/2002/07/owl#withRestrictions> _:n64c7f766f8394242a9af6b72fa234328b25 .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the total duration of a Full Video, as an xsd:duration value."@en .
+_:n64c7f766f8394242a9af6b72fa234328b35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Age_Of_The_Participants> .
+<http://www.purl.org/storytel/Story_Creation> <http://purl.org/dc/elements/1.1/title> "Story Creation"@en .
+_:n64c7f766f8394242a9af6b72fa234328b41 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Anonymized_Story> .
+_:n64c7f766f8394242a9af6b72fa234328b14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device> .
+_:n64c7f766f8394242a9af6b72fa234328b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b9 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#label> "Story"@en .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n64c7f766f8394242a9af6b72fa234328b54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+<http://www.purl.org/storytel/Software_Based_On_LLM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> .
+_:n64c7f766f8394242a9af6b72fa234328b47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://purl.org/dc/elements/1.1/title> "Number of Participants"@en .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b34 .
+_:n64c7f766f8394242a9af6b72fa234328b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://purl.org/dc/elements/1.1/title> "Full Video mp4"@en .
+_:n64c7f766f8394242a9af6b72fa234328b37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://www.purl.org/storytel/Smartphone> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital device (smartphone) used to record the Full Video."@en .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#comment> "Media Fragment URI selecting the segment, e.g. t=723,767." .
+_:n64c7f766f8394242a9af6b72fa234328b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Duration_Of_The_Story> .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n64c7f766f8394242a9af6b72fa234328b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story mp4"@en .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#SpecificResource> .
+<http://www.purl.org/storytel/Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Content of the annotation, e.g. the transcribed text of the segment." .
+_:n64c7f766f8394242a9af6b72fa234328b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b52 .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> .
+<http://www.purl.org/storytel/Linguistics_Researcher> <http://www.w3.org/2000/01/rdf-schema#label> "Linguistics Researcher"@en .
+<http://www.purl.org/storytel/Linguistics_Researcher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/ns/oa#Annotation> <http://purl.org/dc/elements/1.1/title> "Annotation"@en .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://purl.org/dc/elements/1.1/title> "Duration of Full Video"@en .
+<http://www.purl.org/storytel/Annotation_Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/title> "Description"@en .
+_:n64c7f766f8394242a9af6b72fa234328b18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"@en .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Participants"@en .
+_:n64c7f766f8394242a9af6b72fa234328b3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware> .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation> .
+<http://www.purl.org/storytel/Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#TextualBody> .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."@en .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the number of participants in a group, as an integer value."@en .
+<http://www.purl.org/storytel/Linguistics_Researcher> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor (researcher in linguistics) who manually cuts the Full Video to produce the Story."@en .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource)."@en .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/elements/1.1/title> "Title"@en .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#comment> "The language of the resource; used here to state the language in which the ontology is expressed."@en .
+_:n64c7f766f8394242a9af6b72fa234328b14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Smartphone> .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b32 .
+<http://www.purl.org/storytel/Linguistics_Researcher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Place_Of_Recording> <http://purl.org/dc/elements/1.1/title> "Place of Recording"@en .
+_:n64c7f766f8394242a9af6b72fa234328b39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+_:n64c7f766f8394242a9af6b72fa234328b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Smartphone> <http://purl.org/dc/elements/1.1/title> "Smartphone"@en .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b13 .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b6 .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#label> "Age of the Participants"@en .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#label> "Storytel AI-assisted pipeline"@en .
+<http://www.purl.org/storytel/Place_Of_Recording> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Recording"@en .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en .
+_:n64c7f766f8394242a9af6b72fa234328b10 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R17_created> .
+_:n64c7f766f8394242a9af6b72fa234328b56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://purl.org/dc/elements/1.1/title> "Anonymized Story Creation"@en .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+_:n64c7f766f8394242a9af6b72fa234328b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/oa#hasSelector> <http://purl.org/dc/elements/1.1/title> "has selector"@en .
+_:n64c7f766f8394242a9af6b72fa234328b31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story"@en .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://purl.org/dc/elements/1.1/title> "Start of the Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L43_annotates> .
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+_:n64c7f766f8394242a9af6b72fa234328b56 <http://www.w3.org/2002/07/owl#unionOf> _:n64c7f766f8394242a9af6b72fa234328b57 .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+<http://www.purl.org/storytel/Linguistics_Researcher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b49 .
+_:n64c7f766f8394242a9af6b72fa234328b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#time> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.purl.org/storytel/Manual_Cutting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation"@en .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b14 .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/End_Of_The_Full_Video> .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/elements/1.1/title> "Language"@en .
+_:n64c7f766f8394242a9af6b72fa234328b1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Anonymized_Story> .
+<http://www.purl.org/storytel/Software_Based_On_LLM> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b21 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n64c7f766f8394242a9af6b72fa234328b22 .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://www.purl.org/storytel/Annotation> <http://purl.org/dc/elements/1.1/title> "Annotation "@en .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b2 .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation"@en .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+_:n64c7f766f8394242a9af6b72fa234328b46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Anonymized_Story> .
+_:n64c7f766f8394242a9af6b72fa234328b10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en .
+_:n64c7f766f8394242a9af6b72fa234328b31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#comment> "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47." .
+<http://www.purl.org/storytel/Manual_Cutting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://purl.org/dc/elements/1.1/title> "Anonymized Story mp4"@en .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+<http://www.purl.org/storytel/Linguistics_Researcher> <http://purl.org/dc/elements/1.1/title> "Linguistics Researcher"@en .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b7 .
+_:n64c7f766f8394242a9af6b72fa234328b23 <http://www.w3.org/2001/XMLSchema#minInclusive> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:n64c7f766f8394242a9af6b72fa234328b46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+_:n64c7f766f8394242a9af6b72fa234328b30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Media_Fragment_Selector> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource; used here to provide a human-readable title for ontology terms."@en .
+_:n64c7f766f8394242a9af6b72fa234328b55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Smartphone> <http://www.w3.org/2000/01/rdf-schema#label> "Smartphone"@en .
+_:n64c7f766f8394242a9af6b72fa234328b32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#duration> .
+_:n64c7f766f8394242a9af6b72fa234328b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+_:n64c7f766f8394242a9af6b72fa234328b55 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Story> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+<http://www.purl.org/storytel/STORYTEL_AI_Assisted_Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Story_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation> .
+_:n64c7f766f8394242a9af6b72fa234328b34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."@en .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2002/07/owl#disjointWith> _:n64c7f766f8394242a9af6b72fa234328b42 .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."@en .
+<http://www.purl.org/storytel/Student_Recording> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor (student) who records the Full Video."@en .
+_:n64c7f766f8394242a9af6b72fa234328b53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation class: an embedded textual resource used as the body of an Annotation."@en .
+_:n64c7f766f8394242a9af6b72fa234328b49 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Full_Video> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b53 .
+_:n64c7f766f8394242a9af6b72fa234328b13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Place_Of_Recording> .
+_:n64c7f766f8394242a9af6b72fa234328b28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Annotation_Body> .
+_:n64c7f766f8394242a9af6b72fa234328b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#label> "has selector"@en .
+_:n64c7f766f8394242a9af6b72fa234328b45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#label> "Fragment Selector"@en .
+_:n64c7f766f8394242a9af6b72fa234328b20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+_:n64c7f766f8394242a9af6b72fa234328b35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "Start of the Full Video"@en .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Person, a student, who participates in a conversational storytelling session."@en .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#label> "Segment of Anonymized Story"@en .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b53 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n64c7f766f8394242a9af6b72fa234328b51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Anonymized_Story> .
+_:n64c7f766f8394242a9af6b72fa234328b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Automatic Annotation"@en .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b9 .
+_:n64c7f766f8394242a9af6b72fa234328b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://www.purl.org/storytel/type/Full_Video> <http://purl.org/dc/elements/1.1/title> "Full Video"@en .
+<http://www.purl.org/storytel/Anonymized_Story> <http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en .
+<http://www.purl.org/storytel/Place_Of_Recording> <http://www.w3.org/2000/01/rdf-schema#comment> "Place where a Full Video is recorded."@en .
+_:n64c7f766f8394242a9af6b72fa234328b7 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2002/07/owl#disjointWith> _:n64c7f766f8394242a9af6b72fa234328b50 .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story."@en .
+_:n64c7f766f8394242a9af6b72fa234328b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "Entity primarily responsible for making the resource; used here to record the author of the ontology."@en .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b8 .
+_:n64c7f766f8394242a9af6b72fa234328b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b1 .
+<http://www.purl.org/storytel/> <http://purl.org/dc/elements/1.1/description> "Storytel is the ontology of the european ERASMUS+ project Storytel. Its goal is to map the relationship between Full Video, Story and Anonymized Video re-using existing ontologies and implementing some ad-hoc classes." .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b10 .
+<http://www.purl.org/storytel/Software_Based_On_LLM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b11 .
+_:n64c7f766f8394242a9af6b72fa234328b24 <http://www.w3.org/2001/XMLSchema#maxInclusive> "65"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event> .
+_:n64c7f766f8394242a9af6b72fa234328b11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P11_had_participant> .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has target"@en .
+_:n64c7f766f8394242a9af6b72fa234328b17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+<http://www.w3.org/2001/XMLSchema#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
+_:n64c7f766f8394242a9af6b72fa234328b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b58 .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.purl.org/storytel/type/Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.purl.org/storytel/Place_Of_Recording> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<http://www.purl.org/storytel/Manual_Cutting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+_:n64c7f766f8394242a9af6b72fa234328b50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b15 .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b18 .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+_:n64c7f766f8394242a9af6b72fa234328b20 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R4_embodies> .
+_:n64c7f766f8394242a9af6b72fa234328b55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."@en .
+_:n64c7f766f8394242a9af6b72fa234328b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/type/Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#comment> "Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone."@en .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b12 .
+<http://www.purl.org/storytel/Full_Video_Creation> <http://www.w3.org/2000/01/rdf-schema#label> "Full Video Creation"@en .
+_:n64c7f766f8394242a9af6b72fa234328b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b54 .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> .
+_:n64c7f766f8394242a9af6b72fa234328b5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware> .
+_:n64c7f766f8394242a9af6b72fa234328b27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Anonymized_Story> .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifestation of a Full Video in mp4 file format."@en .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b16 .
+<http://www.purl.org/storytel/type/Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Type (E55 Type) used to classify digital objects as Full Videos."@en .
+_:n64c7f766f8394242a9af6b72fa234328b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/type/> .
+_:n64c7f766f8394242a9af6b72fa234328b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" .
+_:n64c7f766f8394242a9af6b72fa234328b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source> .
+_:n64c7f766f8394242a9af6b72fa234328b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Type (E55 Type) used to classify digital objects as Anonymized Stories."@en .
+_:n64c7f766f8394242a9af6b72fa234328b58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Full_Video> .
+<http://www.purl.org/storytel/type/Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Type (E55 Type) used to classify digital objects as Stories."@en .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Clipped Story from the main full video." .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b17 .
+<http://www.purl.org/storytel/Full_Video> <http://purl.org/dc/elements/1.1/title> "Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b4 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R4_embodies> .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://purl.org/dc/elements/1.1/title> "Conversational Storytelling session"@en .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/title> "Creator"@en .
+<http://www.purl.org/storytel/Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation Body"@en .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://www.purl.org/storytel/type/Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> .
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b36 .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b41 .
+_:n64c7f766f8394242a9af6b72fa234328b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b44 .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://purl.org/dc/elements/1.1/title> "Segment of Anonymized Story"@en .
+<http://www.purl.org/storytel/Conversational_Storytelling_Session> <http://www.w3.org/2000/01/rdf-schema#label> "Conversational Storytelling session"@en .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b16 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R17_created> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#label> "Group of Participants"@en .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the duration of a Story (clip), as an xsd:duration value."@en .
+<http://www.purl.org/storytel/Student_Recording> <http://www.w3.org/2000/01/rdf-schema#label> "Student Recording"@en .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b38 .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://www.purl.org/storytel/Story_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b20 .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of the resource; used here to describe the ontology and its purpose."@en .
+_:n64c7f766f8394242a9af6b72fa234328b32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n64c7f766f8394242a9af6b72fa234328b24 .
+_:n64c7f766f8394242a9af6b72fa234328b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+<http://www.purl.org/storytel/Student_Participant> <http://purl.org/dc/elements/1.1/title> "Student Participant"@en .
+<http://www.purl.org/storytel/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.purl.org/storytel/> <http://www.w3.org/2000/01/rdf-schema#label> "Storytel" .
+<http://www.purl.org/storytel/Student_Recording> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b46 .
+<http://www.purl.org/storytel/type/Story> <http://purl.org/dc/elements/1.1/title> "Story"@en .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/> <http://purl.org/dc/elements/1.1/language> "English" .
+_:n64c7f766f8394242a9af6b72fa234328b18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
+_:n64c7f766f8394242a9af6b72fa234328b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Manual_Cutting> <http://purl.org/dc/elements/1.1/title> "Manual cutting"@en .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://purl.org/dc/elements/1.1/title> "value"@en .
+<http://www.purl.org/storytel/type/Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/type/> .
+<http://www.purl.org/storytel/Duration_Of_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/2000/01/rdf-schema#comment> "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM."@en .
+<http://www.purl.org/storytel/Smartphone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device> .
+_:n64c7f766f8394242a9af6b72fa234328b47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Start_Of_The_Full_Video> .
+_:n64c7f766f8394242a9af6b72fa234328b45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Duration_Of_Full_Video> .
+<http://www.purl.org/storytel/Duration_Of_The_Story> <http://purl.org/dc/elements/1.1/title> "Duration of the Story"@en .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Story_Creation> <http://www.w3.org/2000/01/rdf-schema#comment> "Event in which a Story is created by a Linguistics Researcher who manually cuts a Full Video."@en .
+_:n64c7f766f8394242a9af6b72fa234328b19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique> .
+_:n64c7f766f8394242a9af6b72fa234328b29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasTarget> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Anonymized_Story> .
+_:n64c7f766f8394242a9af6b72fa234328b39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#label> "Student Participant"@en .
+_:n64c7f766f8394242a9af6b72fa234328b9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://purl.org/dc/elements/1.1/title> "Fragment Selector"@en .
+<http://www.purl.org/storytel/Place_Of_Recording> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/oa#TextualBody> <http://purl.org/dc/elements/1.1/title> "Textual Body"@en .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the start time of a Full Video, as an xsd:time value."@en .
+<http://www.purl.org/storytel/> <http://www.w3.org/2002/07/owl#imports> <http://cidoc-crm.org/extensions/lrmoo/owl/1.0/> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Student_Recording> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+_:n64c7f766f8394242a9af6b72fa234328b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Story> .
+_:n64c7f766f8394242a9af6b72fa234328b30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#time> .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#label> "has body"@en .
+_:n64c7f766f8394242a9af6b72fa234328b48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.cidoc-crm.org/cidoc-crm/E56_Language> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b5 .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Linguistics_Researcher> .
+_:n64c7f766f8394242a9af6b72fa234328b48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> .
+<http://www.purl.org/storytel/Anonymized_Story_Creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+<http://www.purl.org/storytel/Automatic_Annotation> <http://purl.org/dc/elements/1.1/title> "Automatic Annotation"@en .
+<http://www.purl.org/storytel/Place_Of_Recording> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." .
+<http://www.purl.org/storytel/Student_Participant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/> <http://www.w3.org/2002/07/owl#imports> <http://www.cidoc-crm.org/cidoc-crm/owl/7.1.3/> .
+<http://www.purl.org/storytel/Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b29 .
+<http://www.purl.org/storytel/Media_Fragment_Selector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b37 .
+<http://www.purl.org/storytel/Full_Video_mp4> <http://www.w3.org/2000/01/rdf-schema#label> "Full Video mp4"@en .
+_:n64c7f766f8394242a9af6b72fa234328b6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Annotation> .
+<http://www.purl.org/storytel/Annotation_Body> <http://purl.org/dc/elements/1.1/title> "Annotation Body"@en .
+_:n64c7f766f8394242a9af6b72fa234328b36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Software_Based_On_LLM> .
+<http://www.purl.org/storytel/Story_mp4> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifestation of a Story in mp4 file format."@en .
+<http://www.w3.org/ns/oa#SpecificResource> <http://purl.org/dc/elements/1.1/title> "Specific Resource"@en .
+<http://www.purl.org/storytel/Story_mp4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b48 .
+<http://www.purl.org/storytel/Story_mp4> <http://www.w3.org/2000/01/rdf-schema#label> "Story mp4"@en .
+<http://www.purl.org/storytel/Start_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b39 .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b21 .

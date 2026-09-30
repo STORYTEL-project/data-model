@@ -1,0 +1,10 @@
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b33 .
+_:n64c7f766f8394242a9af6b72fa234328b33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+_:n64c7f766f8394242a9af6b72fa234328b33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://purl.org/dc/elements/1.1/title> "End of the Full Video"@en .
+_:n64c7f766f8394242a9af6b72fa234328b33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#time> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the end time of a Full Video, as an xsd:time value."@en .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#label> "End of the Full Video"@en .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/End_Of_The_Full_Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .

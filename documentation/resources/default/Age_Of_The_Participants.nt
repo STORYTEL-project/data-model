@@ -1,0 +1,19 @@
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#label> "Age of the Participants"@en .
+_:n64c7f766f8394242a9af6b72fa234328b22 <http://www.w3.org/2002/07/owl#withRestrictions> _:n64c7f766f8394242a9af6b72fa234328b25 .
+_:n64c7f766f8394242a9af6b72fa234328b23 <http://www.w3.org/2001/XMLSchema#minInclusive> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n64c7f766f8394242a9af6b72fa234328b21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."@en .
+_:n64c7f766f8394242a9af6b72fa234328b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:n64c7f766f8394242a9af6b72fa234328b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n64c7f766f8394242a9af6b72fa234328b24 .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://purl.org/dc/elements/1.1/title> "Age of the Participants"@en .
+_:n64c7f766f8394242a9af6b72fa234328b24 <http://www.w3.org/2001/XMLSchema#maxInclusive> "65"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:n64c7f766f8394242a9af6b72fa234328b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b26 .
+_:n64c7f766f8394242a9af6b72fa234328b21 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n64c7f766f8394242a9af6b72fa234328b22 .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+_:n64c7f766f8394242a9af6b72fa234328b22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:n64c7f766f8394242a9af6b72fa234328b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n64c7f766f8394242a9af6b72fa234328b23 .
+_:n64c7f766f8394242a9af6b72fa234328b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Age_Of_The_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b21 .

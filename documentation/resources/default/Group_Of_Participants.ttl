@@ -1,0 +1,22 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Group_Of_Participants a owl:Class ;
+    rdfs:label "Group of Participants"@en ;
+    dc:title "Group of Participants"@en ;
+    rdfs:comment "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P107_has_current_member ;
+            owl:someValuesFrom :Student_Participant ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Age_Of_The_Participants ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Number_of_Participants ],
+        cidoc-crm:E74_Group .
+

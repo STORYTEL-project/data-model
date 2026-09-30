@@ -1,0 +1,22 @@
+_:n64c7f766f8394242a9af6b72fa234328b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Full_Video> .
+_:n64c7f766f8394242a9af6b72fa234328b40 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> .
+_:n64c7f766f8394242a9af6b72fa234328b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n64c7f766f8394242a9af6b72fa234328b41 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Anonymized_Story> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b40 .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." .
+_:n64c7f766f8394242a9af6b72fa234328b42 <http://www.w3.org/2002/07/owl#unionOf> _:n64c7f766f8394242a9af6b72fa234328b43 .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b41 .
+_:n64c7f766f8394242a9af6b72fa234328b40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story"@en .
+_:n64c7f766f8394242a9af6b72fa234328b43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n64c7f766f8394242a9af6b72fa234328b44 .
+_:n64c7f766f8394242a9af6b72fa234328b42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+_:n64c7f766f8394242a9af6b72fa234328b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Story> .
+_:n64c7f766f8394242a9af6b72fa234328b44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2002/07/owl#disjointWith> _:n64c7f766f8394242a9af6b72fa234328b42 .
+<http://www.purl.org/storytel/Anonymized_Story> <http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en .
+<http://www.purl.org/storytel/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .

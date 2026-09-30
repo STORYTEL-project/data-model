@@ -1,0 +1,156 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/Full_Video",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Full Video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Full Video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b47"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b49"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b46"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b45"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
+      },
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      },
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b48"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "_:n64c7f766f8394242a9af6b72fa234328b50"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b50",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Anonymized_Story"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Story"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b47",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b49",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://www.purl.org/storytel/type/Full_Video"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b46",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b45",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Duration_Of_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:n64c7f766f8394242a9af6b72fa234328b48",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P72_has_language"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E56_Language"
+      }
+    ]
+  }
+]

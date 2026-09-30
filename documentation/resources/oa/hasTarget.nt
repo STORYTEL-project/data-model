@@ -1,0 +1,5 @@
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has target"@en .
+<http://www.w3.org/ns/oa#hasTarget> <http://purl.org/dc/elements/1.1/title> "has target"@en .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en .

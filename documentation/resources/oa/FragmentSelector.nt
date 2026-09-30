@@ -1,0 +1,5 @@
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://purl.org/dc/elements/1.1/title> "Fragment Selector"@en .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#label> "Fragment Selector"@en .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/2000/01/rdf-schema#comment> "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."@en .
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

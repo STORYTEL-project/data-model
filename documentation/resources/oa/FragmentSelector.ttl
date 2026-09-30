@@ -1,0 +1,11 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+oa:FragmentSelector a owl:Class ;
+    rdfs:label "Fragment Selector"@en ;
+    dc:title "Fragment Selector"@en ;
+    rdfs:comment "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."@en ;
+    rdfs:isDefinedBy oa: .
+

@@ -1,0 +1,10 @@
+<http://www.purl.org/storytel/Number_of_Participants> <http://purl.org/dc/elements/1.1/title> "Number of Participants"@en .
+_:n64c7f766f8394242a9af6b72fa234328b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b38 .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the number of participants in a group, as an integer value."@en .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:n64c7f766f8394242a9af6b72fa234328b38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P90_has_value> .
+_:n64c7f766f8394242a9af6b72fa234328b38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> .
+<http://www.purl.org/storytel/Number_of_Participants> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Participants"@en .

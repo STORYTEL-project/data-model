@@ -1,0 +1,30 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Full_Video_Creation a owl:Class ;
+    rdfs:label "Full Video Creation"@en ;
+    dc:title "Full Video Creation"@en ;
+    rdfs:comment "Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R17_created ;
+            owl:someValuesFrom :Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P11_had_participant ;
+            owl:someValuesFrom :Group_Of_Participants ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P14_carried_out_by ;
+            owl:someValuesFrom :Student_Recording ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P7_took_place_at ;
+            owl:someValuesFrom :Place_Of_Recording ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L12_happened_on_device ;
+            owl:someValuesFrom :Smartphone ],
+        lrmoo:F28_Expression_Creation .
+

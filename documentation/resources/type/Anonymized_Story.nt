@@ -1,0 +1,6 @@
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Type (E55 Type) used to classify digital objects as Anonymized Stories."@en .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story"@en .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/type/> .
+<http://www.purl.org/storytel/type/Anonymized_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .

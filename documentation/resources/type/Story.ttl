@@ -1,0 +1,13 @@
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix type: <http://www.purl.org/storytel/type/> .
+
+type:Story a cidoc-crm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Story"@en ;
+    dc:title "Story"@en ;
+    rdfs:comment "Type (E55 Type) used to classify digital objects as Stories."@en ;
+    rdfs:isDefinedBy type: .
+

@@ -1,0 +1,17 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Start_Of_The_Full_Video a owl:Class ;
+    rdfs:label "Start of the Full Video"@en ;
+    dc:title "Start of the Full Video"@en ;
+    rdfs:comment "Dimension expressing the start time of a Full Video, as an xsd:time value."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P90_has_value ;
+            owl:someValuesFrom xsd:time ],
+        cidoc-crm:E54_Dimension .
+

@@ -1,0 +1,10 @@
+_:n64c7f766f8394242a9af6b72fa234328b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifestation of an Anonymized Story in mp4 file format."@en .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://purl.org/dc/elements/1.1/title> "Anonymized Story mp4"@en .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation> .
+_:n64c7f766f8394242a9af6b72fa234328b4 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R4_embodies> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n64c7f766f8394242a9af6b72fa234328b4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Anonymized_Story> .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story mp4"@en .
+<http://www.purl.org/storytel/Anonymized_Story_mp4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n64c7f766f8394242a9af6b72fa234328b4 .

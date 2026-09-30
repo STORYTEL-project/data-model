@@ -1,0 +1,16 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Full_Video_mp4 a owl:Class ;
+    rdfs:label "Full Video mp4"@en ;
+    dc:title "Full Video mp4"@en ;
+    rdfs:comment "Manifestation of a Full Video in mp4 file format."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R4_embodies ;
+            owl:someValuesFrom :Full_Video ],
+        lrmoo:F3_Manifestation .
+

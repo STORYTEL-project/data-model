@@ -1,0 +1,11 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+oa:hasBody a owl:ObjectProperty ;
+    rdfs:label "has body"@en ;
+    dc:title "has body"@en ;
+    rdfs:comment "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."@en ;
+    rdfs:isDefinedBy oa: .
+

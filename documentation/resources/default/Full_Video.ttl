@@ -1,0 +1,35 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix type: <http://www.purl.org/storytel/type/> .
+
+:Full_Video a owl:Class ;
+    rdfs:label "Full Video"@en ;
+    dc:title "Full Video"@en ;
+    rdfs:comment "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Duration_Of_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :End_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Start_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P72_has_language ;
+            owl:someValuesFrom cidoc-crm:E56_Language ],
+        [ a owl:Restriction ;
+            owl:hasValue type:Full_Video ;
+            owl:onProperty cidoc-crm:P2_has_type ],
+        lrmoo:F2_Expression,
+        crmdig:D1_Digital_Object ;
+    owl:disjointWith [ a owl:Class ;
+            owl:unionOf ( :Anonymized_Story :Story ) ] .
+

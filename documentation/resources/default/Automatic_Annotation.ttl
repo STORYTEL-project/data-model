@@ -1,0 +1,19 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Automatic_Annotation a owl:Class ;
+    rdfs:label "Automatic Annotation"@en ;
+    dc:title "Automatic Annotation"@en ;
+    rdfs:comment "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :STORYTEL_AI_Assisted_Pipeline ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L48_created_annotation ;
+            owl:someValuesFrom :Annotation ],
+        crmdig:D30_Annotation_Event .
+

@@ -1,0 +1,32 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/type/Story",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Type (E55 Type) used to classify digital objects as Stories."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/type/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Story"
+      }
+    ]
+  }
+]
