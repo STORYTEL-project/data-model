@@ -1,0 +1,43 @@
+{
+  "full_video": {
+    "http://purl.org/dc/terms/identifier": "",
+    "http://schema.org/duration": "",
+    "http://purl.org/dc/terms/language": "",
+    "http://purl.org/dc/terms/type": "",
+    "https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/format/": "",
+    "https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#audiovisual": "",
+    "https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/fundingreference/": "",
+    "http://schema.org/keywords": "",
+    "http://schema.org/permissionType": "",
+    "http://schema.org/ethicsPolicy": "",
+    "http://schema.org/AgreeAction": ""
+  },
+  "full_video_creation": {
+    "http://schema.org/startDate": "",
+    "http://schema.org/EventVenue": "",
+    "http://schema.org/addressCountry": "",
+    "http://schema.org/addressRegion": "",
+    "http://schema.org/instrument": "",
+    "http://purl.org/dc/terms/creator": "",
+    "http://schema.org/roleName": "",
+    "http://schema.org/partySize": "",
+    "http://schema.org/recordingOf": "",
+    "https://schema.org/participant": [
+      { "https://schema.org/identifier": "" },
+      { "https://schema.org/identifier": "" },
+      { "https://schema.org/identifier": "" },
+      { "https://schema.org/identifier": "" }
+    ]
+  },
+  "story": {
+    "http://purl.org/dc/terms/identifier": "",
+    "http://purl.org/dc/terms/isPartOf": "",
+    "https://schema.org/startTime": "",
+    "https://schema.org/endTime": "",
+    "https://schema.org/clipNumber": ""
+  },
+  "story_creation": {
+    "http://purl.org/dc/terms/created": "",
+    "http://purl.org/dc/terms/creator": ""
+  }
+}

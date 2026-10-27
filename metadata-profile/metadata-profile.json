@@ -1,11 +1,7 @@
 {
   "video": {
     "http://purl.org/dc/terms/identifier": "",
-    "http://schema.org/duration": ""
-  },
-  "story": {
-    "http://purl.org/dc/terms/identifier": "",
-    "http://purl.org/dc/terms/isPartOf": "",
+    "http://schema.org/duration": "",
     "http://purl.org/dc/terms/created": "",
     "http://purl.org/dc/terms/creator": "",
     "http://purl.org/dc/terms/type": "",
@@ -24,13 +20,8 @@
     "http://schema.org/partySize": "",
     "http://schema.org/permissionType": "",
     "http://schema.org/recordingOf": "",
-    "http://schema.org/requiredMaxAge": "",
-    "http://schema.org/requiredMinAge": "",
     "http://schema.org/roleName": "",
     "http://schema.org/startDate": "",
-    "https://schema.org/startTime": "",
-    "https://schema.org/endTime": "",
-    "https://schema.org/clipNumber": "",
     "https://schema.org/participant": [
       {
         "https://schema.org/identifier": ""
@@ -45,5 +36,12 @@
         "https://schema.org/identifier": ""
       }
     ]
+  },
+  "story": {
+    "http://purl.org/dc/terms/identifier": "",
+    "http://purl.org/dc/terms/isPartOf": "",
+    "https://schema.org/startTime": "",
+    "https://schema.org/endTime": "",
+    "https://schema.org/clipNumber": ""
   }
 }
