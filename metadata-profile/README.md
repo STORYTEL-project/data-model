@@ -41,7 +41,7 @@ Properties intrinsic to the `Full_Video` digital object, including governance an
 | **Keywords** | [Schema.org `keywords`](http://schema.org/keywords) | e.g. `"game, friends, compliment"` — comma-separated list | MANUAL (TBD the rationale) | public |
 | **Permission Type** | [Schema.org `permissionType`](http://schema.org/permissionType) | Fixed value: `"Restricted"` | AUTO | private |
 | **Ethics Policy / Protocol** | [Schema.org `ethicsPolicy`](http://schema.org/ethicsPolicy) | e.g. `"Prot. no. 0086617 del 12/05/2026"` — fixed per institution, set once at project level | AUTO | private |
-| **Consent Form Type** | [Schema.org `AgreeAction`](http://schema.org/AgreeAction) | e.g. `"Written"` — fixed | AUTO | private |
+| **Consent Form Type** | [Schema.org `AgreeAction`](http://schema.org/AgreeAction) | Fixed value: `"Written"`  | AUTO | private |
 
 ---
 
