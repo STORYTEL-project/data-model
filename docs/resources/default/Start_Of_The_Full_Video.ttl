@@ -6,9 +6,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :Start_Of_The_Full_Video a owl:Class ;
-    rdfs:label "Start of the Full Video"@en ;
-    dc:title "Start of the Full Video"@en ;
-    rdfs:comment "Dimension expressing the start time of a Full Video, as an xsd:time value."@en ;
+    rdfs:label "Start of the Anonymized Story"@en ;
+    dc:title "Start of the Anonymized Story"@en ;
+    rdfs:comment "Dimension expressing the start time of an Anonymized Story, as an xsd:time value."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty cidoc-crm:P90_has_value ;

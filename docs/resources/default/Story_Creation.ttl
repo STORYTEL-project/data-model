@@ -1,26 +1,26 @@
 @prefix : <http://www.purl.org/storytel/> .
-@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 :Story_Creation a owl:Class ;
-    rdfs:label "Story Creation"@en ;
-    dc:title "Story Creation"@en ;
-    rdfs:comment "Event in which a Story is created by a Linguistics Researcher who manually cuts a Full Video."@en ;
+    rdfs:label "Anonymized Video Creation"@en ;
+    dc:title "Anonymized Video Creation"@en ;
+    rdfs:comment "Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R17_created ;
             owl:someValuesFrom :Story ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P14_carried_out_by ;
-            owl:someValuesFrom :Linguistics_Researcher ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P16_used_specific_object ;
+            owl:onProperty crmdig:L21_used_as_derivation_source ;
             owl:someValuesFrom :Full_Video ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P33_used_specific_technique ;
-            owl:someValuesFrom :Manual_Cutting ],
+            owl:onProperty crmdig:L22_created_derivative ;
+            owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Software_Based_On_LLM ],
         lrmoo:F28_Expression_Creation .
 

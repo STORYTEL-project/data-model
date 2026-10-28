@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b37"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb49"
       },
       {
         "@id": "http://www.w3.org/ns/oa#FragmentSelector"
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b37",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb49",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

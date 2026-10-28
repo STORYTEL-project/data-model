@@ -6,9 +6,9 @@
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#FragmentSelector">
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <dc:title xml:lang="en">Fragment Selector</dc:title>
-    <rdfs:label xml:lang="en">Fragment Selector</rdfs:label>
     <rdfs:comment xml:lang="en">Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Fragment Selector</dc:title>
+    <rdfs:label xml:lang="en">Fragment Selector</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

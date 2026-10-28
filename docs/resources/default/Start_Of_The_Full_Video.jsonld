@@ -7,13 +7,13 @@
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "Start of the Full Video"
+        "@value": "Start of the Anonymized Story"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Dimension expressing the start time of a Full Video, as an xsd:time value."
+        "@value": "Dimension expressing the start time of an Anonymized Story, as an xsd:time value."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -24,7 +24,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Start of the Full Video"
+        "@value": "Start of the Anonymized Story"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -32,12 +32,12 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b39"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb51"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b39",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb51",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

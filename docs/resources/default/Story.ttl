@@ -9,16 +9,13 @@
 @prefix type: <http://www.purl.org/storytel/type/> .
 
 :Story a owl:Class ;
-    rdfs:label "Story"@en ;
-    dc:title "Story"@en ;
-    rdfs:comment "Clipped Story from the main full video." ;
+    rdfs:label "Anonymized Video"@en ;
+    dc:title "Anonymized Video"@en ;
+    rdfs:comment "Anonymized version of the full video" ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R76_is_derivative_of ;
             owl:someValuesFrom :Full_Video ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P43_has_dimension ;
-            owl:someValuesFrom :Duration_Of_The_Story ],
         [ a owl:Restriction ;
             owl:hasValue type:Story ;
             owl:onProperty cidoc-crm:P2_has_type ],

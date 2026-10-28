@@ -29,21 +29,21 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b8"
-      },
-      {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b7"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb27"
       },
       {
         "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b9"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb28"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb26"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b8",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb27",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -59,23 +59,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b9",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb28",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -87,6 +71,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb26",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
       }
     ]
   }

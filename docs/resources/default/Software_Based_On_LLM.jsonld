@@ -7,7 +7,7 @@
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "Software based on LLM"
+        "@value": "LLM Software"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
@@ -24,7 +24,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Software based on LLM"
+        "@value": "LLM Software"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [

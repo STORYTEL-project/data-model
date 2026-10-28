@@ -7,13 +7,13 @@
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "Story mp4"
+        "@value": "Anonymized Video Manifestation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Manifestation of a Story in mp4 file format."
+        "@value": "Manifestation of an Anonymized Video in mp4 file format."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -24,12 +24,12 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Story mp4"
+        "@value": "Anonymized Video Manifestation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b20"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb61"
       },
       {
         "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
@@ -37,7 +37,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b20",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb61",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

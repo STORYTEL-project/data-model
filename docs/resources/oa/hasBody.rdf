@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasBody">
-    <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text).</rdfs:comment>
     <dc:title xml:lang="en">has body</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text).</rdfs:comment>
     <rdfs:label xml:lang="en">has body</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

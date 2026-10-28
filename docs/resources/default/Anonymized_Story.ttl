@@ -17,6 +17,15 @@
             owl:onProperty lrmoo:R76_is_derivative_of ;
             owl:someValuesFrom :Story ],
         [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :End_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Start_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Software_Based_On_LLM ],
+        [ a owl:Restriction ;
             owl:hasValue type:Anonymized_Story ;
             owl:onProperty cidoc-crm:P2_has_type ],
         lrmoo:F2_Expression,

@@ -29,16 +29,16 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b27"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb7"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb9"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb8"
       },
       {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object"
-      },
-      {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b28"
-      },
-      {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b29"
       },
       {
         "@id": "http://www.w3.org/ns/oa#Annotation"
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b27",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb7",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -62,23 +62,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b28",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/oa#hasBody"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Annotation_Body"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b29",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb9",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -90,6 +74,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Annotation_Body"
       }
     ]
   }

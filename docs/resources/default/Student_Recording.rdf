@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Student_Recording">
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <dc:title xml:lang="en">Student Recording</dc:title>
     <rdfs:label xml:lang="en">Student Recording</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:comment xml:lang="en">Actor (student) who records the Full Video.</rdfs:comment>
+    <dc:title xml:lang="en">Student Recording</dc:title>
   </rdf:Description>
 </rdf:RDF>

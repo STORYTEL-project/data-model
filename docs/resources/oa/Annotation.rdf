@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#Annotation">
-    <rdfs:label xml:lang="en">Annotation</rdfs:label>
-    <dc:title xml:lang="en">Annotation</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource).</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Annotation</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:comment xml:lang="en">Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource).</rdfs:comment>
+    <dc:title xml:lang="en">Annotation</dc:title>
   </rdf:Description>
 </rdf:RDF>

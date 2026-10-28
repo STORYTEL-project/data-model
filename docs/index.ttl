@@ -46,14 +46,17 @@ dc:title a owl:AnnotationProperty ;
             owl:onProperty crmdig:L21_used_as_derivation_source ;
             owl:someValuesFrom :Story ],
         [ a owl:Restriction ;
+            owl:onProperty crmdig:L22_created_derivative ;
+            owl:someValuesFrom :Anonymized_Story ],
+        [ a owl:Restriction ;
             owl:onProperty crmdig:L23_used_software_or_firmware ;
             owl:someValuesFrom :Software_Based_On_LLM ],
         lrmoo:F28_Expression_Creation,
         crmdig:D3_Formal_Derivation .
 
 :Anonymized_Story_mp4 a owl:Class ;
-    rdfs:label "Anonymized Story mp4"@en ;
-    dc:title "Anonymized Story mp4"@en ;
+    rdfs:label "Anonymized Story Manifestation"@en ;
+    dc:title "Anonymized Story Manifestation"@en ;
     rdfs:comment "Manifestation of an Anonymized Story in mp4 file format."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -68,7 +71,7 @@ dc:title a owl:AnnotationProperty ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty crmdig:L23_used_software_or_firmware ;
-            owl:someValuesFrom :STORYTEL_AI_Assisted_Pipeline ],
+            owl:someValuesFrom :Storytel_AI_Assisted_Pipeline ],
         [ a owl:Restriction ;
             owl:onProperty crmdig:L48_created_annotation ;
             owl:someValuesFrom :Annotation ],
@@ -89,6 +92,16 @@ dc:title a owl:AnnotationProperty ;
             owl:onProperty lrmoo:R3_is_realised_in ;
             owl:someValuesFrom :Story ],
         lrmoo:F1_Work .
+
+:Duration_Of_The_Story a owl:Class ;
+    rdfs:label "Duration of the Story"@en ;
+    dc:title "Duration of the Story"@en ;
+    rdfs:comment "Dimension expressing the duration of a Story (clip), as an xsd:duration value."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P90_has_value ;
+            owl:someValuesFrom xsd:duration ],
+        cidoc-crm:E54_Dimension .
 
 :Full_Video_Creation a owl:Class ;
     rdfs:label "Full Video Creation"@en ;
@@ -113,8 +126,8 @@ dc:title a owl:AnnotationProperty ;
         lrmoo:F28_Expression_Creation .
 
 :Full_Video_mp4 a owl:Class ;
-    rdfs:label "Full Video mp4"@en ;
-    dc:title "Full Video mp4"@en ;
+    rdfs:label "Full Video Manifestation"@en ;
+    dc:title "Full Video Manifestation"@en ;
     rdfs:comment "Manifestation of a Full Video in mp4 file format."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -123,40 +136,33 @@ dc:title a owl:AnnotationProperty ;
         lrmoo:F3_Manifestation .
 
 :Story_Creation a owl:Class ;
-    rdfs:label "Story Creation"@en ;
-    dc:title "Story Creation"@en ;
-    rdfs:comment "Event in which a Story is created by a Linguistics Researcher who manually cuts a Full Video."@en ;
+    rdfs:label "Anonymized Video Creation"@en ;
+    dc:title "Anonymized Video Creation"@en ;
+    rdfs:comment "Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R17_created ;
             owl:someValuesFrom :Story ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P14_carried_out_by ;
-            owl:someValuesFrom :Linguistics_Researcher ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P16_used_specific_object ;
+            owl:onProperty crmdig:L21_used_as_derivation_source ;
             owl:someValuesFrom :Full_Video ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P33_used_specific_technique ;
-            owl:someValuesFrom :Manual_Cutting ],
+            owl:onProperty crmdig:L22_created_derivative ;
+            owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Software_Based_On_LLM ],
         lrmoo:F28_Expression_Creation .
 
 :Story_mp4 a owl:Class ;
-    rdfs:label "Story mp4"@en ;
-    dc:title "Story mp4"@en ;
-    rdfs:comment "Manifestation of a Story in mp4 file format."@en ;
+    rdfs:label "Anonymized Video Manifestation"@en ;
+    dc:title "Anonymized Video Manifestation"@en ;
+    rdfs:comment "Manifestation of an Anonymized Video in mp4 file format."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R4_embodies ;
             owl:someValuesFrom :Story ],
         lrmoo:F3_Manifestation .
-
-:Storytel_AI_Assisted_Pipeline a owl:Class ;
-    rdfs:label "Storytel AI-assisted pipeline"@en ;
-    dc:title "Storytel AI-assisted pipeline"@en ;
-    rdfs:comment "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf crmdig:D14_Software .
 
 cidoc-crm:P107_has_current_member a owl:ObjectProperty .
 
@@ -216,26 +222,6 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
             owl:someValuesFrom xsd:duration ],
         cidoc-crm:E54_Dimension .
 
-:Duration_Of_The_Story a owl:Class ;
-    rdfs:label "Duration of the Story"@en ;
-    dc:title "Duration of the Story"@en ;
-    rdfs:comment "Dimension expressing the duration of a Story (clip), as an xsd:duration value."@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P90_has_value ;
-            owl:someValuesFrom xsd:duration ],
-        cidoc-crm:E54_Dimension .
-
-:End_Of_The_Full_Video a owl:Class ;
-    rdfs:label "End of the Full Video"@en ;
-    dc:title "End of the Full Video"@en ;
-    rdfs:comment "Dimension expressing the end time of a Full Video, as an xsd:time value."@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P90_has_value ;
-            owl:someValuesFrom xsd:time ],
-        cidoc-crm:E54_Dimension .
-
 :Group_Of_Participants a owl:Class ;
     rdfs:label "Group of Participants"@en ;
     dc:title "Group of Participants"@en ;
@@ -251,20 +237,6 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
             owl:onProperty cidoc-crm:P43_has_dimension ;
             owl:someValuesFrom :Number_of_Participants ],
         cidoc-crm:E74_Group .
-
-:Linguistics_Researcher a owl:Class ;
-    rdfs:label "Linguistics Researcher"@en ;
-    dc:title "Linguistics Researcher"@en ;
-    rdfs:comment "Actor (researcher in linguistics) who manually cuts the Full Video to produce the Story."@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf cidoc-crm:E39_Actor .
-
-:Manual_Cutting a owl:Class ;
-    rdfs:label "Manual cutting"@en ;
-    dc:title "Manual cutting"@en ;
-    rdfs:comment "Procedure by which a researcher manually clips a Story out of a Full Video."@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf cidoc-crm:E29_Design_or_Procedure .
 
 :Media_Fragment_Selector a owl:Class ;
     rdfs:label "Media Fragment Selector"@en ;
@@ -293,8 +265,6 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
     rdfs:isDefinedBy : ;
     rdfs:subClassOf cidoc-crm:E53_Place .
 
-:STORYTEL_AI_Assisted_Pipeline a owl:Class .
-
 :Smartphone a owl:Class ;
     rdfs:label "Smartphone"@en ;
     dc:title "Smartphone"@en ;
@@ -302,22 +272,12 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
     rdfs:isDefinedBy : ;
     rdfs:subClassOf crmdig:D8_Digital_Device .
 
-:Software_Based_On_LLM a owl:Class ;
-    rdfs:label "Software based on LLM"@en ;
-    dc:title "Software based on LLM"@en ;
-    rdfs:comment "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story."@en ;
+:Storytel_AI_Assisted_Pipeline a owl:Class ;
+    rdfs:label "Storytel AI-assisted pipeline"@en ;
+    dc:title "Storytel AI-assisted pipeline"@en ;
+    rdfs:comment "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf crmdig:D14_Software .
-
-:Start_Of_The_Full_Video a owl:Class ;
-    rdfs:label "Start of the Full Video"@en ;
-    dc:title "Start of the Full Video"@en ;
-    rdfs:comment "Dimension expressing the start time of a Full Video, as an xsd:time value."@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P90_has_value ;
-            owl:someValuesFrom xsd:time ],
-        cidoc-crm:E54_Dimension .
 
 :Student_Participant a owl:Class ;
     rdfs:label "Student Participant"@en ;
@@ -349,9 +309,9 @@ type:Full_Video a cidoc-crm:E55_Type,
 
 type:Story a cidoc-crm:E55_Type,
         owl:NamedIndividual ;
-    rdfs:label "Story"@en ;
-    dc:title "Story"@en ;
-    rdfs:comment "Type (E55 Type) used to classify digital objects as Stories."@en ;
+    rdfs:label "Anonymized Video"@en ;
+    dc:title "Anonymized Video"@en ;
+    rdfs:comment "Type (E55 Type) used to classify digital objects as Anonymized Video."@en ;
     rdfs:isDefinedBy type: .
 
 rdf:value a owl:DatatypeProperty ;
@@ -402,7 +362,34 @@ oa:hasTarget a owl:ObjectProperty ;
     rdfs:comment "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en ;
     rdfs:isDefinedBy oa: .
 
+:End_Of_The_Full_Video a owl:Class ;
+    rdfs:label "End of the Anonymized Story"@en ;
+    dc:title "End of the Anonymized Story"@en ;
+    rdfs:comment "Dimension expressing the end time of an Anonymized Story, as an xsd:time value."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P90_has_value ;
+            owl:someValuesFrom xsd:time ],
+        cidoc-crm:E54_Dimension .
+
+:Start_Of_The_Full_Video a owl:Class ;
+    rdfs:label "Start of the Anonymized Story"@en ;
+    dc:title "Start of the Anonymized Story"@en ;
+    rdfs:comment "Dimension expressing the start time of an Anonymized Story, as an xsd:time value."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P90_has_value ;
+            owl:someValuesFrom xsd:time ],
+        cidoc-crm:E54_Dimension .
+
 xsd:time a rdfs:Datatype .
+
+:Software_Based_On_LLM a owl:Class ;
+    rdfs:label "LLM Software"@en ;
+    dc:title "LLM Software"@en ;
+    rdfs:comment "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf crmdig:D14_Software .
 
 xsd:duration a rdfs:Datatype .
 
@@ -414,6 +401,15 @@ xsd:duration a rdfs:Datatype .
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R76_is_derivative_of ;
             owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :End_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Start_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Software_Based_On_LLM ],
         [ a owl:Restriction ;
             owl:hasValue type:Anonymized_Story ;
             owl:onProperty cidoc-crm:P2_has_type ],
@@ -448,16 +444,13 @@ xsd:duration a rdfs:Datatype .
             owl:unionOf ( :Anonymized_Story :Story ) ] .
 
 :Story a owl:Class ;
-    rdfs:label "Story"@en ;
-    dc:title "Story"@en ;
-    rdfs:comment "Clipped Story from the main full video." ;
+    rdfs:label "Anonymized Video"@en ;
+    dc:title "Anonymized Video"@en ;
+    rdfs:comment "Anonymized version of the full video" ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R76_is_derivative_of ;
             owl:someValuesFrom :Full_Video ],
-        [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P43_has_dimension ;
-            owl:someValuesFrom :Duration_Of_The_Story ],
         [ a owl:Restriction ;
             owl:hasValue type:Story ;
             owl:onProperty cidoc-crm:P2_has_type ],
@@ -469,7 +462,7 @@ xsd:duration a rdfs:Datatype .
 : a owl:Ontology ;
     rdfs:label "Storytel" ;
     dc:creator "Giorgia Crosilla" ;
-    dc:description "Storytel is the ontology of the european ERASMUS+ project Storytel. Its goal is to map the relationship between Full Video, Story and Anonymized Video re-using existing ontologies and implementing some ad-hoc classes." ;
+    dc:description "Storytel is the ontology of the european funded project Storytel. Its goal is to map the relationship between Full Video, Anonymized Video and Anonymized Story re-using existing ontologies and implementing some ad-hoc classes." ;
     dc:language "English" ;
     dc:title "Storytel" ;
     owl:imports <http://cidoc-crm.org/extensions/lrmoo/owl/1.0/>,

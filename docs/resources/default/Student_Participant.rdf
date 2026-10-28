@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Student_Participant">
-    <rdfs:label xml:lang="en">Student Participant</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <dc:title xml:lang="en">Student Participant</dc:title>
-    <rdfs:comment xml:lang="en">Person, a student, who participates in a conversational storytelling session.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <dc:title xml:lang="en">Student Participant</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Student Participant</rdfs:label>
+    <rdfs:comment xml:lang="en">Person, a student, who participates in a conversational storytelling session.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

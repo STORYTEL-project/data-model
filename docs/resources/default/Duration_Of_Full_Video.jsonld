@@ -29,15 +29,15 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b31"
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb29"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b31",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb29",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

@@ -6,17 +6,17 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/End_Of_The_Full_Video">
-    <dc:title xml:lang="en">End of the Full Video</dc:title>
-    <rdfs:comment xml:lang="en">Dimension expressing the end time of a Full Video, as an xsd:time value.</rdfs:comment>
-    <rdfs:label xml:lang="en">End of the Full Video</rdfs:label>
+    <rdfs:comment xml:lang="en">Dimension expressing the end time of an Anonymized Story, as an xsd:time value.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b33"/>
+    <dc:title xml:lang="en">End of the Anonymized Story</dc:title>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb31"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">End of the Anonymized Story</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b33">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb31">
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
     <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

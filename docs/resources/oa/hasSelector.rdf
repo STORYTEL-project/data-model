@@ -6,9 +6,9 @@
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasSelector">
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">has selector</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <dc:title xml:lang="en">has selector</dc:title>
     <rdfs:comment xml:lang="en">Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source.</rdfs:comment>
+    <rdfs:label xml:lang="en">has selector</rdfs:label>
+    <dc:title xml:lang="en">has selector</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

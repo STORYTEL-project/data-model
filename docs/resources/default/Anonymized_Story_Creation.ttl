@@ -17,6 +17,9 @@
             owl:onProperty crmdig:L21_used_as_derivation_source ;
             owl:someValuesFrom :Story ],
         [ a owl:Restriction ;
+            owl:onProperty crmdig:L22_created_derivative ;
+            owl:someValuesFrom :Anonymized_Story ],
+        [ a owl:Restriction ;
             owl:onProperty crmdig:L23_used_software_or_firmware ;
             owl:someValuesFrom :Software_Based_On_LLM ],
         lrmoo:F28_Expression_Creation,

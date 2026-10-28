@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/type/Full_Video">
+    <dc:title xml:lang="en">Full Video</dc:title>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label xml:lang="en">Full Video</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
-    <dc:title xml:lang="en">Full Video</dc:title>
+    <rdfs:label xml:lang="en">Full Video</rdfs:label>
     <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Full Videos.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

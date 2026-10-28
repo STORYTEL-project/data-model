@@ -29,24 +29,27 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b1"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb18"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b3"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb21"
       },
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
-      },
-      {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b2"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb19"
       },
       {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb20"
+      },
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b1",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb18",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -62,7 +65,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b3",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb21",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -78,7 +81,7 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b2",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -90,6 +93,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
       }
     ]
   }

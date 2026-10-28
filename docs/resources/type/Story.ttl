@@ -6,8 +6,8 @@
 
 type:Story a cidoc-crm:E55_Type,
         owl:NamedIndividual ;
-    rdfs:label "Story"@en ;
-    dc:title "Story"@en ;
-    rdfs:comment "Type (E55 Type) used to classify digital objects as Stories."@en ;
+    rdfs:label "Anonymized Video"@en ;
+    dc:title "Anonymized Video"@en ;
+    rdfs:comment "Type (E55 Type) used to classify digital objects as Anonymized Video."@en ;
     rdfs:isDefinedBy type: .
 

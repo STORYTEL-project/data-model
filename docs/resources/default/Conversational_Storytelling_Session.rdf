@@ -6,27 +6,27 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Conversational_Storytelling_Session">
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b8"/>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b7"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb27"/>
     <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b9"/>
-    <rdfs:comment xml:lang="en">Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb28"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb26"/>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <dc:title xml:lang="en">Conversational Storytelling session</dc:title>
+    <rdfs:comment xml:lang="en">Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Conversational Storytelling session</dc:title>
     <rdfs:label xml:lang="en">Conversational Storytelling session</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b9">
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb28">
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb26">
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b8">
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb27">
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>

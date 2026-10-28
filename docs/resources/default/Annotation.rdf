@@ -6,30 +6,30 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Annotation">
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b27"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb7"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb9"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb8"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object"/>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b28"/>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b29"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
-    <rdfs:label xml:lang="en">Annotation</rdfs:label>
     <rdfs:comment xml:lang="en">Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline</rdfs:comment>
+    <rdfs:label xml:lang="en">Annotation</rdfs:label>
     <dc:title xml:lang="en">Annotation </dc:title>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b27">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b28">
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb8">
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation_Body"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b29">
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb9">
     <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story_Segment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb7">
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

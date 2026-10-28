@@ -7,16 +7,16 @@
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Story_mp4">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Story mp4</dc:title>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b20"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
-    <rdfs:comment xml:lang="en">Manifestation of a Story in mp4 file format.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Manifestation of an Anonymized Video in mp4 file format.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Story mp4</rdfs:label>
+    <dc:title xml:lang="en">Anonymized Video Manifestation</dc:title>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb61"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+    <rdfs:label xml:lang="en">Anonymized Video Manifestation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b20">
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb61">
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
   </rdf:Description>
 </rdf:RDF>

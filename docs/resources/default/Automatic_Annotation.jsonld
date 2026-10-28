@@ -32,15 +32,31 @@
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b6"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb24"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b5"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb25"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b6",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb24",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb25",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -52,22 +68,6 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Annotation"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b5",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/STORYTEL_AI_Assisted_Pipeline"
       }
     ]
   }

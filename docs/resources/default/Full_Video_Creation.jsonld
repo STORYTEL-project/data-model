@@ -29,75 +29,27 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b13"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb42"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b10"
-      },
-      {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b11"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb43"
       },
       {
         "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b12"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb41"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b14"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb40"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb44"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b13",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Place_Of_Recording"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b11",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Group_Of_Participants"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b12",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb42",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -113,7 +65,55 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b14",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb43",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Place_Of_Recording"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb41",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Group_Of_Participants"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb40",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb44",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

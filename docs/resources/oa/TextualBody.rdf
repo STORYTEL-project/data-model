@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#TextualBody">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Textual Body</dc:title>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
     <rdfs:label xml:lang="en">Textual Body</rdfs:label>
+    <dc:title xml:lang="en">Textual Body</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Web Annotation class: an embedded textual resource used as the body of an Annotation.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

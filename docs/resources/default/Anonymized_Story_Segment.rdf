@@ -6,17 +6,17 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story_Segment">
-    <rdfs:comment>Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <dc:title xml:lang="en">Segment of Anonymized Story</dc:title>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b30"/>
+    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb22"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
     <rdfs:label xml:lang="en">Segment of Anonymized Story</rdfs:label>
+    <rdfs:comment>Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n64c7f766f8394242a9af6b72fa234328b30">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb22">
     <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasSelector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Media_Fragment_Selector"/>
   </rdf:Description>
 </rdf:RDF>

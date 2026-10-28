@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <dc:title xml:lang="en">value</dc:title>
-    <rdfs:label xml:lang="en">value</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:comment xml:lang="en">RDF property giving the literal value of a structured resource, here the media fragment expression of a selector.</rdfs:comment>
+    <rdfs:label xml:lang="en">value</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <dc:title xml:lang="en">value</dc:title>
   </rdf:Description>
 </rdf:RDF>

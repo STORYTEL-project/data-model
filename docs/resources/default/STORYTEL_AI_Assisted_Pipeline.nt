@@ -1,1 +1,6 @@
-<http://www.purl.org/storytel/STORYTEL_AI_Assisted_Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#label> "Storytel AI-assisted pipeline"@en .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#comment> "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."@en .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://purl.org/dc/elements/1.1/title> "Storytel AI-assisted pipeline"@en .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> .

@@ -7,7 +7,7 @@
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "Anonymized Story mp4"
+        "@value": "Anonymized Story Manifestation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
@@ -24,20 +24,20 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Anonymized Story mp4"
+        "@value": "Anonymized Story Manifestation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb23"
       },
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b4"
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b4",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb23",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

@@ -11,7 +11,7 @@
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty crmdig:L23_used_software_or_firmware ;
-            owl:someValuesFrom :STORYTEL_AI_Assisted_Pipeline ],
+            owl:someValuesFrom :Storytel_AI_Assisted_Pipeline ],
         [ a owl:Restriction ;
             owl:onProperty crmdig:L48_created_annotation ;
             owl:someValuesFrom :Annotation ],

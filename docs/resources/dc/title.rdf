@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:label xml:lang="en">Title</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     <dc:title xml:lang="en">Title</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     <rdfs:comment xml:lang="en">A name given to the resource; used here to provide a human-readable title for ontology terms.</rdfs:comment>
+    <rdfs:label xml:lang="en">Title</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

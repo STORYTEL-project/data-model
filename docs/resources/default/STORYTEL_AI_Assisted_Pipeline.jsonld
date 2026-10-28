@@ -1,8 +1,36 @@
 [
   {
-    "@id": "http://www.purl.org/storytel/STORYTEL_AI_Assisted_Pipeline",
+    "@id": "http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Storytel AI-assisted pipeline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Storytel AI-assisted pipeline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
+      }
     ]
   }
 ]

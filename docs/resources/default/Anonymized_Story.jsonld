@@ -28,42 +28,35 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b40"
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10"
+      },
+      {
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12"
       },
       {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
       },
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
-      },
-      {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b41"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "_:n64c7f766f8394242a9af6b72fa234328b42"
+        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15"
       }
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b40",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b41",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -79,7 +72,71 @@
     ]
   },
   {
-    "@id": "_:n64c7f766f8394242a9af6b72fa234328b42",
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

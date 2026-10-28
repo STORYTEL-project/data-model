@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/type/Story">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <dc:title xml:lang="en">Story</dc:title>
-    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Stories.</rdfs:comment>
-    <rdfs:label xml:lang="en">Story</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label xml:lang="en">Anonymized Video</rdfs:label>
+    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Anonymized Video.</rdfs:comment>
+    <dc:title xml:lang="en">Anonymized Video</dc:title>
   </rdf:Description>
 </rdf:RDF>

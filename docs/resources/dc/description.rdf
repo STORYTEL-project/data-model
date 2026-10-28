@@ -6,9 +6,9 @@
 >
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:label xml:lang="en">Description</rdfs:label>
-    <rdfs:comment xml:lang="en">An account of the resource; used here to describe the ontology and its purpose.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:comment xml:lang="en">An account of the resource; used here to describe the ontology and its purpose.</rdfs:comment>
     <dc:title xml:lang="en">Description</dc:title>
+    <rdfs:label xml:lang="en">Description</rdfs:label>
   </rdf:Description>
 </rdf:RDF>
