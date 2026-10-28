@@ -52,7 +52,7 @@ Properties of the recording event (`Full_Video_Creation` in the ontology): who r
 | Field | Predicate (Property) | Value | Compilation | Visibility |
 | --- | --- | --- | --- | --- |
 | **Start Date** | [Schema.org `startDate`](http://schema.org/startDate) | e.g. `"2026-06-17"` — extractable from file | AUTO | public |
-| **End Date** | [Schema.org `endDate`](http://schema.org/endDate) | e.g. `"2026-06-17"` — extractable from EXIF startDate + duration: Needed if the end date is different from the start date (e.g. recording starts at 11.40 pm and ends at 00.10 of the following day) | AUTO | public |
+| **End Date** | [Schema.org `endDate`](http://schema.org/endDate) | e.g. `"2026-06-17"` — extractable from EXIF startDate + duration: Needed if the end date is different from the start date (e.g. recording starts at 11.40 pm and ends at 12.10am of the following day) | AUTO | public |
 | **Recording Venue** | [Schema.org `EventVenue`](http://schema.org/EventVenue) | e.g. `"Home"` — not inferable from the file | MANUAL | public |
 | **Country** | [Schema.org `addressCountry`](http://schema.org/addressCountry) | e.g. `"Italy"` — not inferable  | MANUAL | public |
 | **Region** | [Schema.org `addressRegion`](http://schema.org/addressRegion) | City or region of the recording | MANUAL | public |
