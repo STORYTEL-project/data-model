@@ -34,11 +34,11 @@ Properties intrinsic to the `Full_Video` digital object, including governance an
 | **Title** | [Dublin Core `dcterms:title`](http://purl.org/dc/terms/title) | Descriptive title of the full video | AUTO | public |
 | **Video Duration** | [Schema.org `duration`](http://schema.org/duration) | e.g. `"1:32"` — extracted from file metadata | AUTO | public |
 | **Language** | [Dublin Core `dcterms:language`](http://purl.org/dc/terms/language) | e.g. `"Italian"` | AUTO | public |
-| **Resource Type** | [Dublin Core `dcterms:type`](http://purl.org/dc/terms/type) | Fixed value: `"Dataset"` | AUTO | private |
+| **Resource Type** | [Dublin Core `dcterms:type`](http://purl.org/dc/terms/type) | Fixed value: `"MovingImage"` | AUTO | public |
 | **File Format** | [DataCite `Format`](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/format/) | e.g. `"mp4"` — extracted from file extension or MIME type | AUTO | public |
 | **Resource Type General** | [DataCite `resourceTypeGeneral`](https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#audiovisual) | Fixed value: `"Audiovisual"` | AUTO | private |
-| **Funding Reference** | [DataCite `fundingReference`](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/fundingreference/) | Fixed value: `"STORYTEL"` | AUTO | private |
-| **Keywords** | [Schema.org `keywords`](http://schema.org/keywords) | e.g. `"game, friends, compliment"` — comma-separated list | MANUAL | public |
+| **Funding Reference** | [DataCite `fundingReference`](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/fundingreference/) | Fixed value: `"KA220-HED - Cooperation partnerships in higher education"` | AUTO | private |
+| **Keywords** | [Schema.org `keywords`](http://schema.org/keywords) | e.g. `"game, friends, compliment"` — comma-separated list | MANUAL (TBD the rationale) | public |
 | **Permission Type** | [Schema.org `permissionType`](http://schema.org/permissionType) | Fixed value: `"Restricted"` | AUTO | private |
 | **Ethics Policy / Protocol** | [Schema.org `ethicsPolicy`](http://schema.org/ethicsPolicy) | e.g. `"Prot. no. 0086617 del 12/05/2026"` — fixed per institution, set once at project level | AUTO | private |
 | **Consent Form Type** | [Schema.org `AgreeAction`](http://schema.org/AgreeAction) | e.g. `"Written"` — fixed | AUTO | private |
@@ -51,10 +51,10 @@ Properties of the recording event (`Full_Video_Creation` in the ontology): who r
 
 | Field | Predicate (Property) | Value | Compilation | Visibility |
 | --- | --- | --- | --- | --- |
-| **Start Date** | [Schema.org `startDate`](http://schema.org/startDate) | e.g. `"2026-06-17"` — extractable from file | AUTO | private |
-| **End Date** | [Schema.org `endDate`](http://schema.org/endDate) | e.g. `"2026-06-17"` — extractable from EXIF startDate + duration | AUTO | private |
+| **Start Date** | [Schema.org `startDate`](http://schema.org/startDate) | e.g. `"2026-06-17"` — extractable from file | AUTO | public |
+| **End Date** | [Schema.org `endDate`](http://schema.org/endDate) | e.g. `"2026-06-17"` — extractable from EXIF startDate + duration: Needed if the end date is different from the start date (e.g. recording starts at 11.40 pm and ends at 00.10 of the following day) | AUTO | public |
 | **Recording Venue** | [Schema.org `EventVenue`](http://schema.org/EventVenue) | e.g. `"Home"` — not inferable from the file | MANUAL | public |
-| **Country** | [Schema.org `addressCountry`](http://schema.org/addressCountry) | e.g. `"Italy"` —  | MANUAL | public |
+| **Country** | [Schema.org `addressCountry`](http://schema.org/addressCountry) | e.g. `"Italy"` — not inferable  | MANUAL | public |
 | **Region** | [Schema.org `addressRegion`](http://schema.org/addressRegion) | City or region of the recording | MANUAL | public |
 | **Recording Instrument** | [Schema.org `instrument`](http://schema.org/instrument) | e.g. `"Smartphone"` — fixed | AUTO | private |
 | **Contributor** | [Dublin Core `dcterms:creator`](http://purl.org/dc/terms/creator) | ID or name of the student who uploaded the video — identifiable via authenticated session at upload time | MANUAL | private |
