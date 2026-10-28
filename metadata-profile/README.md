@@ -57,7 +57,7 @@ Properties of the recording event (`Full_Video_Creation` in the ontology): who r
 | **Country** | [Schema.org `addressCountry`](http://schema.org/addressCountry) | e.g. `"Italy"` — not inferable  | MANUAL | public |
 | **Region** | [Schema.org `addressRegion`](http://schema.org/addressRegion) | City or region of the recording | MANUAL | public |
 | **Recording Instrument** | [Schema.org `instrument`](http://schema.org/instrument) | e.g. `"Smartphone"` — fixed | AUTO | private |
-| **Contributor** | [Dublin Core `dcterms:creator`](http://purl.org/dc/terms/creator) | ID or name of the student who uploaded the video — identifiable via authenticated session at upload time | MANUAL | private |
+| **Contributor** | [Dublin Core `dcterms:creator`](http://purl.org/dc/terms/creator) | pseudonym of the student who uploaded the video | MANUAL | private |
 | **Role Name** | [Schema.org `roleName`](http://schema.org/roleName) | Fixed value: `"Being recorded"` | AUTO | private |
 | **Source Organization** | [Schema.org `sourceOrganization`](http://schema.org/sourceOrganization) | Partner university that provided the video, e.g. `"University of Bologna"` | AUTO | private |
 | **Party Size** | [Schema.org `partySize`](http://schema.org/partySize) | Number of people present in the video | MANUAL | public |
