@@ -1,5 +1,5 @@
 The metadata profile was slightly modified and expanded to meet the project needs, mainly for archival purposes and basic domain-related searches.  
-The JSON file is compiled through a combination of automatic pipeline processes and manual researcher input. It is divided into four sections reflecting the event-creation structure of the STORYTEL ontology:
+The JSON file is compiled through a combination of automatic pipeline processes and manual researcher input. It is divided into four sections:
 
 ```json
 {
