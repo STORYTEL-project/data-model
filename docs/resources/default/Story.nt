@@ -1,22 +1,22 @@
-_:nfb4366b93bd749b99262f6ca53882fdbb52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Anonymized_Story> .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb52 .
-_:nfb4366b93bd749b99262f6ca53882fdbb54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nfb4366b93bd749b99262f6ca53882fdbb55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfb4366b93bd749b99262f6ca53882fdbb56 .
-_:nfb4366b93bd749b99262f6ca53882fdbb52 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> .
-_:nfb4366b93bd749b99262f6ca53882fdbb54 <http://www.w3.org/2002/07/owl#unionOf> _:nfb4366b93bd749b99262f6ca53882fdbb55 .
-_:nfb4366b93bd749b99262f6ca53882fdbb53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nfb4366b93bd749b99262f6ca53882fdbb52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b69 .
 <http://www.purl.org/storytel/Story> <http://purl.org/dc/elements/1.1/title> "Anonymized Video"@en .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
-_:nfb4366b93bd749b99262f6ca53882fdbb56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Full_Video> .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Video"@en .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb53 .
-_:nfb4366b93bd749b99262f6ca53882fdbb56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Anonymized_Story> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Full_Video> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
 <http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#comment> "Anonymized version of the full video" .
-_:nfb4366b93bd749b99262f6ca53882fdbb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.purl.org/storytel/Story> <http://www.w3.org/2002/07/owl#disjointWith> _:nfb4366b93bd749b99262f6ca53882fdbb54 .
-_:nfb4366b93bd749b99262f6ca53882fdbb53 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Story> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b68 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b69 <http://www.w3.org/2002/07/owl#hasValue> <http://www.purl.org/storytel/type/Story> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b70 <http://www.w3.org/2002/07/owl#unionOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b71 .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Full_Video> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Video"@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b68 <http://www.w3.org/2002/07/owl#onProperty> <http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbe3a5c879a974bcb99a97f5216d30ae4b72 .
+<http://www.purl.org/storytel/Story> <http://www.w3.org/2002/07/owl#disjointWith> _:nbe3a5c879a974bcb99a97f5216d30ae4b70 .

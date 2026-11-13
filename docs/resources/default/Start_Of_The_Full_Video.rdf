@@ -5,18 +5,18 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb51">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b67">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
     <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/Start_Of_The_Full_Video">
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb51"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b67"/>
     <rdfs:comment xml:lang="en">Dimension expressing the start time of an Anonymized Story, as an xsd:time value.</rdfs:comment>
-    <rdfs:label xml:lang="en">Start of the Anonymized Story</rdfs:label>
     <dc:title xml:lang="en">Start of the Anonymized Story</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Start of the Anonymized Story</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
   </rdf:Description>
 </rdf:RDF>

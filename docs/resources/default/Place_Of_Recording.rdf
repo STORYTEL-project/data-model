@@ -6,10 +6,10 @@
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Place_Of_Recording">
     <rdfs:label xml:lang="en">Place of Recording</rdfs:label>
-    <rdfs:comment xml:lang="en">Place where a Full Video is recorded.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-    <dc:title xml:lang="en">Place of Recording</dc:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Place where a Full Video is recorded.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <dc:title xml:lang="en">Place of Recording</dc:title>
   </rdf:Description>
 </rdf:RDF>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Glossing_Body">
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation_Body"/>
+    <dc:title xml:lang="en">Glossing Body</dc:title>
+    <rdfs:label xml:lang="en">Glossing Body</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:comment xml:lang="en">Interlinear gloss of a segment, produced automatically from its transcription.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

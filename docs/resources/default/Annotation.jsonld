@@ -13,7 +13,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"
+        "@value": "Annotation object attached to a segment of a Story or of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -29,56 +29,24 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb7"
+        "@id": "http://www.w3.org/ns/oa#Annotation"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb9"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b17"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb8"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b18"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b13"
       },
       {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object"
-      },
-      {
-        "@id": "http://www.w3.org/ns/oa#Annotation"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/oa#hasTarget"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb8",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b17",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -90,6 +58,56 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b18",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasTarget"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Media_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b14"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Anonymized_Story"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Story"
+          }
+        ]
       }
     ]
   }

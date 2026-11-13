@@ -21,42 +21,42 @@
         dc:title "Anonymized Story"@en ;
         rdfs:comment "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." ;
         rdfs:isDefinedBy : ;
-        rdfs:subClassOf _:nfb4366b93bd749b99262f6ca53882fdbb10,
-            _:nfb4366b93bd749b99262f6ca53882fdbb11,
-            _:nfb4366b93bd749b99262f6ca53882fdbb12,
-            _:nfb4366b93bd749b99262f6ca53882fdbb13,
-            _:nfb4366b93bd749b99262f6ca53882fdbb14,
+        rdfs:subClassOf _:nbe3a5c879a974bcb99a97f5216d30ae4b19,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b20,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b21,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b22,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b23,
             lrmoo:F2_Expression,
             crmdig:D1_Digital_Object ;
-        owl:disjointWith _:nfb4366b93bd749b99262f6ca53882fdbb15 .
+        owl:disjointWith _:nbe3a5c879a974bcb99a97f5216d30ae4b24 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb10 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b19 a owl:Restriction ;
         owl:onProperty lrmoo:R76_is_derivative_of ;
         owl:someValuesFrom :Story .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb11 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b20 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :End_Of_The_Full_Video .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb12 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b21 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :Start_Of_The_Full_Video .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb13 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b22 a owl:Restriction ;
         owl:onProperty crmdig:L23_used_software_or_firmware ;
         owl:someValuesFrom :Software_Based_On_LLM .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb14 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b23 a owl:Restriction ;
         owl:hasValue type:Anonymized_Story ;
         owl:onProperty cidoc-crm:P2_has_type .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb15 a owl:Class ;
-        owl:unionOf _:nfb4366b93bd749b99262f6ca53882fdbb16 .
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b24 a owl:Class ;
+        owl:unionOf _:nbe3a5c879a974bcb99a97f5216d30ae4b25 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb16 rdf:first :Full_Video ;
-        rdf:rest _:nfb4366b93bd749b99262f6ca53882fdbb17 .
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b25 rdf:first :Full_Video ;
+        rdf:rest _:nbe3a5c879a974bcb99a97f5216d30ae4b26 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb17 rdf:first :Story ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b26 rdf:first :Story ;
         rdf:rest () .
 }
 
@@ -92,83 +92,35 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b21"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b19"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11"
-          },
-          {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10"
-          },
-          {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b23"
           },
           {
             "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b22"
+          },
+          {
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b20"
+          },
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
           }
         ],
         "http://www.w3.org/2002/07/owl#disjointWith": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b24"
           }
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#hasValue": [
-          {
-            "@id": "http://www.purl.org/storytel/type/Anonymized_Story"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://www.purl.org/storytel/Story"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b21",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -184,7 +136,39 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b19",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://www.purl.org/storytel/Story"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b23",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#hasValue": [
+          {
+            "@id": "http://www.purl.org/storytel/type/Anonymized_Story"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b22",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -200,7 +184,23 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b20",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b24",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -220,40 +220,40 @@
     ],
     "@id": "http://www.purl.org/storytel/"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_f7be772e20cdd73ebf8fe83c51d74617_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb17 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb14 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P2_has_type> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb15 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nfb4366b93bd749b99262f6ca53882fdbb16 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2002/07/owl#disjointWith> _:nfb4366b93bd749b99262f6ca53882fdbb15 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb16 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfb4366b93bd749b99262f6ca53882fdbb17 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb14 &lt;http://www.w3.org/2002/07/owl#hasValue> &lt;http://www.purl.org/storytel/type/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb12 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Start_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb14 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+]</code></pre></div><div class="tab-pane fade" id=id_f7be772e20cdd73ebf8fe83c51d74617_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b21 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b26 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b19 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b23 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b23 &lt;http://www.w3.org/2002/07/owl#hasValue> &lt;http://www.purl.org/storytel/type/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb11 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/End_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb11 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb10 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb16 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb17 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb13 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb10 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb13 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Software_Based_On_LLM> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb12 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb10 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b20 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/End_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://purl.org/dc/elements/1.1/title> "Anonymized Story"@en &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb11 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb13 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb12 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b22 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b22 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b22 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b19 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b19 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b20 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b23 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b21 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Start_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b25 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b25 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbe3a5c879a974bcb99a97f5216d30ae4b26 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b22 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Software_Based_On_LLM> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b23 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P2_has_type> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2002/07/owl#disjointWith> _:nbe3a5c879a974bcb99a97f5216d30ae4b24 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b21 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b26 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b24 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b25 &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b20 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b24 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

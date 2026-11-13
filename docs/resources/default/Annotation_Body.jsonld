@@ -12,7 +12,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Content of the annotation, e.g. the transcribed text of the segment."
+        "@value": "Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis)."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -24,11 +24,6 @@
       {
         "@language": "en",
         "@value": "Annotation Body"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/oa#TextualBody"
       }
     ]
   }

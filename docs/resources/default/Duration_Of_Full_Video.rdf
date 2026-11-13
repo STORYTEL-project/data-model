@@ -6,17 +6,17 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Duration_Of_Full_Video">
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <dc:title xml:lang="en">Duration of Full Video</dc:title>
     <rdfs:comment xml:lang="en">Dimension expressing the total duration of a Full Video, as an xsd:duration value.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Duration of Full Video</dc:title>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b43"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb29"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:label xml:lang="en">Duration of Full Video</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb29">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b43">
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
   </rdf:Description>
 </rdf:RDF>

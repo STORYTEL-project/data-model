@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STORYTEL Ontology – Classes and Relations</title>
+<style>
+  :root{--bg:#f7f7f5;--ink:#1f2328;--muted:#6b7078;--panel:#fff;--bd:#dcdcd8}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+  #app{display:grid;grid-template-columns:1fr 340px;height:100vh}
+  #stage{position:relative;overflow:hidden;cursor:grab;background:radial-gradient(circle,#d9d9d4 1px,transparent 1px) 0 0/22px 22px}
+  #stage.drag{cursor:grabbing}
+  svg{width:100%;height:100%;display:block;user-select:none}
+  aside{background:var(--panel);border-left:1px solid var(--bd);overflow:auto;padding:16px 18px;font-size:13px;line-height:1.45}
+  h1{font-size:16px;margin:0 0 4px}
+  h2{font-size:12px;margin:18px 0 8px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .sub{color:var(--muted);margin:0 0 10px}
+  .tools{display:flex;gap:6px;position:absolute;top:12px;left:12px;z-index:2}
+  .tools button{font:inherit;font-size:12px;background:#fff;border:1px solid var(--bd);border-radius:6px;padding:5px 9px;cursor:pointer}
+  .tools button:hover{background:#f0f0ec}
+  .leg{display:grid;grid-template-columns:24px 1fr;gap:6px 8px;align-items:center}
+  .sw{width:20px;height:12px;border:1px solid #888;border-radius:2px}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;background:#f2f2ef;padding:0 3px;border-radius:3px}
+  #info{border:1px solid var(--bd);border-radius:8px;padding:10px;background:#fbfbfa;min-height:52px}
+  #info .muted{color:var(--muted)} #info .cm{margin-top:6px;font-style:italic;color:#444}
+  #info ul{margin:6px 0 0;padding-left:16px}
+  table.px{border-collapse:collapse;font-size:11.5px;width:100%}
+  table.px td{padding:2px 4px;vertical-align:top;word-break:break-all}
+  table.px td:first-child{font-weight:600;white-space:nowrap;word-break:normal}
+  .node{cursor:pointer}
+  .edge.faint{opacity:.3}
+  .dim .node,.dim .edge{opacity:.1}
+  .dim .node.hl,.dim .edge.hl{opacity:1}
+  @media (max-width:900px){#app{grid-template-columns:1fr;grid-template-rows:62vh 1fr}aside{border-left:0;border-top:1px solid var(--bd)}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div class="tools"><button id="zin" aria-label="Zoom in">＋</button><button id="zout" aria-label="Zoom out">－</button><button id="fit">Fit</button></div>
+    <svg id="svg"><defs id="defs"></defs><g id="vp"><g id="edges"></g><g id="nodes"></g></g></svg>
+  </div>
+  <aside>
+    <h1>STORYTEL Ontology</h1>
+    <p class="sub">Storytel is the ontology of the European funded project Storytel. Its goal is to map the relationship between Full Video, Anonymized Video and Anonymized Story, re-using existing ontologies and implementing some ad-hoc classes.</p>
+    <p class="sub">Each box shows the Storytel class name (purple), its superclasses and its <code>rdfs:label</code>. Edges are the <code>owl:someValuesFrom</code> / <code>owl:hasValue</code> restrictions, property domains and ranges, and <code>owl:disjointWith</code> axioms. Click a class to highlight its relations and read its definition; scroll to zoom, drag to pan.</p>
+
+    <h2>Selected class</h2>
+    <div id="info"><span class="muted">None – click a class.</span></div>
+
+    <h2>Legend</h2>
+    <div class="leg">
+      <div class="sw" style="background:#d5e8d4"></div><div>Work (lrmoo:F1_Work)</div>
+      <div class="sw" style="background:#dae8fc"></div><div>Expressions (lrmoo:F2_Expression)</div>
+      <div class="sw" style="background:#e1d5e7"></div><div>Events (F28, D30)</div>
+      <div class="sw" style="background:#fff2cc"></div><div>Manifestations (lrmoo:F3_Manifestation)</div>
+      <div class="sw" style="background:#ffe6cc"></div><div>Annotations</div>
+      <div class="sw" style="background:#fdf0f5"></div><div>Annotation bodies</div>
+      <div class="sw" style="background:#fff"></div><div>Other classes</div>
+      <div class="sw" style="background:#f3f3f0;border-style:dashed"></div><div>Named individual (E55_Type)</div>
+      <div class="sw" style="background:#fff;transform:skewX(-20deg)"></div><div>Datatype</div>
+      <div><svg width="22" height="12"><line x1="0" y1="6" x2="14" y2="6" stroke="#555" stroke-width="1.2"/><path d="M13,2 L20,6 L13,10 Z" fill="#555"/></svg></div><div>Object / datatype property</div>
+      <div><svg width="22" height="12"><line x1="0" y1="6" x2="14" y2="6" stroke="#4f46e5" stroke-width="1.3"/><path d="M14,1 L21,6 L14,11 Z" fill="#fff" stroke="#4f46e5"/></svg></div><div><code>rdfs:subClassOf</code></div>
+      <div><svg width="22" height="12"><line x1="0" y1="6" x2="22" y2="6" stroke="#b03a2e" stroke-width="1.3" stroke-dasharray="3 3"/></svg></div><div><code>owl:disjointWith</code></div>
+    </div>
+
+    <h2>Imports</h2>
+    <ul style="padding-left:16px;margin:0">
+      <li>LRMoo 1.0</li><li>CIDOC-CRM 7.1.3</li><li>CRMdig 5.0</li>
+    </ul>
+
+    <h2>Prefixes</h2>
+    <table class="px">
+      <tr><td>:</td><td>http://www.purl.org/storytel/</td></tr>
+      <tr><td>type</td><td>http://www.purl.org/storytel/type/</td></tr>
+      <tr><td>cidoc-crm</td><td>http://www.cidoc-crm.org/cidoc-crm/</td></tr>
+      <tr><td>lrmoo</td><td>http://iflastandards.info/ns/lrm/lrmoo/</td></tr>
+      <tr><td>crmdig</td><td>http://www.cidoc-crm.org/extensions/crmdig/</td></tr>
+      <tr><td>oa</td><td>http://www.w3.org/ns/oa#</td></tr>
+      <tr><td>rdf</td><td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td></tr>
+      <tr><td>xsd</td><td>http://www.w3.org/2001/XMLSchema#</td></tr>
+    </table>
+    <p class="sub" style="margin-top:14px">Author: Giorgia Crosilla</p>
+  </aside>
+</div>
+
+<script>
+const COMMENTS={"is_based_on_transcription": "Links a translation or glossing annotation to the transcription annotation it was derived from.", "pitch_ceiling": "Upper bound of the F0 search range used in the Praat analysis, in Hz.", "pitch_floor": "Lower bound of the F0 search range used in the Praat analysis, in Hz.", "time_step": "Time step between analysis frames used in the Praat analysis, in seconds.", "Acoustic_Annotation": "Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy.", "Acoustic_Annotation_Body": "Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification.", "Age_Of_The_Participants": "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65.", "Amplitude_Annotation": "Acoustic annotation holding the Amplitude (waveform) of a segment.", "Annotation": "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline", "Annotation_Body": "Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis).", "Anonymized_Story": "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body.", "Anonymized_Story_Creation": "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM.", "Anonymized_Story_Segment": "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47.", "Anonymized_Story_Manifestation": "Manifestation of an Anonymized Story in mp4 file format.", "Automatic_Acoustic_Analysis": "Automatic annotation event in which the pipeline runs Praat on a segment of the Story to produce acoustic annotations.", "Automatic_Annotation": "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation.", "Automatic_Glossing": "Automatic annotation event in which the pipeline glosses a segment.", "Automatic_Transcription": "Automatic annotation event in which the pipeline transcribes a segment.", "Automatic_Translation": "Automatic annotation event in which the pipeline translates a segment.", "Conversational_Storytelling_Session": "Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story.", "Duration_Of_Full_Video": "Dimension expressing the total duration of a Full Video, as an xsd:duration value.", "End_Of_The_Full_Video": "Dimension expressing the end time of an Anonymized Story, as an xsd:time value.", "Frequency_Annotation": "Acoustic annotation holding the Frequency of a segment.", "Full_Video": "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities", "Full_Video_Creation": "Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone.", "Full_Video_Manifestation": "Manifestation of a Full Video in mp4 file format.", "Glossing_Annotation": "Annotation whose body is the interlinear gloss of a segment of an Anonymized Story, based on the transcription of that segment.", "Glossing_Body": "Interlinear gloss of a segment, produced automatically from its transcription.", "Group_Of_Participants": "Group of student participants taking part in a conversational storytelling session, characterised by their number and age.", "Media_Fragment_Selector": "Media Fragment URI selecting the segment, e.g. t=723,767.", "Media_Segment": "Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story.", "Number_of_Participants": "Dimension expressing the number of participants in a group, as an integer value.", "Pitch_Annotation": "Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment.", "Place_Of_Recording": "Place where a Full Video is recorded.", "Praat": "Praat software used for the acoustic analysis (pitch, amplitude, frequency). Use one individual per version.", "Smartphone": "Digital device (smartphone) used to record the Full Video.", "Software_Based_On_LLM": "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story.", "Start_Of_The_Full_Video": "Dimension expressing the start time of an Anonymized Story, as an xsd:time value.", "Story": "Anonymized version of the full video", "Story_Creation": "Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs.", "Story_Segment": "Temporal segment of a Story (the source of the Anonymized Story, i.e. before voice and body anonymisation), e.g. 00:12:03-00:12:47.", "Story_Manifestation": "Manifestation of a Story in mp4 file format.", "Storytel_AI_Assisted_Pipeline": "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories.", "Student_Participant": "Person, a student, who participates in a conversational storytelling session.", "Student_Recording": "Actor (student) who records the Full Video.", "Textual_Annotation": "Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story.", "Textual_Annotation_Body": "Annotation body consisting of text (transcription, translation or glossing).", "Transcription_Annotation": "Annotation whose body is the transcription of a segment of an Anonymized Story.", "Transcription_Body": "Text of the automatic transcription of a segment.", "Translation_Annotation": "Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment.", "Translation_Body": "Text of the automatic translation of a segment. Its target language is given with P72 has language.", "type/Anonymized_Story": "Type (E55 Type) used to classify digital objects as Anonymized Stories.", "type/Full_Video": "Type (E55 Type) used to classify digital objects as Full Videos.", "type/Story": "Type (E55 Type) used to classify digital objects as Anonymized Video."};
+const C={work:'#d5e8d4',expr:'#dae8fc',event:'#e1d5e7',man:'#fff2cc',anno:'#ffe6cc',body:'#fdf0f5',plain:'#ffffff',ind:'#f3f3f0'};
+const B={work:'#82b366',expr:'#6c8ebf',event:'#9673a6',man:'#d6b656',anno:'#d79b00',body:'#c2779a',plain:'#333',ind:'#777'};
+const SUB='#4f46e5',DIS='#b03a2e',LINE='#555';
+/* n = Storytel name; cls = superclasses; t = rdfs:label */
+const N=[
+ {id:'work',n:'Conversational_Storytelling_Session',cls:['lrmoo:F1_Work'],t:'Conversational Storytelling session',x:1105,y:90,k:'work'},
+ {id:'fv',n:'Full_Video',cls:['lrmoo:F2_Expression','crmdig:D1_Digital_Object'],t:'Full Video',x:760,y:360,k:'expr'},
+ {id:'story',n:'Story',cls:['lrmoo:F2_Expression','crmdig:D1_Digital_Object'],t:'Anonymized Video',x:1105,y:360,k:'expr'},
+ {id:'as',n:'Anonymized_Story',cls:['lrmoo:F2_Expression','crmdig:D1_Digital_Object'],t:'Anonymized Story',x:1560,y:360,k:'expr'},
+ {id:'fvc',n:'Full_Video_Creation',cls:['lrmoo:F28_Expression_Creation'],t:'Full Video Creation',x:440,y:360,k:'event'},
+ {id:'sc',n:'Story_Creation',cls:['lrmoo:F28_Expression_Creation'],t:'Anonymized Video Creation',x:1300,y:520,k:'event'},
+ {id:'asc',n:'Anonymized_Story_Creation',cls:['lrmoo:F28_Expression_Creation','crmdig:D3_Formal_Derivation'],t:'Anonymized Story Creation',x:1830,y:505,k:'event'},
+ {id:'t_fv',ind:1,n:'type:Full_Video',cls:['cidoc-crm:E55_Type'],t:'Full Video',x:720,y:235},
+ {id:'t_story',ind:1,n:'type:Story',cls:['cidoc-crm:E55_Type'],t:'Anonymized Video',x:1290,y:255},
+ {id:'t_as',ind:1,n:'type:Anonymized_Story',cls:['cidoc-crm:E55_Type'],t:'Anonymized Story',x:1720,y:240},
+ {id:'lang',cls:['cidoc-crm:E56_Language'],t:'',x:560,y:470},
+ {id:'dur',n:'Duration_Of_Full_Video',cls:['cidoc-crm:E54_Dimension'],t:'Duration of Full Video',x:590,y:580},
+ {id:'l_dur',lit:'xsd:duration',x:360,y:650},
+ {id:'start',n:'Start_Of_The_Full_Video',cls:['cidoc-crm:E54_Dimension'],t:'Start of the Anonymized Story',x:1100,y:900},
+ {id:'l_start',lit:'xsd:time',x:1100,y:1000},
+ {id:'end',n:'End_Of_The_Full_Video',cls:['cidoc-crm:E54_Dimension'],t:'End of the Anonymized Story',x:1350,y:960},
+ {id:'l_end',lit:'xsd:time',x:1350,y:1060},
+ {id:'m_fv',n:'Full_Video_Manifestation',cls:['lrmoo:F3_Manifestation'],t:'Full Video Manifestation',x:650,y:870,k:'man'},
+ {id:'m_story',n:'Story_Manifestation',cls:['lrmoo:F3_Manifestation'],t:'Anonymized Video Manifestation',x:880,y:990,k:'man'},
+ {id:'m_as',n:'Anonymized_Story_Manifestation',cls:['lrmoo:F3_Manifestation'],t:'Anonymized Story Manifestation',x:1840,y:820,k:'man'},
+ {id:'llm',n:'Software_Based_On_LLM',cls:['crmdig:D14_Software'],t:'LLM Software',x:1600,y:640},
+ {id:'group',n:'Group_Of_Participants',cls:['cidoc-crm:E74_Group'],t:'Group of Participants',x:455,y:240},
+ {id:'person',n:'Student_Participant',cls:['cidoc-crm:E21_Person'],t:'Student Participant',x:480,y:120},
+ {id:'age',n:'Age_Of_The_Participants',cls:['cidoc-crm:E54_Dimension'],t:'Age of the Participants',x:240,y:120},
+ {id:'l_age',lit:'xsd:integer [18 ≤ x ≤ 65]',x:240,y:15},
+ {id:'num',n:'Number_of_Participants',cls:['cidoc-crm:E54_Dimension'],t:'Number of Participants',x:720,y:120},
+ {id:'l_num',lit:'xsd:integer',x:720,y:15},
+ {id:'actor',n:'Student_Recording',cls:['cidoc-crm:E39_Actor'],t:'Student Recording',x:200,y:250},
+ {id:'device',n:'Smartphone',cls:['crmdig:D8_Digital_Device'],t:'Smartphone',x:110,y:370},
+ {id:'place',n:'Place_Of_Recording',cls:['cidoc-crm:E53_Place'],t:'Place of Recording',x:260,y:490},
+ // segments
+ {id:'seg',n:'Media_Segment',cls:['oa:SpecificResource'],t:'Media Segment',x:1960,y:150},
+ {id:'aseg',n:'Anonymized_Story_Segment',cls:[':Media_Segment','oa:SpecificResource'],t:'Segment of Anonymized Story',x:1660,y:120},
+ {id:'sseg',n:'Story_Segment',cls:[':Media_Segment'],t:'Segment of Story',x:2210,y:150},
+ {id:'sel',n:'Media_Fragment_Selector',cls:['oa:FragmentSelector'],t:'Media Fragment Selector',x:1960,y:20},
+ {id:'l_frag',lit:'xsd:duration',x:2190,y:20},
+ // annotation events
+ {id:'pipe',n:'Storytel_AI_Assisted_Pipeline',cls:['crmdig:D14_Software'],t:'Storytel AI-assisted pipeline',x:2440,y:60},
+ {id:'annev',n:'Automatic_Annotation',cls:['crmdig:D30_Annotation_Event'],t:'Automatic Annotation',x:2440,y:185,k:'event'},
+ {id:'aT',n:'Automatic_Transcription',cls:[':Automatic_Annotation'],t:'Automatic Transcription',x:2200,y:315,k:'event'},
+ {id:'aTr',n:'Automatic_Translation',cls:[':Automatic_Annotation'],t:'Automatic Translation',x:2470,y:315,k:'event'},
+ {id:'aG',n:'Automatic_Glossing',cls:[':Automatic_Annotation'],t:'Automatic Glossing',x:2730,y:315,k:'event'},
+ {id:'aA',n:'Automatic_Acoustic_Analysis',cls:[':Automatic_Annotation'],t:'Automatic Acoustic Analysis',x:3050,y:315,k:'event'},
+ {id:'praat',n:'Praat',cls:['crmdig:D14_Software'],t:'Praat',x:3050,y:185},
+ {id:'l_pf',lit:'xsd:decimal',x:3330,y:245},
+ {id:'l_pc',lit:'xsd:decimal',x:3330,y:315},
+ {id:'l_ts',lit:'xsd:decimal',x:3330,y:385},
+ // annotations
+ {id:'ann',n:'Annotation',cls:['crmdig:D29_Annotation_Object','oa:Annotation'],t:'Annotation',x:2320,y:455,k:'anno'},
+ {id:'aTxt',n:'Textual_Annotation',cls:[':Annotation'],t:'Textual Annotation',x:2600,y:575,k:'anno'},
+ {id:'aAc',n:'Acoustic_Annotation',cls:[':Annotation'],t:'Acoustic Annotation',x:3050,y:575,k:'anno'},
+ {id:'aTra',n:'Transcription_Annotation',cls:[':Textual_Annotation'],t:'Transcription Annotation',x:2200,y:715,k:'anno'},
+ {id:'aTrl',n:'Translation_Annotation',cls:[':Textual_Annotation'],t:'Translation Annotation',x:2470,y:715,k:'anno'},
+ {id:'aGl',n:'Glossing_Annotation',cls:[':Textual_Annotation'],t:'Glossing Annotation',x:2730,y:715,k:'anno'},
+ {id:'aAmp',n:'Amplitude_Annotation',cls:[':Acoustic_Annotation'],t:'Amplitude Annotation',x:2950,y:705,k:'anno'},
+ {id:'aFreq',n:'Frequency_Annotation',cls:[':Acoustic_Annotation'],t:'Frequency Annotation',x:3240,y:775,k:'anno'},
+ {id:'aPitch',n:'Pitch_Annotation',cls:[':Acoustic_Annotation'],t:'F0 Annotation',x:3420,y:705,k:'anno'},
+ // bodies
+ {id:'body',n:'Annotation_Body',cls:[],t:'Annotation Body',x:2320,y:885,k:'body'},
+ {id:'bTxt',n:'Textual_Annotation_Body',cls:[':Annotation_Body','oa:TextualBody'],t:'Textual Annotation Body',x:2610,y:885,k:'body'},
+ {id:'bTra',n:'Transcription_Body',cls:[':Textual_Annotation_Body'],t:'Transcription Body',x:2200,y:1025,k:'body'},
+ {id:'bTrl',n:'Translation_Body',cls:[':Textual_Annotation_Body'],t:'Translation Body',x:2490,y:1025,k:'body'},
+ {id:'bGl',n:'Glossing_Body',cls:[':Textual_Annotation_Body'],t:'Glossing Body',x:2780,y:1025,k:'body'},
+ {id:'bAc',n:'Acoustic_Annotation_Body',cls:[':Annotation_Body','crmdig:D1_Digital_Object'],t:'Acoustic Annotation Body',x:3110,y:925,k:'body'},
+];
+/* [from,to,label,labelPos,opts]; 'sub' = rdfs:subClassOf, 'dis' = owl:disjointWith */
+const E=[
+ ['work','fv','lrmoo:R3_is_realised_in',.45],
+ ['work','story','lrmoo:R3_is_realised_in',.55],
+ ['work','as','lrmoo:R3_is_realised_in',.45],
+ ['fvc','fv','lrmoo:R17_created',.5],
+ ['fvc','actor','cidoc-crm:P14_carried_out_by',.65],
+ ['fvc','group','cidoc-crm:P11_had_participant',.4],
+ ['fvc','device','crmdig:L12_happened_on_device',.5],
+ ['fvc','place','cidoc-crm:P7_took_place_at',.5],
+ ['group','person','cidoc-crm:P107_has_current_member',.3],
+ ['group','age','cidoc-crm:P43_has_dimension',.78],
+ ['group','num','cidoc-crm:P43_has_dimension',.78],
+ ['age','l_age','cidoc-crm:P90_has_value'],
+ ['num','l_num','cidoc-crm:P90_has_value'],
+ ['fv','t_fv','cidoc-crm:P2_has_type (hasValue)',.5],
+ ['fv','lang','cidoc-crm:P72_has_language',.5],
+ ['fv','dur','cidoc-crm:P43_has_dimension',.45],
+ ['fv','start','cidoc-crm:P43_has_dimension',.4],
+ ['fv','end','cidoc-crm:P43_has_dimension',.62],
+ ['dur','l_dur','cidoc-crm:P90_has_value'],
+ ['start','l_start','cidoc-crm:P90_has_value'],
+ ['end','l_end','cidoc-crm:P90_has_value'],
+ ['m_fv','fv','lrmoo:R4_embodies',.25],
+ ['story','fv','lrmoo:R76_is_derivative_of',.5],
+ ['story','t_story','cidoc-crm:P2_has_type (hasValue)',.5],
+ ['m_story','story','lrmoo:R4_embodies',.15],
+ ['sc','story','lrmoo:R17_created / crmdig:L22_created_derivative',.45],
+ ['sc','fv','crmdig:L21_used_as_derivation_source',.55],
+ ['sc','llm','crmdig:L23_used_software_or_firmware',.5],
+ ['as','story','lrmoo:R76_is_derivative_of',.5],
+ ['as','t_as','cidoc-crm:P2_has_type (hasValue)',.55],
+ ['as','start','cidoc-crm:P43_has_dimension',.6],
+ ['as','end','cidoc-crm:P43_has_dimension',.75],
+ ['as','llm','crmdig:L23_used_software_or_firmware',.55],
+ ['m_as','as','lrmoo:R4_embodies',.3],
+ ['asc','as','lrmoo:R17_created / crmdig:L22_created_derivative',.5],
+ ['asc','story','crmdig:L21_used_as_derivation_source',.72],
+ ['asc','llm','crmdig:L23_used_software_or_firmware',.5],
+ ['fv','story','dis',0,{curve:-70}],
+ ['story','as','dis',0,{curve:-70}],
+ ['fv','as','dis',0,{curve:-330}],
+ // segments
+ ['seg','sel','oa:hasSelector',.5],
+ ['aseg','sel','oa:hasSelector',.5],
+ ['sel','l_frag','rdf:value',.5],
+ ['aseg','seg','sub'],
+ ['sseg','seg','sub'],
+ // events
+ ['annev','pipe','crmdig:L23_used_software_or_firmware',.5],
+ ['annev','ann','crmdig:L48_created_annotation',.35],
+ ['aT','annev','sub'],['aTr','annev','sub'],['aG','annev','sub'],['aA','annev','sub'],
+ ['aA','praat','crmdig:L23_used_software_or_firmware',.5],
+ ['aA','l_pf',':pitch_floor',.55],['aA','l_pc',':pitch_ceiling',.55],['aA','l_ts',':time_step',.55],
+ ['aT','aTra','crmdig:L48_created_annotation',.3,{faint:1}],
+ ['aTr','aTrl','crmdig:L48_created_annotation',.3,{faint:1}],
+ ['aG','aGl','crmdig:L48_created_annotation',.3,{faint:1}],
+ ['aA','aAc','crmdig:L48_created_annotation',.5],
+ // annotations
+ ['ann','as','crmdig:L43_annotates',.3],
+ ['ann','seg','oa:hasTarget',.5,{curve:-90}],
+ ['ann','body','oa:hasBody',.3],
+ ['aTxt','ann','sub'],['aAc','ann','sub'],
+ ['aTxt','aAc','dis',0,{curve:45}],
+ ['aTra','aTxt','sub'],['aTrl','aTxt','sub'],['aGl','aTxt','sub'],
+ ['aAmp','aAc','sub'],['aFreq','aAc','sub'],['aPitch','aAc','sub'],
+ ['aTrl','aTra',':is_based_on_transcription',.5,{curve:-40}],
+ ['aGl','aTra',':is_based_on_transcription',.5,{curve:-75}],
+ ['aTxt','aseg','oa:hasTarget',.5,{faint:1}],
+ ['aTxt','as','crmdig:L43_annotates',.5,{faint:1}],
+ ['aAc','sseg','oa:hasTarget',.5,{faint:1}],
+ ['aAc','story','crmdig:L43_annotates',.5,{faint:1}],
+ ['aTxt','bTxt','oa:hasBody',.5],
+ ['aAc','bAc','oa:hasBody',.5],
+ ['aTra','bTra','oa:hasBody',.75],
+ ['aTrl','bTrl','oa:hasBody',.75],
+ ['aGl','bGl','oa:hasBody',.75],
+ // bodies
+ ['bTxt','body','sub'],
+ ['bAc','body','sub',.5,{curve:120}],
+ ['bTra','bTxt','sub'],['bTrl','bTxt','sub'],['bGl','bTxt','sub'],
+];
+
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a={},p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const byId={};
+const ctx=document.createElement('canvas').getContext('2d');
+const tw=(s,f)=>{ctx.font=f;return ctx.measureText(s).width};
+const FH='600 11px Inter,system-ui,sans-serif',FB='11px Inter,system-ui,sans-serif',FN='italic 600 11px Inter,system-ui,sans-serif';
+function wrap(s,max){if(!s)return[];const w=s.split(' ');const out=[];let cur='';for(const x of w){const t=cur?cur+' '+x:x;if(tw(t,FB)>max&&cur){out.push(cur);cur=x}else cur=t}if(cur)out.push(cur);return out}
+const defs=document.getElementById('defs');
+{const m=el('marker',{id:'ar',viewBox:'0 0 10 10',refX:9.5,refY:5,markerWidth:7,markerHeight:7,orient:'auto'},defs);el('path',{d:'M0,0 L10,5 L0,10 z',fill:LINE},m);}
+{const m=el('marker',{id:'ar-sub',viewBox:'0 0 12 12',refX:11,refY:6,markerWidth:11,markerHeight:11,orient:'auto',markerUnits:'userSpaceOnUse'},defs);el('path',{d:'M1,1 L11,6 L1,11 Z',fill:'#fff',stroke:SUB,'stroke-width':1.2},m);}
+
+const gN=document.getElementById('nodes'),gE=document.getElementById('edges');
+for(const n of N){
+  const g=el('g',{class:'node','data-id':n.id},gN);n.g=g;byId[n.id]=n;
+  if(n.union){
+    n.w=96;n.h=30;el('ellipse',{cx:n.x,cy:n.y,rx:48,ry:15,fill:'#fff',stroke:'#333','stroke-width':1.1},g);
+    const t=el('text',{x:n.x,y:n.y+4,'text-anchor':'middle','font-size':11,'font-weight':600,fill:'#1f2328'},g);t.textContent='owl:unionOf';continue;
+  }
+  if(n.lit){
+    const w=Math.max(110,tw(n.lit,FB)+40),h=34;n.w=w;n.h=h;const x=n.x-w/2,y=n.y-h/2,s=10;
+    el('path',{d:`M${x+s},${y} H${x+w} L${x+w-s},${y+h} H${x} Z`,fill:'#fff',stroke:'#333','stroke-width':1.2},g);
+    const t=el('text',{x:n.x,y:n.y+4,'text-anchor':'middle','font-size':11,fill:'#1f2328'},g);t.textContent=n.lit;continue;
+  }
+  const k=n.ind?'ind':(n.k||'plain');
+  const hdr=[];
+  if(n.n)hdr.push({s:n.ind?n.n:':'+n.n,f:FN,c:'#4338ca',it:1});
+  n.cls.forEach(c=>hdr.push({s:(n.ind?'a ':(n.n?'⊑ ':''))+c,f:FH,c:'#1f2328'}));
+  const bodyLines=wrap(n.t,210);
+  const w=Math.max(150,...hdr.map(h=>tw(h.s,h.f)+22),...bodyLines.map(s=>tw(s,FB)+22));
+  const hh=hdr.length*14+10,bh=n.t?bodyLines.length*14+10:0;const h=hh+bh;n.w=w;n.h=h;
+  const x=n.x-w/2,y=n.y-h/2;
+  el('rect',{x,y,width:w,height:h,rx:n.ind?10:3,fill:C[k],stroke:B[k],'stroke-width':1.1,'stroke-dasharray':n.ind?'5 3':''},g);
+  if(n.t)el('line',{x1:x,y1:y+hh,x2:x+w,y2:y+hh,stroke:B[k],'stroke-width':.9},g);
+  hdr.forEach((h,i)=>{const t=el('text',{x:n.x,y:y+15+i*14,'text-anchor':'middle','font-size':11,'font-weight':600,'font-style':h.it?'italic':'normal',fill:h.c},g);t.textContent=h.s});
+  bodyLines.forEach((s,i)=>{const t=el('text',{x:n.x,y:y+hh+16+i*14,'text-anchor':'middle','font-size':11,fill:'#1f2328'},g);t.textContent=s});
+}
+function edgePt(n,tx,ty){const dx=tx-n.x,dy=ty-n.y;if(!dx&&!dy)return[n.x,n.y];
+  if(n.union){const a=Math.atan2(dy,dx);return[n.x+48*Math.cos(a),n.y+15*Math.sin(a)]}
+  const hw=n.w/2,hh=n.h/2;const s=Math.min(dx?hw/Math.abs(dx):1e9,dy?hh/Math.abs(dy):1e9);return[n.x+dx*s,n.y+dy*s]}
+const edges=[];
+for(const [a,b,lab,tp,o={}] of E){
+  const A=byId[a],Bn=byId[b];const sub=lab==='sub',dis=lab==='dis';
+  const mx=(A.x+Bn.x)/2,my=(A.y+Bn.y)/2;let cx=mx,cy=my;
+  if(o.curve){const dx=Bn.x-A.x,dy=Bn.y-A.y,L=Math.hypot(dx,dy);cx=mx-dy/L*o.curve;cy=my+dx/L*o.curve}
+  const [x1,y1]=edgePt(A,cx,cy),[x2,y2]=edgePt(Bn,cx,cy);
+  const g=el('g',{class:'edge'+(o.faint?' faint':'')},gE);
+  const d=o.curve?`M${x1},${y1} Q${cx},${cy} ${x2},${y2}`:`M${x1},${y1} L${x2},${y2}`;
+  const col=sub?SUB:dis?DIS:LINE;
+  el('path',{d,fill:'none',stroke:col,'stroke-width':sub||dis?1.3:1.05,'stroke-dasharray':dis?'4 4':'','marker-end':dis?'':sub?'url(#ar-sub)':'url(#ar)'},g);
+  const text=dis?'owl:disjointWith':sub?'':lab;
+  if(text){
+    const t=(dis&&!tp)?.5:(tp??.5);let lx,ly;
+    if(o.curve){lx=(1-t)*(1-t)*x1+2*(1-t)*t*cx+t*t*x2;ly=(1-t)*(1-t)*y1+2*(1-t)*t*cy+t*t*y2}else{lx=x1+(x2-x1)*t;ly=y1+(y2-y1)*t}
+    const lw=tw(text,'10px Inter,system-ui,sans-serif')+8;
+    el('rect',{x:lx-lw/2,y:ly-7.5,width:lw,height:14,rx:2,fill:'#fff',opacity:.92},g);
+    const tx=el('text',{x:lx,y:ly+3.5,'text-anchor':'middle','font-size':10,fill:dis?DIS:'#333','font-style':dis?'italic':'normal'},g);tx.textContent=text;
+  }
+  edges.push({a,b,lab:sub?'rdfs:subClassOf':dis?'owl:disjointWith':(lab||'owl:unionOf member'),g});
+}
+const svg=document.getElementById('svg'),vp=document.getElementById('vp'),stage=document.getElementById('stage');
+const info=document.getElementById('info');
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+let sel=null;
+function nm(o){if(o.union)return'owl:unionOf';if(o.lit)return o.lit;if(o.n)return o.ind?o.n:':'+o.n;return o.cls[0]}
+function select(id){
+  sel=id;document.querySelectorAll('.hl').forEach(e=>e.classList.remove('hl'));
+  if(!id){svg.classList.remove('dim');info.innerHTML='<span class="muted">None – click a class.</span>';return}
+  svg.classList.add('dim');const n=byId[id];n.g.classList.add('hl');
+  const out=[],inn=[];
+  edges.forEach(e=>{if(e.a===id||e.b===id){e.g.classList.add('hl');byId[e.a].g.classList.add('hl');byId[e.b].g.classList.add('hl');
+    const o=byId[e.a===id?e.b:e.a];(e.a===id?out:inn).push(`<li><code>${esc(e.lab)}</code> ${e.a===id?'→':'←'} ${esc(nm(o))}</li>`)}});
+  let title;
+  if(n.union)title='<b>owl:unionOf</b> ( :Anonymized_Story :Story )';
+  else if(n.lit)title=`<b>${esc(n.lit)}</b><br><span class="muted">Datatype</span>`;
+  else title=`${n.n?`<b style="color:#4338ca">${esc(nm(n))}</b><br>`:''}${n.cls.map(c=>esc((n.ind?'rdf:type ':'rdfs:subClassOf ')+c)).join('<br>')}${n.t?'<br><span class="muted">rdfs:label “'+esc(n.t)+'”</span>':''}`;
+  const key=n.n?(n.ind?n.n.replace('type:','type/'):n.n):null;
+  const cm=key&&COMMENTS[key]?`<div class="cm">${esc(COMMENTS[key])}</div>`:'';
+  info.innerHTML=title+cm+(out.length?'<div style="margin-top:6px" class="muted">Outgoing</div><ul>'+out.join('')+'</ul>':'')+(inn.length?'<div style="margin-top:6px" class="muted">Incoming</div><ul>'+inn.join('')+'</ul>':'');
+}
+gN.addEventListener('click',e=>{const g=e.target.closest('.node');if(g){e.stopPropagation();select(sel===g.dataset.id?null:g.dataset.id)}});
+let vb={x:0,y:0,w:3500,h:1100};
+const apply=()=>svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+function fit(){const b=vp.getBBox();const pad=30;vb={x:b.x-pad,y:b.y-pad,w:b.width+2*pad,h:b.height+2*pad};
+  const r=stage.clientWidth/stage.clientHeight;if(vb.w/vb.h<r){const nw=vb.h*r;vb.x-=(nw-vb.w)/2;vb.w=nw}else{const nh=vb.w/r;vb.y-=(nh-vb.h)/2;vb.h=nh}apply()}
+function zoom(f,cx,cy){const r=svg.getBoundingClientRect();cx=cx??r.left+r.width/2;cy=cy??r.top+r.height/2;
+  const px=vb.x+(cx-r.left)/r.width*vb.w,py=vb.y+(cy-r.top)/r.height*vb.h;vb.w*=f;vb.h*=f;vb.x=px-(cx-r.left)/r.width*vb.w;vb.y=py-(cy-r.top)/r.height*vb.h;apply()}
+svg.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY>0?1.12:1/1.12,e.clientX,e.clientY)},{passive:false});
+let drag=null,moved=false;
+svg.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};moved=false;stage.classList.add('drag')});
+window.addEventListener('pointermove',e=>{if(!drag)return;const r=svg.getBoundingClientRect();const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>3)moved=true;vb.x=drag.vx-dx/r.width*vb.w;vb.y=drag.vy-dy/r.height*vb.h;apply()});
+window.addEventListener('pointerup',e=>{if(drag&&!moved&&!e.target.closest('.node'))select(null);drag=null;stage.classList.remove('drag')});
+document.getElementById('zin').onclick=()=>zoom(1/1.25);
+document.getElementById('zout').onclick=()=>zoom(1.25);
+document.getElementById('fit').onclick=fit;
+window.addEventListener('resize',fit);
+fit();
+</script>
+</body>
+</html>

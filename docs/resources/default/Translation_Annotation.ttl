@@ -1,0 +1,19 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Translation_Annotation a owl:Class ;
+    rdfs:label "Translation Annotation"@en ;
+    dc:title "Translation Annotation"@en ;
+    rdfs:comment "Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :is_based_on_transcription ;
+            owl:someValuesFrom :Transcription_Annotation ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Translation_Body ],
+        :Textual_Annotation .
+

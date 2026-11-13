@@ -1,0 +1,10 @@
+<http://www.purl.org/storytel/Automatic_Transcription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Automatic_Transcription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Automatic_Annotation> .
+<http://www.purl.org/storytel/Automatic_Transcription> <http://purl.org/dc/elements/1.1/title> "Automatic Transcription"@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Automatic_Transcription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Automatic_Transcription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b38 .
+<http://www.purl.org/storytel/Automatic_Transcription> <http://www.w3.org/2000/01/rdf-schema#label> "Automatic Transcription"@en .
+<http://www.purl.org/storytel/Automatic_Transcription> <http://www.w3.org/2000/01/rdf-schema#comment> "Automatic annotation event in which the pipeline transcribes a segment."@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Transcription_Annotation> .

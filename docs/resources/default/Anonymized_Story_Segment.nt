@@ -1,10 +1,11 @@
 <http://www.purl.org/storytel/Anonymized_Story_Segment> <http://purl.org/dc/elements/1.1/title> "Segment of Anonymized Story"@en .
-_:nfb4366b93bd749b99262f6ca53882fdbb22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasSelector> .
-<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb22 .
-<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#label> "Segment of Anonymized Story"@en .
-_:nfb4366b93bd749b99262f6ca53882fdbb22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#comment> "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47." .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Media_Segment> .
 <http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nfb4366b93bd749b99262f6ca53882fdbb22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Media_Fragment_Selector> .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#comment> "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47." .
 <http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasSelector> .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#label> "Segment of Anonymized Story"@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Media_Fragment_Selector> .
 <http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#SpecificResource> .
+<http://www.purl.org/storytel/Anonymized_Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b31 .

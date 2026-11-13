@@ -34,6 +34,13 @@ dc:title a owl:AnnotationProperty ;
     rdfs:comment "A name given to the resource; used here to provide a human-readable title for ontology terms."@en ;
     rdfs:isDefinedBy dc: .
 
+:Amplitude_Annotation a owl:Class ;
+    rdfs:label "Amplitude Annotation"@en ;
+    dc:title "Amplitude Annotation"@en ;
+    rdfs:comment "Acoustic annotation holding the Amplitude (waveform) of a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Acoustic_Annotation .
+
 :Anonymized_Story_Creation a owl:Class ;
     rdfs:label "Anonymized Story Creation"@en ;
     dc:title "Anonymized Story Creation"@en ;
@@ -54,7 +61,7 @@ dc:title a owl:AnnotationProperty ;
         lrmoo:F28_Expression_Creation,
         crmdig:D3_Formal_Derivation .
 
-:Anonymized_Story_mp4 a owl:Class ;
+:Anonymized_Story_Manifestation a owl:Class ;
     rdfs:label "Anonymized Story Manifestation"@en ;
     dc:title "Anonymized Story Manifestation"@en ;
     rdfs:comment "Manifestation of an Anonymized Story in mp4 file format."@en ;
@@ -64,18 +71,35 @@ dc:title a owl:AnnotationProperty ;
             owl:someValuesFrom :Anonymized_Story ],
         lrmoo:F3_Manifestation .
 
-:Automatic_Annotation a owl:Class ;
-    rdfs:label "Automatic Annotation"@en ;
-    dc:title "Automatic Annotation"@en ;
-    rdfs:comment "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."@en ;
+:Automatic_Glossing a owl:Class ;
+    rdfs:label "Automatic Glossing"@en ;
+    dc:title "Automatic Glossing"@en ;
+    rdfs:comment "Automatic annotation event in which the pipeline glosses a segment."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty crmdig:L23_used_software_or_firmware ;
-            owl:someValuesFrom :Storytel_AI_Assisted_Pipeline ],
-        [ a owl:Restriction ;
             owl:onProperty crmdig:L48_created_annotation ;
-            owl:someValuesFrom :Annotation ],
-        crmdig:D30_Annotation_Event .
+            owl:someValuesFrom :Glossing_Annotation ],
+        :Automatic_Annotation .
+
+:Automatic_Transcription a owl:Class ;
+    rdfs:label "Automatic Transcription"@en ;
+    dc:title "Automatic Transcription"@en ;
+    rdfs:comment "Automatic annotation event in which the pipeline transcribes a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L48_created_annotation ;
+            owl:someValuesFrom :Transcription_Annotation ],
+        :Automatic_Annotation .
+
+:Automatic_Translation a owl:Class ;
+    rdfs:label "Automatic Translation"@en ;
+    dc:title "Automatic Translation"@en ;
+    rdfs:comment "Automatic annotation event in which the pipeline translates a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L48_created_annotation ;
+            owl:someValuesFrom :Translation_Annotation ],
+        :Automatic_Annotation .
 
 :Conversational_Storytelling_Session a owl:Class ;
     rdfs:label "Conversational Storytelling session"@en ;
@@ -93,15 +117,12 @@ dc:title a owl:AnnotationProperty ;
             owl:someValuesFrom :Story ],
         lrmoo:F1_Work .
 
-:Duration_Of_The_Story a owl:Class ;
-    rdfs:label "Duration of the Story"@en ;
-    dc:title "Duration of the Story"@en ;
-    rdfs:comment "Dimension expressing the duration of a Story (clip), as an xsd:duration value."@en ;
+:Frequency_Annotation a owl:Class ;
+    rdfs:label "Frequency Annotation"@en ;
+    dc:title "Frequency Annotation"@en ;
+    rdfs:comment "Acoustic annotation holding the Frequency of a segment."@en ;
     rdfs:isDefinedBy : ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P90_has_value ;
-            owl:someValuesFrom xsd:duration ],
-        cidoc-crm:E54_Dimension .
+    rdfs:subClassOf :Acoustic_Annotation .
 
 :Full_Video_Creation a owl:Class ;
     rdfs:label "Full Video Creation"@en ;
@@ -125,7 +146,7 @@ dc:title a owl:AnnotationProperty ;
             owl:someValuesFrom :Smartphone ],
         lrmoo:F28_Expression_Creation .
 
-:Full_Video_mp4 a owl:Class ;
+:Full_Video_Manifestation a owl:Class ;
     rdfs:label "Full Video Manifestation"@en ;
     dc:title "Full Video Manifestation"@en ;
     rdfs:comment "Manifestation of a Full Video in mp4 file format."@en ;
@@ -134,6 +155,13 @@ dc:title a owl:AnnotationProperty ;
             owl:onProperty lrmoo:R4_embodies ;
             owl:someValuesFrom :Full_Video ],
         lrmoo:F3_Manifestation .
+
+:Pitch_Annotation a owl:Class ;
+    rdfs:label "F0 Annotation"@en ;
+    dc:title "F0 Annotation"@en ;
+    rdfs:comment "Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Acoustic_Annotation .
 
 :Story_Creation a owl:Class ;
     rdfs:label "Anonymized Video Creation"@en ;
@@ -154,17 +182,49 @@ dc:title a owl:AnnotationProperty ;
             owl:someValuesFrom :Software_Based_On_LLM ],
         lrmoo:F28_Expression_Creation .
 
-:Story_mp4 a owl:Class ;
+:Story_Manifestation a owl:Class ;
     rdfs:label "Anonymized Video Manifestation"@en ;
-    dc:title "Anonymized Video Manifestation"@en ;
-    rdfs:comment "Manifestation of an Anonymized Video in mp4 file format."@en ;
+    dc:title "Story Manifestation"@en ;
+    rdfs:comment "Manifestation of a Story in mp4 file format."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty lrmoo:R4_embodies ;
             owl:someValuesFrom :Story ],
         lrmoo:F3_Manifestation .
 
+:pitch_ceiling a owl:DatatypeProperty ;
+    rdfs:label "pitch ceiling"@en ;
+    dc:title "pitch ceiling"@en ;
+    rdfs:comment "Upper bound of the F0 search range used in the Praat analysis, in Hz."@en ;
+    rdfs:domain :Automatic_Acoustic_Analysis ;
+    rdfs:isDefinedBy : ;
+    rdfs:range xsd:decimal .
+
+:pitch_floor a owl:DatatypeProperty ;
+    rdfs:label "pitch floor"@en ;
+    dc:title "pitch floor"@en ;
+    rdfs:comment "Lower bound of the F0 search range used in the Praat analysis, in Hz."@en ;
+    rdfs:domain :Automatic_Acoustic_Analysis ;
+    rdfs:isDefinedBy : ;
+    rdfs:range xsd:decimal .
+
+:time_step a owl:DatatypeProperty ;
+    rdfs:label "time step"@en ;
+    dc:title "time step"@en ;
+    rdfs:comment "Time step between analysis frames used in the Praat analysis, in seconds."@en ;
+    rdfs:domain :Automatic_Acoustic_Analysis ;
+    rdfs:isDefinedBy : ;
+    rdfs:range xsd:decimal .
+
 cidoc-crm:P107_has_current_member a owl:ObjectProperty .
+
+:Acoustic_Annotation_Body a owl:Class ;
+    rdfs:label "Acoustic Annotation Body"@en ;
+    dc:title "Acoustic Annotation Body"@en ;
+    rdfs:comment "Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf crmdig:D1_Digital_Object,
+        :Annotation_Body .
 
 :Age_Of_The_Participants a owl:Class ;
     rdfs:label "Age of the Participants"@en ;
@@ -178,30 +238,6 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
                     owl:withRestrictions ( [ xsd:minInclusive 18 ] [ xsd:maxInclusive 65 ] ) ] ],
         cidoc-crm:E54_Dimension .
 
-:Annotation a owl:Class ;
-    rdfs:label "Annotation"@en ;
-    dc:title "Annotation "@en ;
-    rdfs:comment "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"@en ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty crmdig:L43_annotates ;
-            owl:someValuesFrom :Anonymized_Story ],
-        [ a owl:Restriction ;
-            owl:onProperty oa:hasBody ;
-            owl:someValuesFrom :Annotation_Body ],
-        [ a owl:Restriction ;
-            owl:onProperty oa:hasTarget ;
-            owl:someValuesFrom :Anonymized_Story_Segment ],
-        crmdig:D29_Annotation_Object,
-        oa:Annotation .
-
-:Annotation_Body a owl:Class ;
-    rdfs:label "Annotation Body"@en ;
-    dc:title "Annotation Body"@en ;
-    rdfs:comment "Content of the annotation, e.g. the transcribed text of the segment." ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf oa:TextualBody .
-
 :Anonymized_Story_Segment a owl:Class ;
     rdfs:label "Segment of Anonymized Story"@en ;
     dc:title "Segment of Anonymized Story"@en ;
@@ -210,6 +246,7 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty oa:hasSelector ;
             owl:someValuesFrom :Media_Fragment_Selector ],
+        :Media_Segment,
         oa:SpecificResource .
 
 :Duration_Of_Full_Video a owl:Class ;
@@ -221,6 +258,13 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
             owl:onProperty cidoc-crm:P90_has_value ;
             owl:someValuesFrom xsd:duration ],
         cidoc-crm:E54_Dimension .
+
+:Glossing_Body a owl:Class ;
+    rdfs:label "Glossing Body"@en ;
+    dc:title "Glossing Body"@en ;
+    rdfs:comment "Interlinear gloss of a segment, produced automatically from its transcription."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Textual_Annotation_Body .
 
 :Group_Of_Participants a owl:Class ;
     rdfs:label "Group of Participants"@en ;
@@ -237,16 +281,6 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
             owl:onProperty cidoc-crm:P43_has_dimension ;
             owl:someValuesFrom :Number_of_Participants ],
         cidoc-crm:E74_Group .
-
-:Media_Fragment_Selector a owl:Class ;
-    rdfs:label "Media Fragment Selector"@en ;
-    dc:title "Media Fragment Selector"@en ;
-    rdfs:comment "Media Fragment URI selecting the segment, e.g. t=723,767." ;
-    rdfs:isDefinedBy : ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty rdf:value ;
-            owl:someValuesFrom xsd:duration ],
-        oa:FragmentSelector .
 
 :Number_of_Participants a owl:Class ;
     rdfs:label "Number of Participants"@en ;
@@ -265,12 +299,26 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
     rdfs:isDefinedBy : ;
     rdfs:subClassOf cidoc-crm:E53_Place .
 
+:Praat a owl:Class ;
+    rdfs:label "Praat"@en ;
+    dc:title "Praat"@en ;
+    rdfs:comment "Praat software used for the acoustic analysis (pitch, amplitude, frequency). Use one individual per version."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf crmdig:D14_Software .
+
 :Smartphone a owl:Class ;
     rdfs:label "Smartphone"@en ;
     dc:title "Smartphone"@en ;
     rdfs:comment "Digital device (smartphone) used to record the Full Video."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf crmdig:D8_Digital_Device .
+
+:Story_Segment a owl:Class ;
+    rdfs:label "Segment of Story"@en ;
+    dc:title "Segment of Story"@en ;
+    rdfs:comment "Temporal segment of a Story (the source of the Anonymized Story, i.e. before voice and body anonymisation), e.g. 00:12:03-00:12:47."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Media_Segment .
 
 :Storytel_AI_Assisted_Pipeline a owl:Class ;
     rdfs:label "Storytel AI-assisted pipeline"@en ;
@@ -292,6 +340,20 @@ cidoc-crm:P107_has_current_member a owl:ObjectProperty .
     rdfs:comment "Actor (student) who records the Full Video."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf cidoc-crm:E39_Actor .
+
+:Transcription_Body a owl:Class ;
+    rdfs:label "Transcription Body"@en ;
+    dc:title "Transcription Body"@en ;
+    rdfs:comment "Text of the automatic transcription of a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Textual_Annotation_Body .
+
+:Translation_Body a owl:Class ;
+    rdfs:label "Translation Body"@en ;
+    dc:title "Translation Body"@en ;
+    rdfs:comment "Text of the automatic translation of a segment. Its target language is given with P72 has language."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Textual_Annotation_Body .
 
 type:Anonymized_Story a cidoc-crm:E55_Type,
         owl:NamedIndividual ;
@@ -332,34 +394,10 @@ oa:FragmentSelector a owl:Class ;
     rdfs:comment "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."@en ;
     rdfs:isDefinedBy oa: .
 
-oa:SpecificResource a owl:Class ;
-    rdfs:label "Specific Resource"@en ;
-    dc:title "Specific Resource"@en ;
-    rdfs:comment "Web Annotation class: a part or a particular state of a resource, identified through a source and a selector."@en ;
-    rdfs:isDefinedBy oa: .
-
 oa:TextualBody a owl:Class ;
     rdfs:label "Textual Body"@en ;
     dc:title "Textual Body"@en ;
     rdfs:comment "Web Annotation class: an embedded textual resource used as the body of an Annotation."@en ;
-    rdfs:isDefinedBy oa: .
-
-oa:hasBody a owl:ObjectProperty ;
-    rdfs:label "has body"@en ;
-    dc:title "has body"@en ;
-    rdfs:comment "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."@en ;
-    rdfs:isDefinedBy oa: .
-
-oa:hasSelector a owl:ObjectProperty ;
-    rdfs:label "has selector"@en ;
-    dc:title "has selector"@en ;
-    rdfs:comment "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."@en ;
-    rdfs:isDefinedBy oa: .
-
-oa:hasTarget a owl:ObjectProperty ;
-    rdfs:label "has target"@en ;
-    dc:title "has target"@en ;
-    rdfs:comment "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en ;
     rdfs:isDefinedBy oa: .
 
 :End_Of_The_Full_Video a owl:Class ;
@@ -372,6 +410,29 @@ oa:hasTarget a owl:ObjectProperty ;
             owl:someValuesFrom xsd:time ],
         cidoc-crm:E54_Dimension .
 
+:Glossing_Annotation a owl:Class ;
+    rdfs:label "Glossing Annotation"@en ;
+    dc:title "Glossing Annotation"@en ;
+    rdfs:comment "Annotation whose body is the interlinear gloss of a segment of an Anonymized Story, based on the transcription of that segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :is_based_on_transcription ;
+            owl:someValuesFrom :Transcription_Annotation ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Glossing_Body ],
+        :Textual_Annotation .
+
+:Media_Fragment_Selector a owl:Class ;
+    rdfs:label "Media Fragment Selector"@en ;
+    dc:title "Media Fragment Selector"@en ;
+    rdfs:comment "Media Fragment URI selecting the segment, e.g. t=723,767." ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty rdf:value ;
+            owl:someValuesFrom xsd:duration ],
+        oa:FragmentSelector .
+
 :Start_Of_The_Full_Video a owl:Class ;
     rdfs:label "Start of the Anonymized Story"@en ;
     dc:title "Start of the Anonymized Story"@en ;
@@ -382,7 +443,90 @@ oa:hasTarget a owl:ObjectProperty ;
             owl:someValuesFrom xsd:time ],
         cidoc-crm:E54_Dimension .
 
+:Translation_Annotation a owl:Class ;
+    rdfs:label "Translation Annotation"@en ;
+    dc:title "Translation Annotation"@en ;
+    rdfs:comment "Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :is_based_on_transcription ;
+            owl:someValuesFrom :Transcription_Annotation ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Translation_Body ],
+        :Textual_Annotation .
+
+:is_based_on_transcription a owl:ObjectProperty ;
+    rdfs:label "is based on transcription"@en ;
+    dc:title "is based on transcription"@en ;
+    rdfs:comment "Links a translation or glossing annotation to the transcription annotation it was derived from."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Glossing_Annotation :Translation_Annotation ) ] ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :Transcription_Annotation .
+
+xsd:duration a rdfs:Datatype .
+
 xsd:time a rdfs:Datatype .
+
+oa:SpecificResource a owl:Class ;
+    rdfs:label "Specific Resource"@en ;
+    dc:title "Specific Resource"@en ;
+    rdfs:comment "Web Annotation class: a part or a particular state of a resource, identified through a source and a selector."@en ;
+    rdfs:isDefinedBy oa: .
+
+oa:hasSelector a owl:ObjectProperty ;
+    rdfs:label "has selector"@en ;
+    dc:title "has selector"@en ;
+    rdfs:comment "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."@en ;
+    rdfs:isDefinedBy oa: .
+
+:Annotation a owl:Class ;
+    rdfs:label "Annotation"@en ;
+    dc:title "Annotation "@en ;
+    rdfs:comment "Annotation object attached to a segment of a Story or of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline"@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L43_annotates ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( :Anonymized_Story :Story ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Annotation_Body ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasTarget ;
+            owl:someValuesFrom :Media_Segment ],
+        crmdig:D29_Annotation_Object,
+        oa:Annotation .
+
+:Annotation_Body a owl:Class ;
+    rdfs:label "Annotation Body"@en ;
+    dc:title "Annotation Body"@en ;
+    rdfs:comment "Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis)." ;
+    rdfs:isDefinedBy : .
+
+:Automatic_Acoustic_Analysis a owl:Class ;
+    rdfs:label "Automatic Acoustic Analysis"@en ;
+    dc:title "Automatic Acoustic Analysis"@en ;
+    rdfs:comment "Automatic annotation event in which the pipeline runs Praat on a segment of the Story to produce acoustic annotations."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Praat ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L48_created_annotation ;
+            owl:someValuesFrom :Acoustic_Annotation ],
+        :Automatic_Annotation .
+
+:Media_Segment a owl:Class ;
+    rdfs:label "Media Segment"@en ;
+    dc:title "Media Segment"@en ;
+    rdfs:comment "Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty oa:hasSelector ;
+            owl:someValuesFrom :Media_Fragment_Selector ],
+        oa:SpecificResource .
 
 :Software_Based_On_LLM a owl:Class ;
     rdfs:label "LLM Software"@en ;
@@ -391,32 +535,83 @@ xsd:time a rdfs:Datatype .
     rdfs:isDefinedBy : ;
     rdfs:subClassOf crmdig:D14_Software .
 
-xsd:duration a rdfs:Datatype .
+xsd:decimal a rdfs:Datatype .
 
-:Anonymized_Story a owl:Class ;
-    rdfs:label "Anonymized Story"@en ;
-    dc:title "Anonymized Story"@en ;
-    rdfs:comment "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." ;
+oa:hasTarget a owl:ObjectProperty ;
+    rdfs:label "has target"@en ;
+    dc:title "has target"@en ;
+    rdfs:comment "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."@en ;
+    rdfs:isDefinedBy oa: .
+
+:Acoustic_Annotation a owl:Class ;
+    rdfs:label "Acoustic Annotation"@en ;
+    dc:title "Acoustic Annotation"@en ;
+    rdfs:comment "Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy."@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty lrmoo:R76_is_derivative_of ;
+            owl:onProperty crmdig:L43_annotates ;
             owl:someValuesFrom :Story ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P43_has_dimension ;
-            owl:someValuesFrom :End_Of_The_Full_Video ],
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Acoustic_Annotation_Body ],
         [ a owl:Restriction ;
-            owl:onProperty cidoc-crm:P43_has_dimension ;
-            owl:someValuesFrom :Start_Of_The_Full_Video ],
-        [ a owl:Restriction ;
+            owl:onProperty oa:hasTarget ;
+            owl:someValuesFrom :Story_Segment ],
+        :Annotation ;
+    owl:disjointWith :Textual_Annotation .
+
+:Automatic_Annotation a owl:Class ;
+    rdfs:label "Automatic Annotation"@en ;
+    dc:title "Automatic Annotation"@en ;
+    rdfs:comment "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty crmdig:L23_used_software_or_firmware ;
-            owl:someValuesFrom :Software_Based_On_LLM ],
+            owl:someValuesFrom :Storytel_AI_Assisted_Pipeline ],
         [ a owl:Restriction ;
-            owl:hasValue type:Anonymized_Story ;
-            owl:onProperty cidoc-crm:P2_has_type ],
-        lrmoo:F2_Expression,
-        crmdig:D1_Digital_Object ;
-    owl:disjointWith [ a owl:Class ;
-            owl:unionOf ( :Full_Video :Story ) ] .
+            owl:onProperty crmdig:L48_created_annotation ;
+            owl:someValuesFrom :Annotation ],
+        crmdig:D30_Annotation_Event .
+
+:Textual_Annotation a owl:Class ;
+    rdfs:label "Textual Annotation"@en ;
+    dc:title "Textual Annotation"@en ;
+    rdfs:comment "Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L43_annotates ;
+            owl:someValuesFrom :Anonymized_Story ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Textual_Annotation_Body ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasTarget ;
+            owl:someValuesFrom :Anonymized_Story_Segment ],
+        :Annotation .
+
+:Textual_Annotation_Body a owl:Class ;
+    rdfs:label "Textual Annotation Body"@en ;
+    dc:title "Textual Annotation Body"@en ;
+    rdfs:comment "Annotation body consisting of text (transcription, translation or glossing)."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Annotation_Body,
+        oa:TextualBody .
+
+:Transcription_Annotation a owl:Class ;
+    rdfs:label "Transcription Annotation"@en ;
+    dc:title "Transcription Annotation"@en ;
+    rdfs:comment "Annotation whose body is the transcription of a segment of an Anonymized Story."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Transcription_Body ],
+        :Textual_Annotation .
+
+oa:hasBody a owl:ObjectProperty ;
+    rdfs:label "has body"@en ;
+    dc:title "has body"@en ;
+    rdfs:comment "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."@en ;
+    rdfs:isDefinedBy oa: .
 
 :Full_Video a owl:Class ;
     rdfs:label "Full Video"@en ;
@@ -442,6 +637,31 @@ xsd:duration a rdfs:Datatype .
         crmdig:D1_Digital_Object ;
     owl:disjointWith [ a owl:Class ;
             owl:unionOf ( :Anonymized_Story :Story ) ] .
+
+:Anonymized_Story a owl:Class ;
+    rdfs:label "Anonymized Story"@en ;
+    dc:title "Anonymized Story"@en ;
+    rdfs:comment "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body." ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty lrmoo:R76_is_derivative_of ;
+            owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :End_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty cidoc-crm:P43_has_dimension ;
+            owl:someValuesFrom :Start_Of_The_Full_Video ],
+        [ a owl:Restriction ;
+            owl:onProperty crmdig:L23_used_software_or_firmware ;
+            owl:someValuesFrom :Software_Based_On_LLM ],
+        [ a owl:Restriction ;
+            owl:hasValue type:Anonymized_Story ;
+            owl:onProperty cidoc-crm:P2_has_type ],
+        lrmoo:F2_Expression,
+        crmdig:D1_Digital_Object ;
+    owl:disjointWith [ a owl:Class ;
+            owl:unionOf ( :Full_Video :Story ) ] .
 
 :Story a owl:Class ;
     rdfs:label "Anonymized Video"@en ;

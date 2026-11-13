@@ -1,0 +1,14 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Acoustic_Annotation_Body a owl:Class ;
+    rdfs:label "Acoustic Annotation Body"@en ;
+    dc:title "Acoustic Annotation Body"@en ;
+    rdfs:comment "Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf crmdig:D1_Digital_Object,
+        :Annotation_Body .
+

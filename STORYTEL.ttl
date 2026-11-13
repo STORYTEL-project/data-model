@@ -62,6 +62,10 @@
 #    Datatypes
 #################################################################
 
+###  http://www.w3.org/2001/XMLSchema#decimal
+xsd:decimal rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#duration
 xsd:duration rdf:type rdfs:Datatype .
 
@@ -76,6 +80,20 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member
 cidoc-crm:P107_has_current_member rdf:type owl:ObjectProperty .
+
+
+###  http://www.purl.org/storytel/is_based_on_transcription
+:is_based_on_transcription rdf:type owl:ObjectProperty ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( :Glossing_Annotation
+                                                       :Translation_Annotation
+                                                     )
+                                       ] ;
+                           rdfs:range :Transcription_Annotation ;
+                           <http://purl.org/dc/elements/1.1/title> "is based on transcription"@en ;
+                           rdfs:comment "Links a translation or glossing annotation to the transcription annotation it was derived from."@en ;
+                           rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                           rdfs:label "is based on transcription"@en .
 
 
 ###  http://www.w3.org/ns/oa#hasBody
@@ -106,6 +124,36 @@ oa:hasTarget rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://www.purl.org/storytel/pitch_ceiling
+:pitch_ceiling rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Automatic_Acoustic_Analysis ;
+               rdfs:range xsd:decimal ;
+               <http://purl.org/dc/elements/1.1/title> "pitch ceiling"@en ;
+               rdfs:comment "Upper bound of the F0 search range used in the Praat analysis, in Hz."@en ;
+               rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+               rdfs:label "pitch ceiling"@en .
+
+
+###  http://www.purl.org/storytel/pitch_floor
+:pitch_floor rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Automatic_Acoustic_Analysis ;
+             rdfs:range xsd:decimal ;
+             <http://purl.org/dc/elements/1.1/title> "pitch floor"@en ;
+             rdfs:comment "Lower bound of the F0 search range used in the Praat analysis, in Hz."@en ;
+             rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+             rdfs:label "pitch floor"@en .
+
+
+###  http://www.purl.org/storytel/time_step
+:time_step rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Automatic_Acoustic_Analysis ;
+           rdfs:range xsd:decimal ;
+           <http://purl.org/dc/elements/1.1/title> "time step"@en ;
+           rdfs:comment "Time step between analysis frames used in the Praat analysis, in seconds."@en ;
+           rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+           rdfs:label "time step"@en .
+
+
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
 rdf:value rdf:type owl:DatatypeProperty ;
           <http://purl.org/dc/elements/1.1/title> "value"@en ;
@@ -117,6 +165,38 @@ rdf:value rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.purl.org/storytel/Acoustic_Annotation
+:Acoustic_Annotation rdf:type owl:Class ;
+                     rdfs:subClassOf :Annotation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty crmdig:L43_annotates ;
+                                       owl:someValuesFrom :Story
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty oa:hasBody ;
+                                       owl:someValuesFrom :Acoustic_Annotation_Body
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty oa:hasTarget ;
+                                       owl:someValuesFrom :Story_Segment
+                                     ] ;
+                     owl:disjointWith :Textual_Annotation ;
+                     <http://purl.org/dc/elements/1.1/title> "Acoustic Annotation"@en ;
+                     rdfs:comment "Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy."@en ;
+                     rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                     rdfs:label "Acoustic Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Acoustic_Annotation_Body
+:Acoustic_Annotation_Body rdf:type owl:Class ;
+                          rdfs:subClassOf crmdig:D1_Digital_Object ,
+                                          :Annotation_Body ;
+                          <http://purl.org/dc/elements/1.1/title> "Acoustic Annotation Body"@en ;
+                          rdfs:comment "Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification."@en ;
+                          rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                          rdfs:label "Acoustic Annotation Body"@en .
+
 
 ###  http://www.purl.org/storytel/Age_Of_The_Participants
 :Age_Of_The_Participants rdf:type owl:Class ;
@@ -138,6 +218,15 @@ rdf:value rdf:type owl:DatatypeProperty ;
                          rdfs:label "Age of the Participants"@en .
 
 
+###  http://www.purl.org/storytel/Amplitude_Annotation
+:Amplitude_Annotation rdf:type owl:Class ;
+                      rdfs:subClassOf :Acoustic_Annotation ;
+                      <http://purl.org/dc/elements/1.1/title> "Amplitude Annotation"@en ;
+                      rdfs:comment "Acoustic annotation holding the Amplitude (waveform) of a segment."@en ;
+                      rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                      rdfs:label "Amplitude Annotation"@en .
+
+
 ###  http://www.purl.org/storytel/Annotation
 :Annotation rdf:type owl:Class ;
             rdfs:subClassOf crmdig:D29_Annotation_Object ,
@@ -152,19 +241,18 @@ rdf:value rdf:type owl:DatatypeProperty ;
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty oa:hasTarget ;
-                              owl:someValuesFrom :Anonymized_Story_Segment
+                              owl:someValuesFrom :Media_Segment
                             ] ;
             <http://purl.org/dc/elements/1.1/title> "Annotation "@en ;
-            rdfs:comment "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"@en ;
+            rdfs:comment "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline"@en ;
             rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
             rdfs:label "Annotation"@en .
 
 
 ###  http://www.purl.org/storytel/Annotation_Body
 :Annotation_Body rdf:type owl:Class ;
-                 rdfs:subClassOf oa:TextualBody ;
                  <http://purl.org/dc/elements/1.1/title> "Annotation Body"@en ;
-                 rdfs:comment "Content of the annotation, e.g. the transcribed text of the segment." ;
+                 rdfs:comment "Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis)." ;
                  rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                  rdfs:label "Annotation Body"@en .
 
@@ -232,7 +320,8 @@ rdf:value rdf:type owl:DatatypeProperty ;
 
 ###  http://www.purl.org/storytel/Anonymized_Story_Segment
 :Anonymized_Story_Segment rdf:type owl:Class ;
-                          rdfs:subClassOf oa:SpecificResource ,
+                          rdfs:subClassOf :Media_Segment ,
+                                          oa:SpecificResource ,
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty oa:hasSelector ;
                                             owl:someValuesFrom :Media_Fragment_Selector
@@ -243,8 +332,8 @@ rdf:value rdf:type owl:DatatypeProperty ;
                           rdfs:label "Segment of Anonymized Story"@en .
 
 
-###  http://www.purl.org/storytel/Anonymized_Story_mp4
-:Anonymized_Story_mp4 rdf:type owl:Class ;
+###  http://www.purl.org/storytel/Anonymized_Story_Manifestation
+:Anonymized_Story_Manifestation rdf:type owl:Class ;
                       rdfs:subClassOf lrmoo:F3_Manifestation ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty lrmoo:R4_embodies ;
@@ -254,6 +343,23 @@ rdf:value rdf:type owl:DatatypeProperty ;
                       rdfs:comment "Manifestation of an Anonymized Story in mp4 file format."@en ;
                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                       rdfs:label "Anonymized Story Manifestation"@en .
+
+
+###  http://www.purl.org/storytel/Automatic_Acoustic_Analysis
+:Automatic_Acoustic_Analysis rdf:type owl:Class ;
+                             rdfs:subClassOf :Automatic_Annotation ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty crmdig:L23_used_software_or_firmware ;
+                                               owl:someValuesFrom :Praat
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty crmdig:L48_created_annotation ;
+                                               owl:someValuesFrom :Acoustic_Annotation
+                                             ] ;
+                             <http://purl.org/dc/elements/1.1/title> "Automatic Acoustic Analysis"@en ;
+                             rdfs:comment "Automatic annotation event in which the pipeline runs Praat on a segment of the Story to produce acoustic annotations."@en ;
+                             rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                             rdfs:label "Automatic Acoustic Analysis"@en .
 
 
 ###  http://www.purl.org/storytel/Automatic_Annotation
@@ -271,6 +377,45 @@ rdf:value rdf:type owl:DatatypeProperty ;
                       rdfs:comment "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."@en ;
                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                       rdfs:label "Automatic Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Automatic_Glossing
+:Automatic_Glossing rdf:type owl:Class ;
+                    rdfs:subClassOf :Automatic_Annotation ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty crmdig:L48_created_annotation ;
+                                      owl:someValuesFrom :Glossing_Annotation
+                                    ] ;
+                    <http://purl.org/dc/elements/1.1/title> "Automatic Glossing"@en ;
+                    rdfs:comment "Automatic annotation event in which the pipeline glosses a segment."@en ;
+                    rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                    rdfs:label "Automatic Glossing"@en .
+
+
+###  http://www.purl.org/storytel/Automatic_Transcription
+:Automatic_Transcription rdf:type owl:Class ;
+                         rdfs:subClassOf :Automatic_Annotation ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty crmdig:L48_created_annotation ;
+                                           owl:someValuesFrom :Transcription_Annotation
+                                         ] ;
+                         <http://purl.org/dc/elements/1.1/title> "Automatic Transcription"@en ;
+                         rdfs:comment "Automatic annotation event in which the pipeline transcribes a segment."@en ;
+                         rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                         rdfs:label "Automatic Transcription"@en .
+
+
+###  http://www.purl.org/storytel/Automatic_Translation
+:Automatic_Translation rdf:type owl:Class ;
+                       rdfs:subClassOf :Automatic_Annotation ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty crmdig:L48_created_annotation ;
+                                         owl:someValuesFrom :Translation_Annotation
+                                       ] ;
+                       <http://purl.org/dc/elements/1.1/title> "Automatic Translation"@en ;
+                       rdfs:comment "Automatic annotation event in which the pipeline translates a segment."@en ;
+                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                       rdfs:label "Automatic Translation"@en .
 
 
 ###  http://www.purl.org/storytel/Conversational_Storytelling_Session
@@ -307,19 +452,6 @@ rdf:value rdf:type owl:DatatypeProperty ;
                         rdfs:label "Duration of Full Video"@en .
 
 
-###  http://www.purl.org/storytel/Duration_Of_The_Story
-:Duration_Of_The_Story rdf:type owl:Class ;
-                       rdfs:subClassOf cidoc-crm:E54_Dimension ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty cidoc-crm:P90_has_value ;
-                                         owl:someValuesFrom xsd:duration
-                                       ] ;
-                       <http://purl.org/dc/elements/1.1/title> "Duration of the Story"@en ;
-                       rdfs:comment "Dimension expressing the duration of a Story (clip), as an xsd:duration value."@en ;
-                       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
-                       rdfs:label "Duration of the Story"@en .
-
-
 ###  http://www.purl.org/storytel/End_Of_The_Full_Video
 :End_Of_The_Full_Video rdf:type owl:Class ;
                        rdfs:subClassOf cidoc-crm:E54_Dimension ,
@@ -331,6 +463,15 @@ rdf:value rdf:type owl:DatatypeProperty ;
                        rdfs:comment "Dimension expressing the end time of an Anonymized Story, as an xsd:time value."@en ;
                        rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                        rdfs:label "End of the Anonymized Story"@en .
+
+
+###  http://www.purl.org/storytel/Frequency_Annotation
+:Frequency_Annotation rdf:type owl:Class ;
+                      rdfs:subClassOf :Acoustic_Annotation ;
+                      <http://purl.org/dc/elements/1.1/title> "Frequency Annotation"@en ;
+                      rdfs:comment "Acoustic annotation holding the Frequency of a segment."@en ;
+                      rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                      rdfs:label "Frequency Annotation"@en .
 
 
 ###  http://www.purl.org/storytel/Full_Video
@@ -397,8 +538,8 @@ rdf:value rdf:type owl:DatatypeProperty ;
                      rdfs:label "Full Video Creation"@en .
 
 
-###  http://www.purl.org/storytel/Full_Video_mp4
-:Full_Video_mp4 rdf:type owl:Class ;
+###  http://www.purl.org/storytel/Full_Video_Manifestation
+:Full_Video_Manifestation rdf:type owl:Class ;
                 rdfs:subClassOf lrmoo:F3_Manifestation ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty lrmoo:R4_embodies ;
@@ -408,6 +549,32 @@ rdf:value rdf:type owl:DatatypeProperty ;
                 rdfs:comment "Manifestation of a Full Video in mp4 file format."@en ;
                 rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                 rdfs:label "Full Video Manifestation"@en .
+
+
+###  http://www.purl.org/storytel/Glossing_Annotation
+:Glossing_Annotation rdf:type owl:Class ;
+                     rdfs:subClassOf :Textual_Annotation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :is_based_on_transcription ;
+                                       owl:someValuesFrom :Transcription_Annotation
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty oa:hasBody ;
+                                       owl:someValuesFrom :Glossing_Body
+                                     ] ;
+                     <http://purl.org/dc/elements/1.1/title> "Glossing Annotation"@en ;
+                     rdfs:comment "Annotation whose body is the interlinear gloss of a segment of an Anonymized Story, based on the transcription of that segment."@en ;
+                     rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                     rdfs:label "Glossing Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Glossing_Body
+:Glossing_Body rdf:type owl:Class ;
+               rdfs:subClassOf :Textual_Annotation_Body ;
+               <http://purl.org/dc/elements/1.1/title> "Glossing Body"@en ;
+               rdfs:comment "Interlinear gloss of a segment, produced automatically from its transcription."@en ;
+               rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+               rdfs:label "Glossing Body"@en .
 
 
 ###  http://www.purl.org/storytel/Group_Of_Participants
@@ -444,6 +611,19 @@ rdf:value rdf:type owl:DatatypeProperty ;
                          rdfs:label "Media Fragment Selector"@en .
 
 
+###  http://www.purl.org/storytel/Media_Segment
+:Media_Segment rdf:type owl:Class ;
+               rdfs:subClassOf oa:SpecificResource ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty oa:hasSelector ;
+                                 owl:someValuesFrom :Media_Fragment_Selector
+                               ] ;
+               <http://purl.org/dc/elements/1.1/title> "Media Segment"@en ;
+               rdfs:comment "Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story."@en ;
+               rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+               rdfs:label "Media Segment"@en .
+
+
 ###  http://www.purl.org/storytel/Number_of_Participants
 :Number_of_Participants rdf:type owl:Class ;
                         rdfs:subClassOf cidoc-crm:E54_Dimension ,
@@ -457,6 +637,15 @@ rdf:value rdf:type owl:DatatypeProperty ;
                         rdfs:label "Number of Participants"@en .
 
 
+###  http://www.purl.org/storytel/Pitch_Annotation
+:Pitch_Annotation rdf:type owl:Class ;
+                  rdfs:subClassOf :Acoustic_Annotation ;
+                  <http://purl.org/dc/elements/1.1/title> "F0 Annotation"@en ;
+                  rdfs:comment "Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment."@en ;
+                  rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                  rdfs:label "F0 Annotation"@en .
+
+
 ###  http://www.purl.org/storytel/Place_Of_Recording
 :Place_Of_Recording rdf:type owl:Class ;
                     rdfs:subClassOf cidoc-crm:E53_Place ;
@@ -464,6 +653,15 @@ rdf:value rdf:type owl:DatatypeProperty ;
                     rdfs:comment "Place where a Full Video is recorded."@en ;
                     rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                     rdfs:label "Place of Recording"@en .
+
+
+###  http://www.purl.org/storytel/Praat
+:Praat rdf:type owl:Class ;
+       rdfs:subClassOf crmdig:D14_Software ;
+       <http://purl.org/dc/elements/1.1/title> "Praat"@en ;
+       rdfs:comment "Praat software used for the acoustic analysis (pitch, amplitude, frequency). Use one individual per version."@en ;
+       rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+       rdfs:label "Praat"@en .
 
 
 ###  http://www.purl.org/storytel/Smartphone
@@ -545,15 +743,24 @@ rdf:value rdf:type owl:DatatypeProperty ;
                 rdfs:label "Anonymized Video Creation"@en .
 
 
-###  http://www.purl.org/storytel/Story_mp4
-:Story_mp4 rdf:type owl:Class ;
+###  http://www.purl.org/storytel/Story_Segment
+:Story_Segment rdf:type owl:Class ;
+               rdfs:subClassOf :Media_Segment ;
+               <http://purl.org/dc/elements/1.1/title> "Segment of Story"@en ;
+               rdfs:comment "Temporal segment of a Story (the source of the Anonymized Story, i.e. before voice and body anonymisation), e.g. 00:12:03-00:12:47."@en ;
+               rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+               rdfs:label "Segment of Story"@en .
+
+
+###  http://www.purl.org/storytel/Story_Manifestation
+:Story_Manifestation rdf:type owl:Class ;
            rdfs:subClassOf lrmoo:F3_Manifestation ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty lrmoo:R4_embodies ;
                              owl:someValuesFrom :Story
                            ] ;
-           <http://purl.org/dc/elements/1.1/title> "Anonymized Video Manifestation"@en ;
-           rdfs:comment "Manifestation of an Anonymized Video in mp4 file format."@en ;
+           <http://purl.org/dc/elements/1.1/title> "Story Manifestation"@en ;
+           rdfs:comment "Manifestation of a Story in mp4 file format."@en ;
            rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
            rdfs:label "Anonymized Video Manifestation"@en .
 
@@ -583,6 +790,85 @@ rdf:value rdf:type owl:DatatypeProperty ;
                    rdfs:comment "Actor (student) who records the Full Video."@en ;
                    rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
                    rdfs:label "Student Recording"@en .
+
+
+###  http://www.purl.org/storytel/Textual_Annotation
+:Textual_Annotation rdf:type owl:Class ;
+                    rdfs:subClassOf :Annotation ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty crmdig:L43_annotates ;
+                                      owl:someValuesFrom :Anonymized_Story
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty oa:hasBody ;
+                                      owl:someValuesFrom :Textual_Annotation_Body
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty oa:hasTarget ;
+                                      owl:someValuesFrom :Anonymized_Story_Segment
+                                    ] ;
+                    <http://purl.org/dc/elements/1.1/title> "Textual Annotation"@en ;
+                    rdfs:comment "Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story."@en ;
+                    rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                    rdfs:label "Textual Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Textual_Annotation_Body
+:Textual_Annotation_Body rdf:type owl:Class ;
+                         rdfs:subClassOf :Annotation_Body ,
+                                         oa:TextualBody ;
+                         <http://purl.org/dc/elements/1.1/title> "Textual Annotation Body"@en ;
+                         rdfs:comment "Annotation body consisting of text (transcription, translation or glossing)."@en ;
+                         rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                         rdfs:label "Textual Annotation Body"@en .
+
+
+###  http://www.purl.org/storytel/Transcription_Annotation
+:Transcription_Annotation rdf:type owl:Class ;
+                          rdfs:subClassOf :Textual_Annotation ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty oa:hasBody ;
+                                            owl:someValuesFrom :Transcription_Body
+                                          ] ;
+                          <http://purl.org/dc/elements/1.1/title> "Transcription Annotation"@en ;
+                          rdfs:comment "Annotation whose body is the transcription of a segment of an Anonymized Story."@en ;
+                          rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                          rdfs:label "Transcription Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Transcription_Body
+:Transcription_Body rdf:type owl:Class ;
+                    rdfs:subClassOf :Textual_Annotation_Body ;
+                    <http://purl.org/dc/elements/1.1/title> "Transcription Body"@en ;
+                    rdfs:comment "Text of the automatic transcription of a segment."@en ;
+                    rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                    rdfs:label "Transcription Body"@en .
+
+
+###  http://www.purl.org/storytel/Translation_Annotation
+:Translation_Annotation rdf:type owl:Class ;
+                        rdfs:subClassOf :Textual_Annotation ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :is_based_on_transcription ;
+                                          owl:someValuesFrom :Transcription_Annotation
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty oa:hasBody ;
+                                          owl:someValuesFrom :Translation_Body
+                                        ] ;
+                        <http://purl.org/dc/elements/1.1/title> "Translation Annotation"@en ;
+                        rdfs:comment "Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment."@en ;
+                        rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                        rdfs:label "Translation Annotation"@en .
+
+
+###  http://www.purl.org/storytel/Translation_Body
+:Translation_Body rdf:type owl:Class ;
+                  rdfs:subClassOf :Textual_Annotation_Body ;
+                  <http://purl.org/dc/elements/1.1/title> "Translation Body"@en ;
+                  rdfs:comment "Text of the automatic translation of a segment. Its target language is given with P72 has language."@en ;
+                  rdfs:isDefinedBy <http://www.purl.org/storytel/> ;
+                  rdfs:label "Translation Body"@en .
 
 
 ###  http://www.w3.org/ns/oa#Annotation

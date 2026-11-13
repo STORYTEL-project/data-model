@@ -1,0 +1,15 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:is_based_on_transcription a owl:ObjectProperty ;
+    rdfs:label "is based on transcription"@en ;
+    dc:title "is based on transcription"@en ;
+    rdfs:comment "Links a translation or glossing annotation to the transcription annotation it was derived from."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Glossing_Annotation :Translation_Annotation ) ] ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :Transcription_Annotation .
+

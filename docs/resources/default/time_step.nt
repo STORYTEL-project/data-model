@@ -1,0 +1,7 @@
+<http://www.purl.org/storytel/time_step> <http://purl.org/dc/elements/1.1/title> "time step"@en .
+<http://www.purl.org/storytel/time_step> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.purl.org/storytel/Automatic_Acoustic_Analysis> .
+<http://www.purl.org/storytel/time_step> <http://www.w3.org/2000/01/rdf-schema#label> "time step"@en .
+<http://www.purl.org/storytel/time_step> <http://www.w3.org/2000/01/rdf-schema#comment> "Time step between analysis frames used in the Praat analysis, in seconds."@en .
+<http://www.purl.org/storytel/time_step> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.purl.org/storytel/time_step> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.purl.org/storytel/time_step> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .

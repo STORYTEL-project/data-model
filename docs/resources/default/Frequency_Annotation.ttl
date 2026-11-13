@@ -1,0 +1,12 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Frequency_Annotation a owl:Class ;
+    rdfs:label "Frequency Annotation"@en ;
+    dc:title "Frequency Annotation"@en ;
+    rdfs:comment "Acoustic annotation holding the Frequency of a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Acoustic_Annotation .
+

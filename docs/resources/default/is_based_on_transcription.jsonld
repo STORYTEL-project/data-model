@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/is_based_on_transcription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "is based on transcription"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Links a translation or glossing annotation to the transcription annotation it was derived from."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is based on transcription"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.purl.org/storytel/Transcription_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Glossing_Annotation"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Translation_Annotation"
+          }
+        ]
+      }
+    ]
+  }
+]

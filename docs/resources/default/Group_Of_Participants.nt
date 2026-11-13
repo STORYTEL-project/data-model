@@ -1,18 +1,18 @@
-<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb47 .
-<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb46 .
-_:nfb4366b93bd749b99262f6ca53882fdbb47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Age_Of_The_Participants> .
-_:nfb4366b93bd749b99262f6ca53882fdbb46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member> .
-_:nfb4366b93bd749b99262f6ca53882fdbb48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Number_of_Participants> .
-_:nfb4366b93bd749b99262f6ca53882fdbb46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Student_Participant> .
-<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b62 .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b63 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
 <http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#label> "Group of Participants"@en .
-_:nfb4366b93bd749b99262f6ca53882fdbb48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb48 .
-_:nfb4366b93bd749b99262f6ca53882fdbb47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
-_:nfb4366b93bd749b99262f6ca53882fdbb48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Student_Participant> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.purl.org/storytel/Group_Of_Participants> <http://purl.org/dc/elements/1.1/title> "Group of Participants"@en .
 <http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b61 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b62 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Age_Of_The_Participants> .
 <http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
-_:nfb4366b93bd749b99262f6ca53882fdbb46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nfb4366b93bd749b99262f6ca53882fdbb47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Number_of_Participants> .
+<http://www.purl.org/storytel/Group_Of_Participants> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en .

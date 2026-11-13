@@ -6,8 +6,8 @@
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasTarget">
     <dc:title xml:lang="en">has target</dc:title>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
     <rdfs:label xml:lang="en">has target</rdfs:label>
     <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated.</rdfs:comment>
   </rdf:Description>

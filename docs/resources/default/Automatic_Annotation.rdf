@@ -5,24 +5,24 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Annotation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb24"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb25"/>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <dc:title xml:lang="en">Automatic Annotation</dc:title>
-    <rdfs:comment xml:lang="en">Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation.</rdfs:comment>
-    <rdfs:label xml:lang="en">Automatic Annotation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb25">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb24">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b35">
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Annotation">
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b35"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b36"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation.</rdfs:comment>
+    <dc:title xml:lang="en">Automatic Annotation</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Automatic Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b36">
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation"/>
   </rdf:Description>
 </rdf:RDF>

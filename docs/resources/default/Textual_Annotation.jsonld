@@ -1,0 +1,93 @@
+[
+  {
+    "@id": "http://www.purl.org/storytel/Textual_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Textual Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Textual Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b80"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b79"
+      },
+      {
+        "@id": "http://www.purl.org/storytel/Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b78"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b80",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasTarget"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b79",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b78",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
+      }
+    ]
+  }
+]

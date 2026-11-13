@@ -1,0 +1,10 @@
+<http://www.purl.org/storytel/Transcription_Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation whose body is the transcription of a segment of an Anonymized Story."@en .
+<http://www.purl.org/storytel/Transcription_Annotation> <http://purl.org/dc/elements/1.1/title> "Transcription Annotation"@en .
+<http://www.purl.org/storytel/Transcription_Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasBody> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b81 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Transcription_Body> .
+<http://www.purl.org/storytel/Transcription_Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Transcription Annotation"@en .
+<http://www.purl.org/storytel/Transcription_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Textual_Annotation> .
+<http://www.purl.org/storytel/Transcription_Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Transcription_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b81 .

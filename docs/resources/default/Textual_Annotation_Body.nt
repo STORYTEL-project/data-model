@@ -1,0 +1,7 @@
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Annotation_Body> .
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation body consisting of text (transcription, translation or glossing)."@en .
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://purl.org/dc/elements/1.1/title> "Textual Annotation Body"@en .
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#TextualBody> .
+<http://www.purl.org/storytel/Textual_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#label> "Textual Annotation Body"@en .

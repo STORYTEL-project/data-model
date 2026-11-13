@@ -1,0 +1,19 @@
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story> .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Annotation> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Acoustic_Annotation_Body> .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic Annotation"@en .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b4 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cidoc-crm.org/extensions/crmdig/L43_annotates> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy."@en .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://purl.org/dc/elements/1.1/title> "Acoustic Annotation"@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasTarget> .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b6 .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasBody> .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.purl.org/storytel/Textual_Annotation> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Story_Segment> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Acoustic_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b5 .

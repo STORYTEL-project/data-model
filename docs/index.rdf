@@ -6,231 +6,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 >
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Software_Based_On_LLM">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
-    <dc:title xml:lang="en">LLM Software</dc:title>
-    <rdfs:comment xml:lang="en">Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">LLM Software</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb2">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <owl:withRestrictions rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Story_Creation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb57"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb58"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb59"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb60"/>
-    <dc:title xml:lang="en">Anonymized Video Creation</dc:title>
-    <rdfs:comment xml:lang="en">Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Anonymized Video Creation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Place_Of_Recording">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-    <dc:title xml:lang="en">Place of Recording</dc:title>
-    <rdfs:comment xml:lang="en">Place where a Full Video is recorded.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Place of Recording</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <dc:title xml:lang="en">Language</dc:title>
-    <rdfs:comment xml:lang="en">The language of the resource; used here to state the language in which the ontology is expressed.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    <rdfs:label xml:lang="en">Language</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb51">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb23">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb57">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/End_Of_The_Full_Video">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb31"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b44"/>
     <dc:title xml:lang="en">End of the Anonymized Story</dc:title>
     <rdfs:comment xml:lang="en">Dimension expressing the end time of an Anonymized Story, as an xsd:time value.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:label xml:lang="en">End of the Anonymized Story</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb42">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Student_Recording"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb28">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb43">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Place_Of_Recording"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb61">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Number_of_Participants">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb50"/>
-    <dc:title xml:lang="en">Number of Participants</dc:title>
-    <rdfs:comment xml:lang="en">Dimension expressing the number of participants in a group, as an integer value.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Number of Participants</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb44">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Smartphone"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/type/Anonymized_Story">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <dc:title xml:lang="en">Anonymized Story</dc:title>
-    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Anonymized Stories.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
-    <rdfs:label xml:lang="en">Anonymized Story</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/oa#FragmentSelector">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Fragment Selector</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">Fragment Selector</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb14">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-    <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Anonymized_Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_mp4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb45"/>
-    <dc:title xml:lang="en">Full Video Manifestation</dc:title>
-    <rdfs:comment xml:lang="en">Manifestation of a Full Video in mp4 file format.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Full Video Manifestation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <dc:title xml:lang="en">Title</dc:title>
-    <rdfs:comment xml:lang="en">A name given to the resource; used here to provide a human-readable title for ontology terms.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    <rdfs:label xml:lang="en">Title</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Story">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb52"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb53"/>
-    <owl:disjointWith rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb54"/>
-    <dc:title xml:lang="en">Anonymized Video</dc:title>
-    <rdfs:comment>Anonymized version of the full video</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Anonymized Video</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb52">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Story_mp4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb61"/>
-    <dc:title xml:lang="en">Anonymized Video Manifestation</dc:title>
-    <rdfs:comment xml:lang="en">Manifestation of an Anonymized Video in mp4 file format.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Anonymized Video Manifestation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Smartphone">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device"/>
-    <dc:title xml:lang="en">Smartphone</dc:title>
-    <rdfs:comment xml:lang="en">Digital device (smartphone) used to record the Full Video.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Smartphone</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <dc:title xml:lang="en">value</dc:title>
-    <rdfs:comment xml:lang="en">RDF property giving the literal value of a structured resource, here the media fragment expression of a selector.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <rdfs:label xml:lang="en">value</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_Creation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb40"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb41"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb42"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb43"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb44"/>
-    <dc:title xml:lang="en">Full Video Creation</dc:title>
-    <rdfs:comment xml:lang="en">Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Full Video Creation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb27">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb34">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Start_Of_The_Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb30">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb32"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb33"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb34"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb35"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb36"/>
-    <owl:disjointWith rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb37"/>
-    <dc:title xml:lang="en">Full Video</dc:title>
-    <rdfs:comment>Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Full Video</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
@@ -239,95 +22,41 @@
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     <rdfs:label xml:lang="en">Description</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb35">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P72_has_language"/>
-    <owl:someValuesFrom rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E56_Language"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Student_Participant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-    <dc:title xml:lang="en">Student Participant</dc:title>
-    <rdfs:comment xml:lang="en">Person, a student, who participates in a conversational storytelling session.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Student Participant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <dc:title xml:lang="en">Creator</dc:title>
-    <rdfs:comment xml:lang="en">Entity primarily responsible for making the resource; used here to record the author of the ontology.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    <rdfs:label xml:lang="en">Creator</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/Annotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb7"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb8"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb9"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b13"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b17"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b18"/>
     <dc:title xml:lang="en">Annotation </dc:title>
-    <rdfs:comment xml:lang="en">Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline</rdfs:comment>
+    <rdfs:comment xml:lang="en">Annotation object attached to a segment of a Story or of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:label xml:lang="en">Annotation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/type/Full_Video">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <dc:title xml:lang="en">Full Video</dc:title>
-    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Full Videos.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
-    <rdfs:label xml:lang="en">Full Video</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb13">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b27">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Software_Based_On_LLM"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb48">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b71">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b72"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b53">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Number_of_Participants"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb10">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Duration_Of_The_Story">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb30"/>
-    <dc:title xml:lang="en">Duration of the Story</dc:title>
-    <rdfs:comment xml:lang="en">Dimension expressing the duration of a Story (clip), as an xsd:duration value.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Duration of the Story</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb36">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-    <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb10"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb11"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb12"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb13"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb14"/>
-    <owl:disjointWith rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb15"/>
-    <dc:title xml:lang="en">Anonymized Story</dc:title>
-    <rdfs:comment>Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Anonymized Story</rdfs:label>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b11">
+    <rdf:first rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b9"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b12"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Annotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb24"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb25"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b35"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b36"/>
     <dc:title xml:lang="en">Automatic Annotation</dc:title>
     <rdfs:comment xml:lang="en">Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
@@ -337,33 +66,308 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb18"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb19"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb20"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb21"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b27"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b28"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b29"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b30"/>
     <dc:title xml:lang="en">Anonymized Story Creation</dc:title>
     <rdfs:comment xml:lang="en">Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:label xml:lang="en">Anonymized Story Creation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb41">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Group_Of_Participants"/>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Glossing_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b59"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b60"/>
+    <dc:title xml:lang="en">Glossing Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Annotation whose body is the interlinear gloss of a segment of an Anonymized Story, based on the transcription of that segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Glossing Annotation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb46">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b33">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Student_Participant"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Praat"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b8">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:withRestrictions rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b39">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Translation_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/oa#TextualBody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Textual Body</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation class: an embedded textual resource used as the body of an Annotation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label xml:lang="en">Textual Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Media_Segment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b65"/>
+    <dc:title xml:lang="en">Media Segment</dc:title>
+    <rdfs:comment xml:lang="en">Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Media Segment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Software_Based_On_LLM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
+    <dc:title xml:lang="en">LLM Software</dc:title>
+    <rdfs:comment xml:lang="en">Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">LLM Software</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b19"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b20"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b21"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b22"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b23"/>
+    <owl:disjointWith rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b24"/>
+    <dc:title xml:lang="en">Anonymized Story</dc:title>
+    <rdfs:comment>Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Anonymized Story</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b35">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b81">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Transcription_Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b41">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Annotation_Body">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Annotation Body</dc:title>
+    <rdfs:comment>Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Annotation Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Duration_Of_Full_Video">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b43"/>
+    <dc:title xml:lang="en">Duration of Full Video</dc:title>
+    <rdfs:comment xml:lang="en">Dimension expressing the total duration of a Full Video, as an xsd:duration value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Duration of Full Video</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b68">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Student_Participant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <dc:title xml:lang="en">Student Participant</dc:title>
+    <rdfs:comment xml:lang="en">Person, a student, who participates in a conversational storytelling session.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Student Participant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b15">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Story_Creation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b73"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b74"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b75"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b76"/>
+    <dc:title xml:lang="en">Anonymized Video Creation</dc:title>
+    <rdfs:comment xml:lang="en">Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Anonymized Video Creation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <dc:title xml:lang="en">Language</dc:title>
+    <rdfs:comment xml:lang="en">The language of the resource; used here to state the language in which the ontology is expressed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:label xml:lang="en">Language</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Acoustic_Annotation_Body">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation_Body"/>
+    <dc:title xml:lang="en">Acoustic Annotation Body</dc:title>
+    <rdfs:comment xml:lang="en">Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Acoustic Annotation Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b44">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Frequency_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Acoustic_Annotation"/>
+    <dc:title xml:lang="en">Frequency Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Acoustic annotation holding the Frequency of a segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Frequency Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Textual_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b78"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b79"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b80"/>
+    <dc:title xml:lang="en">Textual Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Textual Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <dc:title xml:lang="en">Title</dc:title>
+    <rdfs:comment xml:lang="en">A name given to the resource; used here to provide a human-readable title for ontology terms.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:label xml:lang="en">Title</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Acoustic_Analysis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Automatic_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b33"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b34"/>
+    <dc:title xml:lang="en">Automatic Acoustic Analysis</dc:title>
+    <rdfs:comment xml:lang="en">Automatic annotation event in which the pipeline runs Praat on a segment of the Story to produce acoustic annotations.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Automatic Acoustic Analysis</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story_Segment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Media_Segment"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb22"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b31"/>
     <dc:title xml:lang="en">Segment of Anonymized Story</dc:title>
     <rdfs:comment>Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:label xml:lang="en">Segment of Anonymized Story</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/is_based_on_transcription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b1"/>
+    <rdfs:range rdf:resource="http://www.purl.org/storytel/Transcription_Annotation"/>
+    <dc:title xml:lang="en">is based on transcription</dc:title>
+    <rdfs:comment xml:lang="en">Links a translation or glossing annotation to the transcription annotation it was derived from.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">is based on transcription</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_Creation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b53"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b54"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b55"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b56"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b57"/>
+    <dc:title xml:lang="en">Full Video Creation</dc:title>
+    <rdfs:comment xml:lang="en">Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Full Video Creation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b63">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Number_of_Participants"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/type/Anonymized_Story">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <dc:title xml:lang="en">Anonymized Story</dc:title>
+    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Anonymized Stories.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
+    <rdfs:label xml:lang="en">Anonymized Story</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b3">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Translation_Annotation"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b16">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Story"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story_Manifestation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b32"/>
+    <dc:title xml:lang="en">Anonymized Story Manifestation</dc:title>
+    <rdfs:comment xml:lang="en">Manifestation of an Anonymized Story in mp4 file format.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Anonymized Story Manifestation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b45"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b46"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b47"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b48"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b49"/>
+    <owl:disjointWith rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b50"/>
+    <dc:title xml:lang="en">Full Video</dc:title>
+    <rdfs:comment>Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Full Video</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_Manifestation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b58"/>
+    <dc:title xml:lang="en">Full Video Manifestation</dc:title>
+    <rdfs:comment xml:lang="en">Manifestation of a Full Video in mp4 file format.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Full Video Manifestation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/pitch_floor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.purl.org/storytel/Automatic_Acoustic_Analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <dc:title xml:lang="en">pitch floor</dc:title>
+    <rdfs:comment xml:lang="en">Lower bound of the F0 search range used in the Praat analysis, in Hz.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">pitch floor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Translation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Automatic_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b39"/>
+    <dc:title xml:lang="en">Automatic Translation</dc:title>
+    <rdfs:comment xml:lang="en">Automatic annotation event in which the pipeline translates a segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Automatic Translation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Age_Of_The_Participants">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b7"/>
+    <dc:title xml:lang="en">Age of the Participants</dc:title>
+    <rdfs:comment xml:lang="en">Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Age of the Participants</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/type/Story">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -373,112 +377,35 @@
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
     <rdfs:label xml:lang="en">Anonymized Video</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story_mp4">
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Glossing_Body">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation_Body"/>
+    <dc:title xml:lang="en">Glossing Body</dc:title>
+    <rdfs:comment xml:lang="en">Interlinear gloss of a segment, produced automatically from its transcription.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Glossing Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/End_Of_The_Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Story_Manifestation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb23"/>
-    <dc:title xml:lang="en">Anonymized Story Manifestation</dc:title>
-    <rdfs:comment xml:lang="en">Manifestation of an Anonymized Story in mp4 file format.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b77"/>
+    <dc:title xml:lang="en">Story Manifestation</dc:title>
+    <rdfs:comment xml:lang="en">Manifestation of a Story in mp4 file format.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Anonymized Story Manifestation</rdfs:label>
+    <rdfs:label xml:lang="en">Anonymized Video Manifestation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb26">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb22">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasSelector"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Media_Fragment_Selector"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb49">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/oa#TextualBody">
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Textual Body</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation class: an embedded textual resource used as the body of an Annotation.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">Textual Body</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation_Body"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb18">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasSelector">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <dc:title xml:lang="en">has selector</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">has selector</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb16">
-    <rdf:first rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-    <rdf:rest rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb17"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/oa#SpecificResource">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Specific Resource</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation class: a part or a particular state of a resource, identified through a source and a selector.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">Specific Resource</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Duration_Of_Full_Video">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb29"/>
-    <dc:title xml:lang="en">Duration of Full Video</dc:title>
-    <rdfs:comment xml:lang="en">Dimension expressing the total duration of a Full Video, as an xsd:duration value.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
+    <dc:title xml:lang="en">Storytel AI-assisted pipeline</dc:title>
+    <rdfs:comment xml:lang="en">Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Duration of Full Video</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Group_Of_Participants">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb46"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb47"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb48"/>
-    <dc:title xml:lang="en">Group of Participants</dc:title>
-    <rdfs:comment xml:lang="en">Group of student participants taking part in a conversational storytelling session, characterised by their number and age.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Group of Participants</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb24">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb40">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb53">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
-    <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Student_Recording">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
-    <dc:title xml:lang="en">Student Recording</dc:title>
-    <rdfs:comment xml:lang="en">Actor (student) who records the Full Video.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Student Recording</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb25">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation"/>
+    <rdfs:label xml:lang="en">Storytel AI-assisted pipeline</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.purl.org/storytel/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -491,170 +418,139 @@
     <dc:title>Storytel</dc:title>
     <rdfs:label>Storytel</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Start_Of_The_Full_Video">
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Group_Of_Participants">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb51"/>
-    <dc:title xml:lang="en">Start of the Anonymized Story</dc:title>
-    <rdfs:comment xml:lang="en">Dimension expressing the start time of an Anonymized Story, as an xsd:time value.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b61"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b62"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b63"/>
+    <dc:title xml:lang="en">Group of Participants</dc:title>
+    <rdfs:comment xml:lang="en">Group of student participants taking part in a conversational storytelling session, characterised by their number and age.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Start of the Anonymized Story</rdfs:label>
+    <rdfs:label xml:lang="en">Group of Participants</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb21">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b22">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Software_Based_On_LLM"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb55">
-    <rdf:first rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-    <rdf:rest rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb56"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b72">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb38">
-    <rdf:first rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
-    <rdf:rest rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb39"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb31">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb37">
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Transcription_Body">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb38"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb58">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Age_Of_The_Participants">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb1"/>
-    <dc:title xml:lang="en">Age of the Participants</dc:title>
-    <rdfs:comment xml:lang="en">Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation_Body"/>
+    <dc:title xml:lang="en">Transcription Body</dc:title>
+    <rdfs:comment xml:lang="en">Text of the automatic transcription of a segment.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Age of the Participants</rdfs:label>
+    <rdfs:label xml:lang="en">Transcription Body</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasBody">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <dc:title xml:lang="en">has body</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text).</rdfs:comment>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b9">
+    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minInclusive>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b48">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P72_has_language"/>
+    <owl:someValuesFrom rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E56_Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b34">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Acoustic_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Place_Of_Recording">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <dc:title xml:lang="en">Place of Recording</dc:title>
+    <rdfs:comment xml:lang="en">Place where a Full Video is recorded.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Place of Recording</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Transcription_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b81"/>
+    <dc:title xml:lang="en">Transcription Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Annotation whose body is the transcription of a segment of an Anonymized Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Transcription Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/oa#SpecificResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Specific Resource</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation class: a part or a particular state of a resource, identified through a source and a selector.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">has body</rdfs:label>
+    <rdfs:label xml:lang="en">Specific Resource</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb45">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Conversational_Storytelling_Session">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb26"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb27"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb28"/>
-    <dc:title xml:lang="en">Conversational Storytelling session</dc:title>
-    <rdfs:comment xml:lang="en">Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Conversational Storytelling session</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasTarget">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <dc:title xml:lang="en">has target</dc:title>
-    <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
-    <rdfs:label xml:lang="en">has target</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Media_Fragment_Selector">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb49"/>
-    <dc:title xml:lang="en">Media Fragment Selector</dc:title>
-    <rdfs:comment>Media Fragment URI selecting the segment, e.g. t=723,767.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Media Fragment Selector</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb29">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb9">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story_Segment"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb50">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b66">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
     <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Annotation_Body">
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Pitch_Annotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#TextualBody"/>
-    <dc:title xml:lang="en">Annotation Body</dc:title>
-    <rdfs:comment>Content of the annotation, e.g. the transcribed text of the segment.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Acoustic_Annotation"/>
+    <dc:title xml:lang="en">F0 Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Annotation Body</rdfs:label>
+    <rdfs:label xml:lang="en">F0 Annotation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb11">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b23">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/End_Of_The_Full_Video"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Anonymized_Story"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb33">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/End_Of_The_Full_Video"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b70">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b71"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb20">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Transcription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Automatic_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b38"/>
+    <dc:title xml:lang="en">Automatic Transcription</dc:title>
+    <rdfs:comment xml:lang="en">Automatic annotation event in which the pipeline transcribes a segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Automatic Transcription</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb32">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Duration_Of_Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb47">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b62">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Age_Of_The_Participants"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
-    <dc:title xml:lang="en">Storytel AI-assisted pipeline</dc:title>
-    <rdfs:comment xml:lang="en">Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:label xml:lang="en">Storytel AI-assisted pipeline</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb15">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb16"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#duration">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb59">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b30">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Software_Based_On_LLM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b28">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb12">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b56">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Place_Of_Recording"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b46">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Start_Of_The_Full_Video"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/End_Of_The_Full_Video"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb3">
-    <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minInclusive>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b32">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b58">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#Annotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -663,44 +559,462 @@
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
     <rdfs:label xml:lang="en">Annotation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb39">
-    <rdf:first rdf:resource="http://www.purl.org/storytel/Story"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b12">
+    <rdf:first rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b10"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb56">
-    <rdf:first rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb6">
-    <rdf:first rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb4"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb54">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb55"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb1">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b80">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
-    <owl:someValuesFrom rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb2"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story_Segment"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb60">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/type/Full_Video">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <dc:title xml:lang="en">Full Video</dc:title>
+    <rdfs:comment xml:lang="en">Type (E55 Type) used to classify digital objects as Full Videos.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/type/"/>
+    <rdfs:label xml:lang="en">Full Video</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/pitch_ceiling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.purl.org/storytel/Automatic_Acoustic_Analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <dc:title xml:lang="en">pitch ceiling</dc:title>
+    <rdfs:comment xml:lang="en">Upper bound of the F0 search range used in the Praat analysis, in Hz.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">pitch ceiling</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b83">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Translation_Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Start_Of_The_Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Media_Fragment_Selector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#FragmentSelector"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b64"/>
+    <dc:title xml:lang="en">Media Fragment Selector</dc:title>
+    <rdfs:comment>Media Fragment URI selecting the segment, e.g. t=723,767.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Media Fragment Selector</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Acoustic_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b4"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b5"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b6"/>
+    <owl:disjointWith rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+    <dc:title xml:lang="en">Acoustic Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Acoustic Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b51">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b75">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b76">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Software_Based_On_LLM"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb17">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b2">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Glossing_Annotation"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Story">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b68"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b69"/>
+    <owl:disjointWith rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b70"/>
+    <dc:title xml:lang="en">Anonymized Video</dc:title>
+    <rdfs:comment>Anonymized version of the full video</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Anonymized Video</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Smartphone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#duration">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+    <owl:someValuesFrom rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Acoustic_Annotation_Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story_Segment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Story_Segment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Media_Segment"/>
+    <dc:title xml:lang="en">Segment of Story</dc:title>
+    <rdfs:comment xml:lang="en">Temporal segment of a Story (the source of the Anonymized Story, i.e. before voice and body anonymisation), e.g. 00:12:03-00:12:47.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Segment of Story</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Automatic_Glossing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Automatic_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b37"/>
+    <dc:title xml:lang="en">Automatic Glossing</dc:title>
+    <rdfs:comment xml:lang="en">Automatic annotation event in which the pipeline glosses a segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Automatic Glossing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Student_Recording">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <dc:title xml:lang="en">Student Recording</dc:title>
+    <rdfs:comment xml:lang="en">Actor (student) who records the Full Video.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Student Recording</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Textual_Annotation_Body">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation_Body"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#TextualBody"/>
+    <dc:title xml:lang="en">Textual Annotation Body</dc:title>
+    <rdfs:comment xml:lang="en">Annotation body consisting of text (transcription, translation or glossing).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Textual Annotation Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b25">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
+    <owl:someValuesFrom rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b37">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Glossing_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b42">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b79">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Textual_Annotation_Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <dc:title xml:lang="en">value</dc:title>
+    <rdfs:comment xml:lang="en">RDF property giving the literal value of a structured resource, here the media fragment expression of a selector.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:label xml:lang="en">value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Conversational_Storytelling_Session">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b40"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b41"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b42"/>
+    <dc:title xml:lang="en">Conversational Storytelling session</dc:title>
+    <rdfs:comment xml:lang="en">Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Conversational Storytelling session</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Translation_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b82"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b83"/>
+    <dc:title xml:lang="en">Translation Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Translation Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b59">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.purl.org/storytel/is_based_on_transcription"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Transcription_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b73">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b52">
     <rdf:first rdf:resource="http://www.purl.org/storytel/Story"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb4">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b54">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Group_Of_Participants"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Translation_Body">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation_Body"/>
+    <dc:title xml:lang="en">Translation Body</dc:title>
+    <rdfs:comment xml:lang="en">Text of the automatic translation of a segment. Its target language is given with P72 has language.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Translation Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b61">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Student_Participant"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Number_of_Participants">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b66"/>
+    <dc:title xml:lang="en">Number of Participants</dc:title>
+    <rdfs:comment xml:lang="en">Dimension expressing the number of participants in a group, as an integer value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Number of Participants</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b38">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Transcription_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Amplitude_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Acoustic_Annotation"/>
+    <dc:title xml:lang="en">Amplitude Annotation</dc:title>
+    <rdfs:comment xml:lang="en">Acoustic annotation holding the Amplitude (waveform) of a segment.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Amplitude Annotation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Smartphone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device"/>
+    <dc:title xml:lang="en">Smartphone</dc:title>
+    <rdfs:comment xml:lang="en">Digital device (smartphone) used to record the Full Video.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Smartphone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasBody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <dc:title xml:lang="en">has body</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label xml:lang="en">has body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/time_step">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.purl.org/storytel/Automatic_Acoustic_Analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <dc:title xml:lang="en">time step</dc:title>
+    <rdfs:comment xml:lang="en">Time step between analysis frames used in the Praat analysis, in seconds.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">time step</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <dc:title xml:lang="en">Creator</dc:title>
+    <rdfs:comment xml:lang="en">Entity primarily responsible for making the resource; used here to record the author of the ontology.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b69">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Media_Segment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b26">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Story"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/oa#FragmentSelector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Fragment Selector</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label xml:lang="en">Fragment Selector</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b65">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasSelector"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Media_Fragment_Selector"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b77">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasSelector"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Media_Fragment_Selector"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b50">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b78">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b21">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Start_Of_The_Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Start_Of_The_Full_Video">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b67"/>
+    <dc:title xml:lang="en">Start of the Anonymized Story</dc:title>
+    <rdfs:comment xml:lang="en">Dimension expressing the start time of an Anonymized Story, as an xsd:time value.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Start of the Anonymized Story</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasSelector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <dc:title xml:lang="en">has selector</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label xml:lang="en">has selector</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/oa#hasTarget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <dc:title xml:lang="en">has target</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label xml:lang="en">has target</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b36">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Praat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
+    <dc:title xml:lang="en">Praat</dc:title>
+    <rdfs:comment xml:lang="en">Praat software used for the acoustic analysis (pitch, amplitude, frequency). Use one individual per version.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Praat</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b82">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.purl.org/storytel/is_based_on_transcription"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Transcription_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b45">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Duration_Of_Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Annotation_Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Student_Recording"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b67">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b64">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#time">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b49">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+    <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b60">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Glossing_Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b40">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b10">
     <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</xsd:maxInclusive>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb5">
-    <rdf:first rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb3"/>
-    <rdf:rest rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb6"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b24">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
   </rdf:Description>
 </rdf:RDF>

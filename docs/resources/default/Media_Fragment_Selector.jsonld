@@ -28,15 +28,15 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb49"
+        "@id": "http://www.w3.org/ns/oa#FragmentSelector"
       },
       {
-        "@id": "http://www.w3.org/ns/oa#FragmentSelector"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b64"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb49",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b64",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

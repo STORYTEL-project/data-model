@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Media_Segment">
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Media Segment</rdfs:label>
+    <rdfs:comment xml:lang="en">Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b65"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#SpecificResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Media Segment</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b65">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Media_Fragment_Selector"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasSelector"/>
+  </rdf:Description>
+</rdf:RDF>

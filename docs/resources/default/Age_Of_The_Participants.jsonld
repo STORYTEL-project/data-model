@@ -32,12 +32,12 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb1"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b7"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb1",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b7",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -48,12 +48,12 @@
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb2"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b8"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb2",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b8",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Datatype"
     ],
@@ -66,17 +66,17 @@
       {
         "@list": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb3"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b9"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb4"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b10"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb3",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b9",
     "http://www.w3.org/2001/XMLSchema#minInclusive": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -85,7 +85,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb4",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b10",
     "http://www.w3.org/2001/XMLSchema#maxInclusive": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",

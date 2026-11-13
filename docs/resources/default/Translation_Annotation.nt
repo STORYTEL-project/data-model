@@ -1,0 +1,14 @@
+_:nbe3a5c879a974bcb99a97f5216d30ae4b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment."@en .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Textual_Annotation> .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Translation Annotation"@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b82 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.purl.org/storytel/is_based_on_transcription> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Transcription_Annotation> .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b83 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b83 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.purl.org/storytel/Translation_Body> .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Translation_Annotation> <http://purl.org/dc/elements/1.1/title> "Translation Annotation"@en .
+<http://www.purl.org/storytel/Translation_Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasBody> .

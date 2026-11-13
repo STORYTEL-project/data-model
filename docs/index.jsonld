@@ -1,48 +1,24 @@
 [
   {
-    "@id": "http://www.w3.org/ns/oa#hasTarget",
+    "@id": "http://www.purl.org/storytel/pitch_floor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "has target"
+        "@value": "pitch floor"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."
+        "@value": "Lower bound of the F0 search range used in the Praat analysis, in Hz."
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3.org/ns/oa#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has target"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Story_mp4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video Manifestation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Manifestation of an Anonymized Video in mp4 file format."
+        "@id": "http://www.purl.org/storytel/Automatic_Acoustic_Analysis"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -53,31 +29,534 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Anonymized Video Manifestation"
+        "@value": "pitch floor"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb61"
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb61",
+    "@id": "http://www.purl.org/storytel/Automatic_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Automatic Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Automatic Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b35"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b36"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b35",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://www.purl.org/storytel/Story"
+        "@id": "http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b36",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Media_Fragment_Selector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Media Fragment Selector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Media Fragment URI selecting the segment, e.g. t=723,767."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Media Fragment Selector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/oa#FragmentSelector"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b64"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b64",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#duration"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Segment of Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Segment of Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Media_Segment"
+      },
+      {
+        "@id": "http://www.w3.org/ns/oa#SpecificResource"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b31"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasSelector"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Media_Fragment_Selector"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Creator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Entity primarily responsible for making the resource; used here to record the author of the ontology."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/elements/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Creator"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "RDF property giving the literal value of a structured resource, here the media fragment expression of a selector."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "value"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/type/Anonymized_Story",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Type (E55 Type) used to classify digital objects as Anonymized Stories."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/type/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Translation_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Translation Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation whose body is the translation of a segment of an Anonymized Story, based on the transcription of that segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Translation Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b82"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b83"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b82",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.purl.org/storytel/is_based_on_transcription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Transcription_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b83",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Translation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#TextualBody",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Textual Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation class: an embedded textual resource used as the body of an Annotation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Textual Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Glossing_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Glossing Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation whose body is the interlinear gloss of a segment of an Anonymized Story, based on the transcription of that segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glossing Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b59"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b60"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b59",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.purl.org/storytel/is_based_on_transcription"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Transcription_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b60",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Glossing_Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "End of the Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Dimension expressing the end time of an Anonymized Story, as an xsd:time value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "End of the Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b44"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b44",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#time"
       }
     ]
   },
@@ -116,29 +595,29 @@
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb32"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b45"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb33"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b46"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb34"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b47"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb35"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b48"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb36"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b49"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb37"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b50"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb32",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b45",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -154,7 +633,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb33",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b46",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -170,7 +649,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb34",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b47",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -186,7 +665,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb35",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b48",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -202,7 +681,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb36",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b49",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -218,7 +697,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb37",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b50",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -232,6 +711,579 @@
             "@id": "http://www.purl.org/storytel/Story"
           }
         ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Full_Video_Manifestation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Full Video Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Manifestation of a Full Video in mp4 file format."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Full Video Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b58"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b58",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Acoustic_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Acoustic Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Acoustic Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b4"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b5"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b6"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Acoustic_Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasTarget"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Full_Video_Creation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Full Video Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Full Video Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b53"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b54"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b55"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b56"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b57"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b54",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Group_Of_Participants"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b55",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Student_Recording"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b56",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Place_Of_Recording"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b57",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Smartphone"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/pitch_ceiling",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "pitch ceiling"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Upper bound of the F0 search range used in the Praat analysis, in Hz."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.purl.org/storytel/Automatic_Acoustic_Analysis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "pitch ceiling"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#hasTarget",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "has target"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation property linking an Annotation to the resource (or segment of a resource) being annotated."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has target"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Story_Creation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b73"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b74"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b75"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b76"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b73",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b74",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b75",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b76",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Student_Participant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Student Participant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Person, a student, who participates in a conversational storytelling session."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Student Participant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Automatic_Transcription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Automatic Transcription"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Automatic annotation event in which the pipeline transcribes a segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Automatic Transcription"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Automatic_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b38"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b38",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Transcription_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/type/Full_Video",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Full Video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Type (E55 Type) used to classify digital objects as Full Videos."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/type/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Full Video"
       }
     ]
   },
@@ -268,18 +1320,18 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb46"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b61"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb47"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b62"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb48"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b63"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb46",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b61",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -295,7 +1347,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb47",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b62",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -311,7 +1363,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb48",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b63",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -327,31 +1379,926 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "@id": "http://www.w3.org/2001/XMLSchema#decimal",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Place_Of_Recording",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Place of Recording"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Place where a Full Video is recorded."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Place of Recording"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Anonymized_Story_Manifestation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Manifestation of an Anonymized Story in mp4 file format."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b32"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b32",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Story_Manifestation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Story Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Manifestation of a Story in mp4 file format."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b77"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b77",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Title"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A name given to the resource; used here to provide a human-readable title for ontology terms."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/elements/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Title"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Age_Of_The_Participants",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Age of the Participants"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Age of the Participants"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b7"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b8"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b8",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#onDatatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#withRestrictions": [
+      {
+        "@list": [
+          {
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b9"
+          },
+          {
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b9",
+    "http://www.w3.org/2001/XMLSchema#minInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 18
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b10",
+    "http://www.w3.org/2001/XMLSchema#maxInclusive": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 65
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Translation_Body",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Translation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Text of the automatic translation of a segment. Its target language is given with P72 has language."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Translation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Textual_Annotation_Body",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Textual Annotation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation body consisting of text (transcription, translation or glossing)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Textual Annotation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Annotation_Body"
+      },
+      {
+        "@id": "http://www.w3.org/ns/oa#TextualBody"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Textual_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Textual Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Textual Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b78"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b79"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b80"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b78",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b79",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b80",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasTarget"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Automatic_Glossing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Automatic Glossing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Automatic annotation event in which the pipeline glosses a segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Automatic Glossing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Automatic_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b37"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Glossing_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Automatic_Translation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Automatic Translation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Automatic annotation event in which the pipeline translates a segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Automatic Translation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Automatic_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b39"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b39",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Translation_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Frequency_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Frequency Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Acoustic annotation holding the Frequency of a segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Frequency Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Acoustic_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Acoustic_Annotation_Body",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Acoustic Annotation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Acoustic Annotation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
+      },
+      {
+        "@id": "http://www.purl.org/storytel/Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#hasSelector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "has selector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has selector"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Smartphone",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Smartphone"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Digital device (smartphone) used to record the Full Video."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Smartphone"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/time_step",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "value"
+        "@value": "time step"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "RDF property giving the literal value of a structured resource, here the media fragment expression of a selector."
+        "@value": "Time step between analysis frames used in the Praat analysis, in seconds."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.purl.org/storytel/Automatic_Acoustic_Analysis"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        "@id": "http://www.purl.org/storytel/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "value"
+        "@value": "time step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Annotation "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation object attached to a segment of a Story or of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object"
+      },
+      {
+        "@id": "http://www.w3.org/ns/oa#Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b13"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b17"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b18"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b14"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Anonymized_Story"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Story"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b17",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b18",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasTarget"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Media_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Glossing_Body",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Glossing Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Interlinear gloss of a segment, produced automatically from its transcription."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Glossing Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation_Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Pitch_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "F0 Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F0 Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Acoustic_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Transcription_Body",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Transcription Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Text of the automatic transcription of a segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Transcription Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation_Body"
       }
     ]
   },
@@ -398,1615 +2345,6 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/oa#SpecificResource",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Specific Resource"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Web Annotation class: a part or a particular state of a resource, identified through a source and a selector."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/oa#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Specific Resource"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Segment of Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Temporal segment of an Anonymized Story, e.g. 00:12:03-00:12:47."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Segment of Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/oa#SpecificResource"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb22"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb22",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/oa#hasSelector"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Media_Fragment_Selector"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/type/Anonymized_Story",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Type (E55 Type) used to classify digital objects as Anonymized Stories."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/type/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Story"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2001/XMLSchema#duration",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Story",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Anonymized version of the full video"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
-      },
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb52"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb53"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#disjointWith": [
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb54"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb52",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb53",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://www.purl.org/storytel/type/Story"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb54",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://www.purl.org/storytel/Anonymized_Story"
-          },
-          {
-            "@id": "http://www.purl.org/storytel/Full_Video"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/type/Story",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Type (E55 Type) used to classify digital objects as Anonymized Video."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/type/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Story_Creation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video Creation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Event in which an Anonymized Video is created by a anonymization pipeline based on LLMs."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Video Creation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb57"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb58"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb59"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb60"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb57",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb58",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb59",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb60",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "End of the Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Dimension expressing the end time of an Anonymized Story, as an xsd:time value."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "End of the Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb31"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb31",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#time"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Duration_Of_The_Story",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Duration of the Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Dimension expressing the duration of a Story (clip), as an xsd:duration value."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Duration of the Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb30"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb30",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#duration"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Student_Participant",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Student Participant"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Person, a student, who participates in a conversational storytelling session."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Student Participant"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/type/Full_Video",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Full Video"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Type (E55 Type) used to classify digital objects as Full Videos."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/type/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Full Video"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Student_Recording",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Student Recording"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Actor (student) who records the Full Video."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Student Recording"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Age_Of_The_Participants",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Age of the Participants"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Age of the Participants"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb1"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb1",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb2"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb2",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ],
-    "http://www.w3.org/2002/07/owl#onDatatype": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#withRestrictions": [
-      {
-        "@list": [
-          {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb3"
-          },
-          {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb3",
-    "http://www.w3.org/2001/XMLSchema#minInclusive": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 18
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb4",
-    "http://www.w3.org/2001/XMLSchema#maxInclusive": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 65
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Anonymized_Story_mp4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Story Manifestation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Manifestation of an Anonymized Story in mp4 file format."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Story Manifestation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb23"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb23",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Place_Of_Recording",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Place of Recording"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Place where a Full Video is recorded."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Place of Recording"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/language",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Language"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "The language of the resource; used here to state the language in which the ontology is expressed."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/elements/1.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Language"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Software_Based_On_LLM",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "LLM Software"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "LLM Software"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Annotation_Body",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Annotation Body"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Content of the annotation, e.g. the transcribed text of the segment."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Annotation Body"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/oa#TextualBody"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Full_Video_Creation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Full Video Creation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Full Video Creation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb40"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb41"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb42"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb43"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb44"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb40",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb41",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Group_Of_Participants"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb42",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Student_Recording"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb43",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Place_Of_Recording"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb44",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Smartphone"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/oa#FragmentSelector",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Fragment Selector"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/oa#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Fragment Selector"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Automatic_Annotation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Automatic Annotation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Annotation event carried out automatically by the Storytel AI-assisted pipeline, producing an Annotation."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Automatic Annotation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb24"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb25"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb24",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb25",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Annotation"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2001/XMLSchema#time",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/oa#hasSelector",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "has selector"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Web Annotation property linking a Specific Resource to the Selector that identifies the segment of the source."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/oa#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "has selector"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Storytel AI-assisted pipeline"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Storytel AI-assisted pipeline"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Full_Video_mp4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Full Video Manifestation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Manifestation of a Full Video in mp4 file format."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Full Video Manifestation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb45"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb45",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Annotation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Annotation "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Annotation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D29_Annotation_Object"
-      },
-      {
-        "@id": "http://www.w3.org/ns/oa#Annotation"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb7"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb8"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb9"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb8",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/oa#hasBody"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Annotation_Body"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/oa#hasTarget"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story_Segment"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/oa#Annotation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Annotation"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Web Annotation class: a typed relationship between a body (the content) and a target (the annotated resource)."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/oa#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Annotation"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/oa#TextualBody",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Textual Body"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Web Annotation class: an embedded textual resource used as the body of an Annotation."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.w3.org/ns/oa#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Textual Body"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Title"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A name given to the resource; used here to provide a human-readable title for ontology terms."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/elements/1.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Title"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Creator"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Entity primarily responsible for making the resource; used here to record the author of the ontology."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/elements/1.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Creator"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Media_Fragment_Selector",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Media Fragment Selector"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Media Fragment URI selecting the segment, e.g. t=723,767."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Media Fragment Selector"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/oa#FragmentSelector"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb49"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb49",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#duration"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Anonymized_Story",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Anonymized Story"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
-      },
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#disjointWith": [
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://www.purl.org/storytel/type/Anonymized_Story"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://www.purl.org/storytel/Full_Video"
-          },
-          {
-            "@id": "http://www.purl.org/storytel/Story"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -2039,12 +2377,12 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb51"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b67"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb51",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b67",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2056,6 +2394,247 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#time"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Transcription_Annotation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Transcription Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Annotation whose body is the transcription of a segment of an Anonymized Story."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Transcription Annotation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Textual_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b81"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b81",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.w3.org/ns/oa#hasBody"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Transcription_Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Conversational_Storytelling_Session",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Conversational Storytelling session"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Conversational Storytelling session"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b40"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b41"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b42"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b40",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Anonymized_Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b41",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b42",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Story_Segment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Segment of Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Temporal segment of a Story (the source of the Anonymized Story, i.e. before voice and body anonymisation), e.g. 00:12:03-00:12:47."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Segment of Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Media_Segment"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#duration",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/is_based_on_transcription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "is based on transcription"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Links a translation or glossing annotation to the transcription annotation it was derived from."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is based on transcription"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.purl.org/storytel/Transcription_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Glossing_Annotation"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Translation_Annotation"
+          }
+        ]
       }
     ]
   },
@@ -2121,12 +2700,12 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb50"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b66"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb50",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b66",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2138,40 +2717,6 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.w3.org/2001/XMLSchema#integer"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.purl.org/storytel/Smartphone",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/title": [
-      {
-        "@language": "en",
-        "@value": "Smartphone"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Digital device (smartphone) used to record the Full Video."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.purl.org/storytel/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Smartphone"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D8_Digital_Device"
       }
     ]
   },
@@ -2208,12 +2753,12 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb29"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b43"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb29",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b43",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2229,20 +2774,50 @@
     ]
   },
   {
-    "@id": "http://www.purl.org/storytel/Conversational_Storytelling_Session",
+    "@id": "http://www.purl.org/storytel/type/Story",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Type (E55 Type) used to classify digital objects as Anonymized Video."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/type/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Amplitude_Annotation",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "Conversational Storytelling session"
+        "@value": "Amplitude Annotation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Abstract work corresponding to a session of conversational storytelling, realised in the Full Video, the Story and the Anonymized Story."
+        "@value": "Acoustic annotation holding the Amplitude (waveform) of a segment."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -2253,48 +2828,187 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Conversational Storytelling session"
+        "@value": "Amplitude Annotation"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb26"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb27"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb28"
+        "@id": "http://www.purl.org/storytel/Acoustic_Annotation"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb26",
+    "@id": "http://www.purl.org/storytel/Media_Segment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Media Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Media Segment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/oa#SpecificResource"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b65"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b65",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+        "@id": "http://www.w3.org/ns/oa#hasSelector"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://www.purl.org/storytel/Anonymized_Story"
+        "@id": "http://www.purl.org/storytel/Media_Fragment_Selector"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb27",
+    "@id": "http://www.w3.org/2001/XMLSchema#time",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/language",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Language"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The language of the resource; used here to state the language in which the ontology is expressed."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/elements/1.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Language"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#SpecificResource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Specific Resource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation class: a part or a particular state of a resource, identified through a source and a selector."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Specific Resource"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Story",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Anonymized version of the full video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Video"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b68"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b69"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b70"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b68",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
@@ -2304,18 +3018,302 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb28",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b69",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://www.purl.org/storytel/type/Story"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b70",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Anonymized_Story"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Full_Video"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Automatic_Acoustic_Analysis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Automatic Acoustic Analysis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Automatic annotation event in which the pipeline runs Praat on a segment of the Story to produce acoustic annotations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Automatic Acoustic Analysis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.purl.org/storytel/Automatic_Annotation"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b33"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b34"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b33",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in"
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://www.purl.org/storytel/Story"
+        "@id": "http://www.purl.org/storytel/Praat"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L48_created_annotation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Acoustic_Annotation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#FragmentSelector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Fragment Selector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation class: a Selector that describes a segment of a resource through a fragment identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Fragment Selector"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Student_Recording",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Student Recording"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Actor (student) who records the Full Video."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Student Recording"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/oa#hasBody",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "has body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/oa#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Annotation_Body",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Annotation Body"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Annotation Body"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Praat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Praat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Praat software used for the acoustic analysis (pitch, amplitude, frequency). Use one individual per version."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Praat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Storytel AI-assisted pipeline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Storytel AI-assisted pipeline"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
       }
     ]
   },
@@ -2355,21 +3353,21 @@
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb18"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b27"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb19"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b28"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb20"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b29"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb21"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b30"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb18",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b27",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2385,7 +3383,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb19",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b28",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2401,7 +3399,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb20",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b29",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2417,7 +3415,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb21",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b30",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2433,31 +3431,190 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/oa#hasBody",
+    "@id": "http://www.purl.org/storytel/Software_Based_On_LLM",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/dc/elements/1.1/title": [
       {
         "@language": "en",
-        "@value": "has body"
+        "@value": "LLM Software"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Web Annotation property linking an Annotation to the resource that carries its content (e.g. the transcribed text)."
+        "@value": "Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://www.w3.org/ns/oa#"
+        "@id": "http://www.purl.org/storytel/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "has body"
+        "@value": "LLM Software"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.purl.org/storytel/Anonymized_Story",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.purl.org/storytel/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Anonymized Story"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b19"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b20"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b21"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b22"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b23"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b24"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b21",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b22",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b23",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://www.purl.org/storytel/type/Anonymized_Story"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b24",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.purl.org/storytel/Full_Video"
+          },
+          {
+            "@id": "http://www.purl.org/storytel/Story"
+          }
+        ]
       }
     ]
   }

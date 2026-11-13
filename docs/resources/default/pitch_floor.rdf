@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/pitch_floor">
+    <rdfs:domain rdf:resource="http://www.purl.org/storytel/Automatic_Acoustic_Analysis"/>
+    <rdfs:label xml:lang="en">pitch floor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <dc:title xml:lang="en">pitch floor</dc:title>
+    <rdfs:comment xml:lang="en">Lower bound of the F0 search range used in the Praat analysis, in Hz.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+</rdf:RDF>

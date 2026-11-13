@@ -28,42 +28,26 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb52"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b69"
       },
       {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
       },
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b68"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb53"
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb54"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b70"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb52",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb53",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b69",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -79,7 +63,23 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb54",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b68",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b70",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

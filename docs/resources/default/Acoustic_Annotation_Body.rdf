@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Acoustic_Annotation_Body">
+    <rdfs:label xml:lang="en">Acoustic Annotation Body</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation_Body"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:comment xml:lang="en">Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification.</rdfs:comment>
+    <dc:title xml:lang="en">Acoustic Annotation Body</dc:title>
+  </rdf:Description>
+</rdf:RDF>

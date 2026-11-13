@@ -6,10 +6,10 @@
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Storytel_AI_Assisted_Pipeline">
     <rdfs:label xml:lang="en">Storytel AI-assisted pipeline</rdfs:label>
-    <rdfs:comment xml:lang="en">Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories.</rdfs:comment>
-    <dc:title xml:lang="en">Storytel AI-assisted pipeline</dc:title>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:comment xml:lang="en">Software pipeline developed in the STORYTEL project that uses AI techniques to automatically annotate stories.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
+    <dc:title xml:lang="en">Storytel AI-assisted pipeline</dc:title>
   </rdf:Description>
 </rdf:RDF>

@@ -1,0 +1,16 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Media_Segment a owl:Class ;
+    rdfs:label "Media Segment"@en ;
+    dc:title "Media Segment"@en ;
+    rdfs:comment "Temporal segment of a time-based resource, identified by a media fragment selector. Generalises the segments of the Story and of the Anonymized Story."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty oa:hasSelector ;
+            owl:someValuesFrom :Media_Fragment_Selector ],
+        oa:SpecificResource .
+

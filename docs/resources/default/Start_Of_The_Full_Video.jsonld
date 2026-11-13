@@ -32,12 +32,12 @@
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb51"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b67"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb51",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b67",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Glossing_Annotation">
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b60"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b59"/>
+    <rdfs:comment xml:lang="en">Annotation whose body is the interlinear gloss of a segment of an Anonymized Story, based on the transcription of that segment.</rdfs:comment>
+    <rdfs:label xml:lang="en">Glossing Annotation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <dc:title xml:lang="en">Glossing Annotation</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b59">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Transcription_Annotation"/>
+    <owl:onProperty rdf:resource="http://www.purl.org/storytel/is_based_on_transcription"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b60">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Glossing_Body"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

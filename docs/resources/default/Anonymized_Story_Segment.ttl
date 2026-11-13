@@ -12,5 +12,6 @@
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty oa:hasSelector ;
             owl:someValuesFrom :Media_Fragment_Selector ],
+        :Media_Segment,
         oa:SpecificResource .
 

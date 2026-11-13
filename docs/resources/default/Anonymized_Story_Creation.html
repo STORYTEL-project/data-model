@@ -18,26 +18,26 @@
         dc:title "Anonymized Story Creation"@en ;
         rdfs:comment "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM."@en ;
         rdfs:isDefinedBy : ;
-        rdfs:subClassOf _:nfb4366b93bd749b99262f6ca53882fdbb18,
-            _:nfb4366b93bd749b99262f6ca53882fdbb19,
-            _:nfb4366b93bd749b99262f6ca53882fdbb20,
-            _:nfb4366b93bd749b99262f6ca53882fdbb21,
+        rdfs:subClassOf _:nbe3a5c879a974bcb99a97f5216d30ae4b27,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b28,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b29,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b30,
             lrmoo:F28_Expression_Creation,
             crmdig:D3_Formal_Derivation .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb18 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b27 a owl:Restriction ;
         owl:onProperty lrmoo:R17_created ;
         owl:someValuesFrom :Anonymized_Story .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb19 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b28 a owl:Restriction ;
         owl:onProperty crmdig:L21_used_as_derivation_source ;
         owl:someValuesFrom :Story .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb20 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b29 a owl:Restriction ;
         owl:onProperty crmdig:L22_created_derivative ;
         owl:someValuesFrom :Anonymized_Story .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb21 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b30 a owl:Restriction ;
         owl:onProperty crmdig:L23_used_software_or_firmware ;
         owl:someValuesFrom :Software_Based_On_LLM .
 }
@@ -75,27 +75,43 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb18"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b29"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb21"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b27"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb19"
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
           },
           {
             "@id": "http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb20"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b28"
           },
           {
-            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b30"
           }
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb18",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b29",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://www.purl.org/storytel/Anonymized_Story"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b27",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -111,23 +127,7 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb21",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb19",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b28",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -143,47 +143,47 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb20",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b30",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
           {
-            "@id": "http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative"
+            "@id": "http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"
           }
         ],
         "http://www.w3.org/2002/07/owl#someValuesFrom": [
           {
-            "@id": "http://www.purl.org/storytel/Anonymized_Story"
+            "@id": "http://www.purl.org/storytel/Software_Based_On_LLM"
           }
         ]
       }
     ],
     "@id": "http://www.purl.org/storytel/"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_f19c94033bf9c5d7a65ab1c4dd7da4f7_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb18 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb21 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb21 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Software_Based_On_LLM> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb20 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb21 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb19 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb18 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb20 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb18 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb19 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb18 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://iflastandards.info/ns/lrm/lrmoo/R17_created> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb20 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb19 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb21 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware> &lt;http://www.purl.org/storytel/> .
+]</code></pre></div><div class="tab-pane fade" id=id_f19c94033bf9c5d7a65ab1c4dd7da4f7_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story Creation"@en &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b27 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://iflastandards.info/ns/lrm/lrmoo/R17_created> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b27 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b27 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b28 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://purl.org/dc/elements/1.1/title> "Anonymized Story Creation"@en &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb20 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Anonymized Story Creation"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb19 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b30 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b30 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b29 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Event in which an Anonymized Story is created as a formal derivation of a Story, using software based on an LLM."@en &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b29 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b29 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b27 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b28 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b29 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L22_created_derivative> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b28 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/extensions/crmdig/L21_used_as_derivation_source> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b30 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Software_Based_On_LLM> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/extensions/crmdig/D3_Formal_Derivation> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b28 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Anonymized_Story_Creation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b30 &lt;http://www.purl.org/storytel/> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

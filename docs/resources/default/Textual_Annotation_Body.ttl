@@ -1,0 +1,14 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Textual_Annotation_Body a owl:Class ;
+    rdfs:label "Textual Annotation Body"@en ;
+    dc:title "Textual Annotation Body"@en ;
+    rdfs:comment "Annotation body consisting of text (transcription, translation or glossing)."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Annotation_Body,
+        oa:TextualBody .
+

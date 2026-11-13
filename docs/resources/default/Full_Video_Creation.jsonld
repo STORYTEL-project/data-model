@@ -29,43 +29,27 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb42"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b56"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb43"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b54"
       },
       {
         "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb41"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b55"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb40"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b57"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb44"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b53"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb42",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Student_Recording"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb43",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b56",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -81,7 +65,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb41",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b54",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -97,23 +81,23 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb40",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b55",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"
       }
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "http://www.purl.org/storytel/Full_Video"
+        "@id": "http://www.purl.org/storytel/Student_Recording"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb44",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b57",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -125,6 +109,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Smartphone"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Full_Video"
       }
     ]
   }

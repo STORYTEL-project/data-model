@@ -6,9 +6,9 @@
 >
   <rdf:Description rdf:about="http://www.w3.org/ns/oa#SpecificResource">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">Web Annotation class: a part or a particular state of a resource, identified through a source and a selector.</rdfs:comment>
-    <rdfs:label xml:lang="en">Specific Resource</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label xml:lang="en">Specific Resource</rdfs:label>
     <dc:title xml:lang="en">Specific Resource</dc:title>
+    <rdfs:comment xml:lang="en">Web Annotation class: a part or a particular state of a resource, identified through a source and a selector.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

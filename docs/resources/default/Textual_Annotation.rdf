@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Textual_Annotation">
+    <dc:title xml:lang="en">Textual Annotation</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b80"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b79"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b78"/>
+    <rdfs:label xml:lang="en">Textual Annotation</rdfs:label>
+    <rdfs:comment xml:lang="en">Annotation carrying text (transcription, translation or glossing) for a segment of an Anonymized Story.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b78">
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b80">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Anonymized_Story_Segment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b79">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Textual_Annotation_Body"/>
+  </rdf:Description>
+</rdf:RDF>

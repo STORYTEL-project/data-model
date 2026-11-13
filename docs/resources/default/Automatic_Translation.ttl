@@ -1,0 +1,16 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Automatic_Translation a owl:Class ;
+    rdfs:label "Automatic Translation"@en ;
+    dc:title "Automatic Translation"@en ;
+    rdfs:comment "Automatic annotation event in which the pipeline translates a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L48_created_annotation ;
+            owl:someValuesFrom :Translation_Annotation ],
+        :Automatic_Annotation .
+

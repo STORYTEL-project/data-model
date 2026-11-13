@@ -5,11 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Annotation_Body">
+    <rdfs:comment>Content of an annotation. It is either textual (transcription, translation, glossing) or acoustic (output of the acoustic analysis).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Annotation Body</rdfs:label>
     <dc:title xml:lang="en">Annotation Body</dc:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Content of the annotation, e.g. the transcribed text of the segment.</rdfs:comment>
-    <rdfs:label xml:lang="en">Annotation Body</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/oa#TextualBody"/>
   </rdf:Description>
 </rdf:RDF>

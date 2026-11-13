@@ -22,26 +22,26 @@
         dc:title "Age of the Participants"@en ;
         rdfs:comment "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."@en ;
         rdfs:isDefinedBy : ;
-        rdfs:subClassOf _:nfb4366b93bd749b99262f6ca53882fdbb1,
+        rdfs:subClassOf _:nbe3a5c879a974bcb99a97f5216d30ae4b7,
             cidoc-crm:E54_Dimension .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb1 a owl:Restriction ;
-        owl:onProperty cidoc-crm:P90_has_value ;
-        owl:someValuesFrom _:nfb4366b93bd749b99262f6ca53882fdbb2 .
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b10 xsd:maxInclusive 65 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb2 a rdfs:Datatype ;
-        owl:onDatatype xsd:integer ;
-        owl:withRestrictions _:nfb4366b93bd749b99262f6ca53882fdbb5 .
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b11 rdf:first _:nbe3a5c879a974bcb99a97f5216d30ae4b9 ;
+        rdf:rest _:nbe3a5c879a974bcb99a97f5216d30ae4b12 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb3 xsd:minInclusive 18 .
-
-    _:nfb4366b93bd749b99262f6ca53882fdbb4 xsd:maxInclusive 65 .
-
-    _:nfb4366b93bd749b99262f6ca53882fdbb5 rdf:first _:nfb4366b93bd749b99262f6ca53882fdbb3 ;
-        rdf:rest _:nfb4366b93bd749b99262f6ca53882fdbb6 .
-
-    _:nfb4366b93bd749b99262f6ca53882fdbb6 rdf:first _:nfb4366b93bd749b99262f6ca53882fdbb4 ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b12 rdf:first _:nbe3a5c879a974bcb99a97f5216d30ae4b10 ;
         rdf:rest () .
+
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b7 a owl:Restriction ;
+        owl:onProperty cidoc-crm:P90_has_value ;
+        owl:someValuesFrom _:nbe3a5c879a974bcb99a97f5216d30ae4b8 .
+
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b8 a rdfs:Datatype ;
+        owl:onDatatype xsd:integer ;
+        owl:withRestrictions _:nbe3a5c879a974bcb99a97f5216d30ae4b11 .
+
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b9 xsd:minInclusive 18 .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_35b4164262605e737f39ffcba15d95b6_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
@@ -80,12 +80,12 @@
             "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb1"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b7"
           }
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb1",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b7",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -96,12 +96,12 @@
         ],
         "http://www.w3.org/2002/07/owl#someValuesFrom": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb2"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b8"
           }
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb2",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b8",
         "@type": [
           "http://www.w3.org/2000/01/rdf-schema#Datatype"
         ],
@@ -114,17 +114,17 @@
           {
             "@list": [
               {
-                "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb3"
+                "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b9"
               },
               {
-                "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb4"
+                "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b10"
               }
             ]
           }
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb3",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b9",
         "http://www.w3.org/2001/XMLSchema#minInclusive": [
           {
             "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb4",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b10",
         "http://www.w3.org/2001/XMLSchema#maxInclusive": [
           {
             "@type": "http://www.w3.org/2001/XMLSchema#integer",
@@ -144,25 +144,25 @@
     ],
     "@id": "http://www.purl.org/storytel/"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_35b4164262605e737f39ffcba15d95b6_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nfb4366b93bd749b99262f6ca53882fdbb2 &lt;http://www.w3.org/2002/07/owl#withRestrictions> _:nfb4366b93bd749b99262f6ca53882fdbb5 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfb4366b93bd749b99262f6ca53882fdbb3 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2000/01/rdf-schema#Datatype> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb2 &lt;http://www.w3.org/2002/07/owl#onDatatype> &lt;http://www.w3.org/2001/XMLSchema#integer> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb1 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P90_has_value> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfb4366b93bd749b99262f6ca53882fdbb6 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+]</code></pre></div><div class="tab-pane fade" id=id_35b4164262605e737f39ffcba15d95b6_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://purl.org/dc/elements/1.1/title> "Age of the Participants"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb4 &lt;http://www.w3.org/2001/XMLSchema#maxInclusive> "65"^^&lt;http://www.w3.org/2001/XMLSchema#integer> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Age of the Participants"@en &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b7 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbe3a5c879a974bcb99a97f5216d30ae4b12 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b7 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nbe3a5c879a974bcb99a97f5216d30ae4b10 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b7 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> _:nbe3a5c879a974bcb99a97f5216d30ae4b8 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b8 &lt;http://www.w3.org/2002/07/owl#onDatatype> &lt;http://www.w3.org/2001/XMLSchema#integer> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b10 &lt;http://www.w3.org/2001/XMLSchema#maxInclusive> "65"^^&lt;http://www.w3.org/2001/XMLSchema#integer> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b7 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P90_has_value> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Dimension expressing the age of the participants in a group, expressed as an integer value between 18 and 65."@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb3 &lt;http://www.w3.org/2001/XMLSchema#minInclusive> "18"^^&lt;http://www.w3.org/2001/XMLSchema#integer> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb1 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> _:nfb4366b93bd749b99262f6ca53882fdbb2 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfb4366b93bd749b99262f6ca53882fdbb4 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb1 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b8 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2000/01/rdf-schema#Datatype> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Age of the Participants"@en &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b9 &lt;http://www.w3.org/2001/XMLSchema#minInclusive> "18"^^&lt;http://www.w3.org/2001/XMLSchema#integer> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nbe3a5c879a974bcb99a97f5216d30ae4b9 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://purl.org/dc/elements/1.1/title> "Age of the Participants"@en &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b8 &lt;http://www.w3.org/2002/07/owl#withRestrictions> _:nbe3a5c879a974bcb99a97f5216d30ae4b11 &lt;http://www.purl.org/storytel/> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

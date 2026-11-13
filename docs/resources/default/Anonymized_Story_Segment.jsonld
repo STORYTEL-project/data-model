@@ -28,15 +28,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb22"
+        "@id": "http://www.purl.org/storytel/Media_Segment"
       },
       {
         "@id": "http://www.w3.org/ns/oa#SpecificResource"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b31"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb22",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b31",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

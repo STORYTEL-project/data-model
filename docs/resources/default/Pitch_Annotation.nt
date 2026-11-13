@@ -1,0 +1,6 @@
+<http://www.purl.org/storytel/Pitch_Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "F0 Annotation"@en .
+<http://www.purl.org/storytel/Pitch_Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment."@en .
+<http://www.purl.org/storytel/Pitch_Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Pitch_Annotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Acoustic_Annotation> .
+<http://www.purl.org/storytel/Pitch_Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Pitch_Annotation> <http://purl.org/dc/elements/1.1/title> "F0 Annotation"@en .

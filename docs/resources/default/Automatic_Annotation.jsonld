@@ -29,18 +29,18 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b35"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b36"
+      },
+      {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D30_Annotation_Event"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb24"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb25"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb24",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b35",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb25",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b36",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

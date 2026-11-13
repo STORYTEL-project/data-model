@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Software_Based_On_LLM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">LLM Software</rdfs:label>
-    <dc:title xml:lang="en">LLM Software</dc:title>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D14_Software"/>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
     <rdfs:comment xml:lang="en">Software based on a Large Language Model (LLM), used to produce the Anonymized Story from the Story.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">LLM Software</dc:title>
   </rdf:Description>
 </rdf:RDF>

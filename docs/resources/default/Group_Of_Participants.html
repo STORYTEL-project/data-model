@@ -17,20 +17,20 @@
         dc:title "Group of Participants"@en ;
         rdfs:comment "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en ;
         rdfs:isDefinedBy : ;
-        rdfs:subClassOf _:nfb4366b93bd749b99262f6ca53882fdbb46,
-            _:nfb4366b93bd749b99262f6ca53882fdbb47,
-            _:nfb4366b93bd749b99262f6ca53882fdbb48,
+        rdfs:subClassOf _:nbe3a5c879a974bcb99a97f5216d30ae4b61,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b62,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b63,
             cidoc-crm:E74_Group .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb46 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b61 a owl:Restriction ;
         owl:onProperty cidoc-crm:P107_has_current_member ;
         owl:someValuesFrom :Student_Participant .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb47 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b62 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :Age_Of_The_Participants .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb48 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b63 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :Number_of_Participants .
 }
@@ -68,13 +68,13 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb47"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b62"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb46"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b63"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb48"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b61"
           },
           {
             "@id": "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
@@ -82,7 +82,7 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb47",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b62",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -98,23 +98,7 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb46",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://www.purl.org/storytel/Student_Participant"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb48",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b63",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -128,28 +112,44 @@
             "@id": "http://www.purl.org/storytel/Number_of_Participants"
           }
         ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b61",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://www.purl.org/storytel/Student_Participant"
+          }
+        ]
       }
     ],
     "@id": "http://www.purl.org/storytel/"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_eac0de3a440217bfb3490039be91b223_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb47 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb46 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb47 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb46 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb48 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Number_of_Participants> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb46 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Student_Participant> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en &lt;http://www.purl.org/storytel/> .
+]</code></pre></div><div class="tab-pane fade" id=id_eac0de3a440217bfb3490039be91b223_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b62 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b63 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b61 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b63 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Group of Participants"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb48 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb48 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb47 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb48 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b62 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b61 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Student_Participant> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b61 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b62 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://purl.org/dc/elements/1.1/title> "Group of Participants"@en &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b61 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b62 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Age_Of_The_Participants> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/cidoc-crm/E74_Group> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb46 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb47 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b63 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b63 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Number_of_Participants> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Group_Of_Participants> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Group of student participants taking part in a conversational storytelling session, characterised by their number and age."@en &lt;http://www.purl.org/storytel/> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

@@ -1,0 +1,14 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pitch_floor a owl:DatatypeProperty ;
+    rdfs:label "pitch floor"@en ;
+    dc:title "pitch floor"@en ;
+    rdfs:comment "Lower bound of the F0 search range used in the Praat analysis, in Hz."@en ;
+    rdfs:domain :Automatic_Acoustic_Analysis ;
+    rdfs:isDefinedBy : ;
+    rdfs:range xsd:decimal .
+

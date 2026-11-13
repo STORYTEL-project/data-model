@@ -2,8 +2,8 @@
   {
     "@id": "http://www.purl.org/storytel/type/Full_Video",
     "@type": [
-      "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
     ],
     "http://purl.org/dc/elements/1.1/title": [
       {

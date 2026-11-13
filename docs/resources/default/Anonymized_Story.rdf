@@ -6,55 +6,55 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.purl.org/storytel/Anonymized_Story">
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb14"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb11"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb10"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb12"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b21"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b19"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b23"/>
     <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb13"/>
-    <dc:title xml:lang="en">Anonymized Story</dc:title>
-    <owl:disjointWith rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb15"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b22"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b20"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
     <rdfs:label xml:lang="en">Anonymized Story</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:title xml:lang="en">Anonymized Story</dc:title>
     <rdfs:comment>Anonymized version of the clipped story using AI techniques. Anonymization involves voice and body.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b24"/>
     <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb17">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b26">
     <rdf:first rdf:resource="http://www.purl.org/storytel/Story"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb14">
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b23">
     <owl:hasValue rdf:resource="http://www.purl.org/storytel/type/Anonymized_Story"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb15">
-    <owl:unionOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb16"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb16">
-    <rdf:rest rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb17"/>
-    <rdf:first rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb12">
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Start_Of_The_Full_Video"/>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b20">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb11">
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/End_Of_The_Full_Video"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb10">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b22">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb13">
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L23_used_software_or_firmware"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Software_Based_On_LLM"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b19">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b21">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Start_Of_The_Full_Video"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b25">
+    <rdf:first rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+    <rdf:rest rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b24">
+    <owl:unionOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b25"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

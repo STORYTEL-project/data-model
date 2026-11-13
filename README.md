@@ -7,6 +7,7 @@ The STORYTEL data model is an entity-relationship model that follows the best pr
 -	[**Web Annotation Ontology**](https://www.w3.org/ns/oa), a formal representation of Web Annotation Data Model of W3C which is used to represent annotations and the relationship between an annotation and the resource or specific segment to which it refers in a structured, shared and interoperable manner.
 
 ![A visual representation of Storytel Data Model](DATA-MODEL.svg)
+*This visual representation shows only the re-used classes from LRMOO, CIDOC-CRM, CRMDig and WAO. Implementation with Storytel *ad-hoc* classes for a formal representation of the annotation is shown in [this interactive representation](STORYTEL_ontology.html).*
 
 The data model structure can be summarized at four interconnected levels:
 

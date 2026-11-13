@@ -28,83 +28,35 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b21"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b19"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10"
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b23"
       },
       {
         "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b22"
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b20"
+      },
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b24"
       }
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb14",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://www.purl.org/storytel/type/Anonymized_Story"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb11",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Story"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb12",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b21",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -120,7 +72,39 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb13",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Story"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b23",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://www.purl.org/storytel/type/Anonymized_Story"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b22",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -136,7 +120,23 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb15",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/End_Of_The_Full_Video"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b24",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

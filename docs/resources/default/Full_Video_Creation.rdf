@@ -5,42 +5,42 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb42">
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b54">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Group_Of_Participants"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_Creation">
+    <rdfs:label xml:lang="en">Full Video Creation</rdfs:label>
+    <dc:title xml:lang="en">Full Video Creation</dc:title>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b56"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b54"/>
+    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b55"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b57"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b53"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b53">
+    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b57">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Smartphone"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b56">
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Place_Of_Recording"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b55">
     <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Student_Recording"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb40">
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Full_Video"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17_created"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb43">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Place_Of_Recording"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.purl.org/storytel/Full_Video_Creation">
-    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb42"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb43"/>
-    <rdfs:subClassOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb41"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb40"/>
-    <rdfs:subClassOf rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb44"/>
-    <rdfs:label xml:lang="en">Full Video Creation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:title xml:lang="en">Full Video Creation</dc:title>
-    <rdfs:comment xml:lang="en">Event of recording a Full Video, carried out by a Student Recording with a Group of Participants, at a Place of Recording and on a Smartphone.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb41">
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Group_Of_Participants"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nfb4366b93bd749b99262f6ca53882fdbb44">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Smartphone"/>
-    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L12_happened_on_device"/>
   </rdf:Description>
 </rdf:RDF>

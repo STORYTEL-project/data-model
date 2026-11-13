@@ -1,0 +1,7 @@
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustic Annotation Body"@en .
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> .
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Annotation_Body> .
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Output of the acoustic analysis of a segment of the Story, stored as a digital object (e.g. an F0 data file or a waveform or spectrogram image) and not as text. Because it is computed on the non-anonymized voice it may allow speaker identification."@en .
+<http://www.purl.org/storytel/Acoustic_Annotation_Body> <http://purl.org/dc/elements/1.1/title> "Acoustic Annotation Body"@en .

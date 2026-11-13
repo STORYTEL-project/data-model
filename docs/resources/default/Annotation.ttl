@@ -3,22 +3,24 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 :Annotation a owl:Class ;
     rdfs:label "Annotation"@en ;
     dc:title "Annotation "@en ;
-    rdfs:comment "Annotation object attached to a segment of an Anonymized Story, whose body carries the annotation content such as a transcription, translation, glossing etc. It is created using the Storytel AI pipeline"@en ;
+    rdfs:comment "Annotation object attached to a segment of a Story or of an Anonymized Story, whose body carries the annotation content (transcription, translation, glossing, acoustic analysis). It is created using the Storytel AI pipeline"@en ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty crmdig:L43_annotates ;
-            owl:someValuesFrom :Anonymized_Story ],
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( :Anonymized_Story :Story ) ] ],
         [ a owl:Restriction ;
             owl:onProperty oa:hasBody ;
             owl:someValuesFrom :Annotation_Body ],
         [ a owl:Restriction ;
             owl:onProperty oa:hasTarget ;
-            owl:someValuesFrom :Anonymized_Story_Segment ],
+            owl:someValuesFrom :Media_Segment ],
         crmdig:D29_Annotation_Object,
         oa:Annotation .
 

@@ -1,0 +1,6 @@
+<http://www.purl.org/storytel/Story_Segment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.purl.org/storytel/Media_Segment> .
+<http://www.purl.org/storytel/Story_Segment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.purl.org/storytel/Story_Segment> <http://www.w3.org/2000/01/rdf-schema#label> "Segment of Story"@en .
+<http://www.purl.org/storytel/Story_Segment> <http://www.w3.org/2000/01/rdf-schema#comment> "Temporal segment of a Story (the source of the Anonymized Story, i.e. before voice and body anonymisation), e.g. 00:12:03-00:12:47."@en .
+<http://www.purl.org/storytel/Story_Segment> <http://purl.org/dc/elements/1.1/title> "Segment of Story"@en .
+<http://www.purl.org/storytel/Story_Segment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .

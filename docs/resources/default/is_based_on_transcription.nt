@@ -1,0 +1,13 @@
+<http://www.purl.org/storytel/is_based_on_transcription> <http://www.w3.org/2000/01/rdf-schema#domain> _:nbe3a5c879a974bcb99a97f5216d30ae4b1 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.purl.org/storytel/is_based_on_transcription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Translation_Annotation> .
+<http://www.purl.org/storytel/is_based_on_transcription> <http://www.w3.org/2000/01/rdf-schema#label> "is based on transcription"@en .
+<http://www.purl.org/storytel/is_based_on_transcription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.purl.org/storytel/is_based_on_transcription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.purl.org/storytel/Transcription_Annotation> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b1 <http://www.w3.org/2002/07/owl#unionOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b2 .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.purl.org/storytel/Glossing_Annotation> .
+<http://www.purl.org/storytel/is_based_on_transcription> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a translation or glossing annotation to the transcription annotation it was derived from."@en .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbe3a5c879a974bcb99a97f5216d30ae4b3 .
+<http://www.purl.org/storytel/is_based_on_transcription> <http://purl.org/dc/elements/1.1/title> "is based on transcription"@en .

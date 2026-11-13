@@ -29,13 +29,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb47"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b62"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb46"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b63"
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb48"
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b61"
       },
       {
         "@id": "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
@@ -43,7 +43,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb47",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b62",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -59,23 +59,7 @@
     ]
   },
   {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb46",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://www.purl.org/storytel/Student_Participant"
-      }
-    ]
-  },
-  {
-    "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb48",
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b63",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -87,6 +71,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://www.purl.org/storytel/Number_of_Participants"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b61",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_member"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.purl.org/storytel/Student_Participant"
       }
     ]
   }

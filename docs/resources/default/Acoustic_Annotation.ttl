@@ -1,0 +1,24 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Acoustic_Annotation a owl:Class ;
+    rdfs:label "Acoustic Annotation"@en ;
+    dc:title "Acoustic Annotation"@en ;
+    rdfs:comment "Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty crmdig:L43_annotates ;
+            owl:someValuesFrom :Story ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasBody ;
+            owl:someValuesFrom :Acoustic_Annotation_Body ],
+        [ a owl:Restriction ;
+            owl:onProperty oa:hasTarget ;
+            owl:someValuesFrom :Story_Segment ],
+        :Annotation ;
+    owl:disjointWith :Textual_Annotation .
+

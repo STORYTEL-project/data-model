@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Acoustic_Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b4"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b6"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b5"/>
+    <rdfs:label xml:lang="en">Acoustic Annotation</rdfs:label>
+    <rdfs:comment xml:lang="en">Annotation holding the result of an acoustic analysis (Praat) of a segment of the Story. It is computed on the original, non-anonymized audio, so it may contain speaker-identifying information and should be handled according to the project data-protection policy.</rdfs:comment>
+    <dc:title xml:lang="en">Acoustic Annotation</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <owl:disjointWith rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b4">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story"/>
+    <owl:onProperty rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/L43_annotates"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b5">
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Acoustic_Annotation_Body"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b6">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Story_Segment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

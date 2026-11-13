@@ -1,0 +1,12 @@
+@prefix : <http://www.purl.org/storytel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Pitch_Annotation a owl:Class ;
+    rdfs:label "F0 Annotation"@en ;
+    dc:title "F0 Annotation"@en ;
+    rdfs:comment "Acoustic annotation holding the fundamental frequency (F0, in Hz) contour of a segment."@en ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf :Acoustic_Annotation .
+

@@ -21,42 +21,42 @@
         dc:title "Full Video"@en ;
         rdfs:comment "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" ;
         rdfs:isDefinedBy : ;
-        rdfs:subClassOf _:nfb4366b93bd749b99262f6ca53882fdbb32,
-            _:nfb4366b93bd749b99262f6ca53882fdbb33,
-            _:nfb4366b93bd749b99262f6ca53882fdbb34,
-            _:nfb4366b93bd749b99262f6ca53882fdbb35,
-            _:nfb4366b93bd749b99262f6ca53882fdbb36,
+        rdfs:subClassOf _:nbe3a5c879a974bcb99a97f5216d30ae4b45,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b46,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b47,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b48,
+            _:nbe3a5c879a974bcb99a97f5216d30ae4b49,
             lrmoo:F2_Expression,
             crmdig:D1_Digital_Object ;
-        owl:disjointWith _:nfb4366b93bd749b99262f6ca53882fdbb37 .
+        owl:disjointWith _:nbe3a5c879a974bcb99a97f5216d30ae4b50 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb32 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b45 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :Duration_Of_Full_Video .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb33 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b46 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :End_Of_The_Full_Video .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb34 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b47 a owl:Restriction ;
         owl:onProperty cidoc-crm:P43_has_dimension ;
         owl:someValuesFrom :Start_Of_The_Full_Video .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb35 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b48 a owl:Restriction ;
         owl:onProperty cidoc-crm:P72_has_language ;
         owl:someValuesFrom cidoc-crm:E56_Language .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb36 a owl:Restriction ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b49 a owl:Restriction ;
         owl:hasValue type:Full_Video ;
         owl:onProperty cidoc-crm:P2_has_type .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb37 a owl:Class ;
-        owl:unionOf _:nfb4366b93bd749b99262f6ca53882fdbb38 .
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b50 a owl:Class ;
+        owl:unionOf _:nbe3a5c879a974bcb99a97f5216d30ae4b51 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb38 rdf:first :Anonymized_Story ;
-        rdf:rest _:nfb4366b93bd749b99262f6ca53882fdbb39 .
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b51 rdf:first :Anonymized_Story ;
+        rdf:rest _:nbe3a5c879a974bcb99a97f5216d30ae4b52 .
 
-    _:nfb4366b93bd749b99262f6ca53882fdbb39 rdf:first :Story ;
+    _:nbe3a5c879a974bcb99a97f5216d30ae4b52 rdf:first :Story ;
         rdf:rest () .
 }
 
@@ -92,67 +92,35 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb35"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b46"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb34"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b48"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb33"
-          },
-          {
-            "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b45"
           },
           {
             "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb32"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b47"
           },
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb36"
+            "@id": "http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"
+          },
+          {
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b49"
           }
         ],
         "http://www.w3.org/2002/07/owl#disjointWith": [
           {
-            "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb37"
+            "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b50"
           }
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb35",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.cidoc-crm.org/cidoc-crm/P72_has_language"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://www.cidoc-crm.org/cidoc-crm/E56_Language"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb34",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video"
-          }
-        ]
-      },
-      {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb33",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b46",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -168,7 +136,23 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb32",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b48",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/P72_has_language"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E56_Language"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b45",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -184,7 +168,23 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb36",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b47",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://www.purl.org/storytel/Start_Of_The_Full_Video"
+          }
+        ]
+      },
+      {
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b49",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -200,7 +200,7 @@
         ]
       },
       {
-        "@id": "_:nfb4366b93bd749b99262f6ca53882fdbb37",
+        "@id": "_:nbe3a5c879a974bcb99a97f5216d30ae4b50",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -220,40 +220,40 @@
     ],
     "@id": "http://www.purl.org/storytel/"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_95c946cbf7ad2976f6d8cd41ec84b62d_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nfb4366b93bd749b99262f6ca53882fdbb38 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb35 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.cidoc-crm.org/cidoc-crm/E56_Language> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb39 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb34 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb35 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Full Video"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb35 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P72_has_language> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb32 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb33 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/End_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb34 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb38 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfb4366b93bd749b99262f6ca53882fdbb39 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb34 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb39 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb36 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P2_has_type> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb37 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nfb4366b93bd749b99262f6ca53882fdbb38 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb33 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb37 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://purl.org/dc/elements/1.1/title> "Full Video"@en &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb35 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb34 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Start_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb33 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2002/07/owl#disjointWith> _:nfb4366b93bd749b99262f6ca53882fdbb37 &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb32 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb36 &lt;http://www.w3.org/2002/07/owl#hasValue> &lt;http://www.purl.org/storytel/type/Full_Video> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb32 &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb36 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+]</code></pre></div><div class="tab-pane fade" id=id_95c946cbf7ad2976f6d8cd41ec84b62d_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b50 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b47 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Start_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b52 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b45 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b52 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Story> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b49 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b48 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b45 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
 &lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://www.purl.org/storytel/> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb33 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
-_:nfb4366b93bd749b99262f6ca53882fdbb32 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Duration_Of_Full_Video> &lt;http://www.purl.org/storytel/> .
-&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfb4366b93bd749b99262f6ca53882fdbb36 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b45 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b47 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b50 &lt;http://www.w3.org/2002/07/owl#unionOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b51 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b47 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b48 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b45 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/Duration_Of_Full_Video> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b49 &lt;http://www.w3.org/2002/07/owl#hasValue> &lt;http://www.purl.org/storytel/type/Full_Video> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2002/07/owl#disjointWith> _:nbe3a5c879a974bcb99a97f5216d30ae4b50 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "Full video registered by a student for the scope of the project on the study of Conversational Storytelling. Duration represents the duration of the video, while start and end time represents the extremities" &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b51 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.purl.org/storytel/Anonymized_Story> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b49 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P2_has_type> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b47 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b48 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.cidoc-crm.org/cidoc-crm/E56_Language> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b49 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b48 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P72_has_language> &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#label> "Full Video"@en &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b46 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b51 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbe3a5c879a974bcb99a97f5216d30ae4b52 &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://purl.org/dc/elements/1.1/title> "Full Video"@en &lt;http://www.purl.org/storytel/> .
+&lt;http://www.purl.org/storytel/Full_Video> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbe3a5c879a974bcb99a97f5216d30ae4b46 &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b46 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://www.purl.org/storytel/> .
+_:nbe3a5c879a974bcb99a97f5216d30ae4b46 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://www.purl.org/storytel/End_Of_The_Full_Video> &lt;http://www.purl.org/storytel/> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

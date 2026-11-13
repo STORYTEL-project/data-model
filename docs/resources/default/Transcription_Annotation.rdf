@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.purl.org/storytel/Transcription_Annotation">
+    <rdfs:comment xml:lang="en">Annotation whose body is the transcription of a segment of an Anonymized Story.</rdfs:comment>
+    <dc:title xml:lang="en">Transcription Annotation</dc:title>
+    <rdfs:isDefinedBy rdf:resource="http://www.purl.org/storytel/"/>
+    <rdfs:label xml:lang="en">Transcription Annotation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.purl.org/storytel/Textual_Annotation"/>
+    <rdfs:subClassOf rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b81"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbe3a5c879a974bcb99a97f5216d30ae4b81">
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
+    <owl:someValuesFrom rdf:resource="http://www.purl.org/storytel/Transcription_Body"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>
