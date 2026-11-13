@@ -14,9 +14,9 @@ The data model structure can be summarized at four interconnected levels:
 1. **Conceptual level**: The central conceptual structure of the model is based on LRMoo and CIDOC-CRM. CIDOC-CRM was selected because of its event-oriented approach, which makes it suitable for representing the processes involved in the production and transformation of the audiovisual resources. LRMoo provides a model for distinguishing the intellectual or conceptual resource from its different expressions.
 In this context, the different audiovisual resources are represented as LRMoo Expressions of a common Work. The Work represents the conceptual level of the conversational storytelling material, while the Expressions represent its different realizations in the workflow. In particular, the model distinguishes between:
 - the _full raw video_, representing the original audiovisual recording; 
-- the _story_, representing a selected segment of the full video corresponding to a storytelling episode; 
+- the _anonymized full video_, representing an anonymized version of the full video; 
 - the _anonymized story_, representing an anonymized version of the selected story segment. 
-This distinction allows the model to represent the fact that these resources are interconnected objects: the story is derived from a segment of the full video, while the anonymized story is derived from the corresponding story. At the same time, the three resources can be understood as different expressions of the same underlying Work. 
+ At the same time, the three resources can be understood as different expressions of the same underlying Work. 
 
 2.	**Process level**: creation events represent the recording, selection and anonymization processes through which the Expressions are produced and connect them to the actors, devices and other contextual entities involved. 
 The creation of each Expression is represented through a dedicated creation event. 
